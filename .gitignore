@@ -3,6 +3,9 @@ node_modules/
 /.pnp
 .pnp.js
 
+# ユニコさんフィードバック
+ユニコさんFB.txt
+
 # Testing
 /coverage
 

@@ -1,70 +1,69 @@
+"use client";
+
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function HeroSection() {
   return (
-    <section className="h-[95vh] relative overflow-hidden pt-16">
-      {/* 背景画像 */}
-      <div className="absolute inset-0 z-0">
+    <section className="relative overflow-hidden">
+      {/* トップに横幅いっぱいの画像を配置 */}
+      <div className="w-full relative">
         <Image
-          src="/images/背景虹色.jpeg"
-          alt="背景"
-          fill
-          className="object-cover object-bottom"
+          src="/images/hero_image6.png"
+          alt="ヒーロー画像"
+          width={1920}
+          height={1080}
+          className="w-full h-auto"
           priority
           quality={100}
         />
-      </div>
-      
-      <div className="container relative z-10 h-full flex items-center justify-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
-          {/* 左側コンテンツ - 横幅を広げる */}
-          <div className="flex flex-col justify-center md:pr-0 md:w-full lg:w-[120%]">
-            {/* メインタイトル - 白背景、フォントを細くて丸みのあるものに変更、サイズを小さく */}
-            <h1 className="mb-6 leading-relaxed">
-              <span className="inline-block bg-white px-5 py-2 mb-2 text-4xl font-light tracking-wide w-auto max-w-full" style={{ fontFamily: "'Noto Sans JP', 'Hiragino Sans', sans-serif" }}>「思いつき」から「動くアプリ」へ</span><br />
-              <span className="inline-block bg-white px-5 py-2 w-auto max-w-full">
-                <span className="text-4xl font-light tracking-wide bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent w-full block" style={{ fontFamily: "'Noto Sans JP', 'Hiragino Sans', sans-serif", letterSpacing: '0.05em' }}>
-                  バイブコーディングコース
-                </span>
-              </span>
-            </h1>
-            
-            {/* サブコピー - 黒背景・白文字、メインコピーと同じフォント */}
-            <p className="mb-8">
-              <span className="inline-block bg-black text-white px-4 py-1.5 mb-2 text-2xl font-light tracking-wide w-auto max-w-full" style={{ fontFamily: "'Noto Sans JP', 'Hiragino Sans', sans-serif" }}>最先端のAIプログラミングが学び放題</span><br />
-              <span className="inline-block bg-black text-white px-4 py-1.5 text-2xl font-light tracking-wide w-auto max-w-full" style={{ fontFamily: "'Noto Sans JP', 'Hiragino Sans', sans-serif" }}>オンライン完結可能</span>
-            </p>
-            
-            {/* CTAボタン画像 - サイズ調整 & アニメーション追加 */}
-            <div className="mt-2">
-              <Link href="#contact">
-                <Image
-                  src="/images/CTAボタン.png"
-                  alt="無料カウンセリングに申し込む"
-                  width={300}
-                  height={90}
-                  className="w-auto h-auto max-w-[300px] cta-pulse hover:scale-105 transition-transform"
-                  priority
-                />
-              </Link>
+        
+        {/* 画像下部のグラデーションオーバーレイ */}
+        <div className="absolute bottom-0 left-0 w-full h-[100px] bg-gradient-to-t from-white to-transparent"></div>
+        
+        {/* CTAボタンを画像の右下に配置 */}
+        <div className="absolute bottom-2 right-2 md:bottom-4 md:right-4 lg:bottom-8 lg:right-8 w-[90%] max-w-[380px]">
+          <div className="bg-gradient-to-r from-[#FF7A00] to-[#FF5E7A] rounded-lg p-5 shadow-lg">
+            <div className="text-center text-white text-xl md:text-2xl font-bold mb-4">
+              簡単申込60秒！
+            </div>
+            <Link href="#contact">
+              <div className="bg-white rounded-full p-1 shadow-md animate-pulse-slow">
+                <div className="bg-white rounded-full py-5 px-6 flex items-center justify-center">
+                  <div className="flex flex-col items-center justify-center">
+                    <div className="text-[#FF7A00] text-xl md:text-2xl font-bold">
+                      まずはZOOMで
+                    </div>
+                    <div className="text-[#FF7A00] text-2xl md:text-3xl font-bold">
+                      無料カウンセリング
+                    </div>
+                  </div>
             </div>
           </div>
-          
-          {/* 右側画像 - 右にずらす、サイズ拡大 */}
-          <div className="relative md:absolute md:right-[-8%] md:bottom-0 md:w-[55%] md:h-[90%]">
-            <Image
-              src="/images/ユニコhero.png"
-              alt="バイブコーディングコース キャラクター"
-              fill
-              className="object-contain object-bottom"
-              priority
-              sizes="(max-width: 768px) 100vw, 55vw"
-            />
+            </Link>
           </div>
         </div>
       </div>
+      
+      {/* カスタムアニメーションのためのスタイル */}
+      <style jsx>{`
+        @keyframes pulseSlow {
+          0% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.05);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+        
+        :global(.animate-pulse-slow) {
+          animation: pulseSlow 2s infinite;
+        }
+      `}</style>
     </section>
   );
 } 

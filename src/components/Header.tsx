@@ -26,7 +26,12 @@ export default function Header() {
         </nav>
         
         <div className="flex items-center space-x-3">
-          <Link href="#contact" className="btn-primary text-sm py-2 px-5 flex items-center justify-center min-h-[36px]">無料相談に申し込む</Link>
+          <Link 
+            href="#contact" 
+            className="text-base py-3 px-6 flex items-center justify-center min-h-[42px] rounded-full font-bold text-white transition-all hover:shadow-lg hover:scale-105 bg-gradient-to-r from-[#FF7A00] to-[#FF9D4A]"
+          >
+            無料カウンセリングに申し込む
+          </Link>
           <button className="md:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
               <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
