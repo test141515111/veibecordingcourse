@@ -3,6 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { BookOpen, Users, Tv, Code, MessageSquare, CheckCircle2, Target, Zap } from "lucide-react";
 
 export default function AboutSection() {
   return (
@@ -185,7 +186,7 @@ export default function AboutSection() {
             <div className="text-center">
               <div className="relative inline-block mb-4">
                 {/* かわいいボーダー効果 */}
-                <div className="absolute -inset-0.5 bg-gradient-to-r from-pink-400 to-purple-300 rounded-2xl animate-pulse-slow"></div>
+                <div className="absolute -inset-0.5 bg-gradient-to-r from-pink-400 to-orange-300 rounded-2xl animate-pulse-slow"></div>
                 <div className="absolute -inset-0.5 bg-white/50 rounded-2xl blur-sm"></div>
                 <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl p-0.5 shadow-lg border border-pink-100">
                   <div className="absolute -top-2 -right-2 w-5 h-5 bg-pink-200 rounded-full shadow-sm flex items-center justify-center">
@@ -194,7 +195,7 @@ export default function AboutSection() {
                   <div className="absolute -bottom-2 -left-2 w-5 h-5 bg-pink-200 rounded-full shadow-sm flex items-center justify-center">
                     <div className="w-3 h-3 bg-pink-400 rounded-full"></div>
                   </div>
-                  <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-pink-500 to-purple-400 bg-clip-text text-transparent px-6 py-2 relative">
+                  <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-pink-500 to-orange-400 bg-clip-text text-transparent px-6 py-2 relative">
                     充実したサポート体制
                   </h2>
                 </div>
@@ -392,7 +393,7 @@ export default function AboutSection() {
           <div className="text-center">
             <div className="relative inline-block mb-4">
               {/* かわいいボーダー効果 */}
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-pink-400 to-purple-300 rounded-2xl animate-pulse-slow"></div>
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-pink-400 to-orange-300 rounded-2xl animate-pulse-slow"></div>
               <div className="absolute -inset-0.5 bg-white/50 rounded-2xl blur-sm"></div>
               <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl p-0.5 shadow-lg border border-pink-100">
                 <div className="absolute -top-2 -right-2 w-5 h-5 bg-pink-200 rounded-full shadow-sm flex items-center justify-center">
@@ -401,7 +402,7 @@ export default function AboutSection() {
                 <div className="absolute -bottom-2 -left-2 w-5 h-5 bg-pink-200 rounded-full shadow-sm flex items-center justify-center">
                   <div className="w-3 h-3 bg-pink-400 rounded-full"></div>
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-pink-500 to-purple-400 bg-clip-text text-transparent px-6 py-2 relative">
+                <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-pink-500 to-orange-400 bg-clip-text text-transparent px-6 py-2 relative">
                   3軸構成の学習プログラム
                 </h2>
               </div>
@@ -409,23 +410,218 @@ export default function AboutSection() {
           </div>
         </div>
 
+        {/* 学習ロードマップ */}
+        <div className="max-w-6xl mx-auto px-6 mt-8 mb-16">
+          {/* Main Table */}
+          <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200">
+            {/* Table Header */}
+            <div className="grid grid-cols-3 overflow-hidden rounded-t-2xl">
+              <div className="bg-gradient-to-br from-amber-100 to-amber-200 p-8 text-center relative group">
+                <div className="absolute inset-0 bg-gradient-to-b from-amber-50/50 via-transparent to-transparent opacity-70"></div>
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-amber-300/30 via-amber-400/50 to-amber-300/30"></div>
+                <div className="relative flex items-center justify-center gap-4 mb-4">
+                  <div className="p-3 bg-gradient-to-br from-amber-500 to-amber-400 rounded-xl shadow-md flex items-center justify-center">
+                    <BookOpen className="w-6 h-6 text-white drop-shadow-sm" />
+                  </div>
+                  <div className="text-left">
+                    <div className="text-xs font-medium text-amber-900/70 tracking-wider uppercase mb-1">AXIS 01</div>
+                    <div className="text-2xl font-bold text-amber-950 tracking-tight">学習軸</div>
+                  </div>
+                </div>
+                <p className="text-amber-800 text-sm font-medium">基礎から実践まで段階的学習</p>
+              </div>
+
+              <div className="bg-gradient-to-br from-amber-200 to-amber-300 p-8 text-center relative group">
+                <div className="absolute inset-0 bg-gradient-to-b from-amber-100/50 via-transparent to-transparent opacity-70"></div>
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-amber-400/30 via-amber-500/50 to-amber-400/30"></div>
+                <div className="relative flex items-center justify-center gap-4 mb-4">
+                  <div className="p-3 bg-gradient-to-br from-amber-600 to-amber-500 rounded-xl shadow-md flex items-center justify-center">
+                    <Users className="w-6 h-6 text-white drop-shadow-sm" />
+                  </div>
+                  <div className="text-left">
+                    <div className="text-xs font-medium text-amber-900/70 tracking-wider uppercase mb-1">AXIS 02</div>
+                    <div className="text-2xl font-bold text-amber-950 tracking-tight">指導軸</div>
+                  </div>
+                </div>
+                <p className="text-amber-800 text-sm font-medium">マンツーマン指導による成長加速</p>
+              </div>
+
+              <div className="bg-gradient-to-br from-amber-300 to-amber-400 p-8 text-center relative group">
+                <div className="absolute inset-0 bg-gradient-to-b from-amber-200/50 via-transparent to-transparent opacity-70"></div>
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-amber-500/30 via-amber-600/50 to-amber-500/30"></div>
+                <div className="relative flex items-center justify-center gap-4 mb-4">
+                  <div className="p-3 bg-gradient-to-br from-amber-700 to-amber-600 rounded-xl shadow-md flex items-center justify-center">
+                    <Tv className="w-6 h-6 text-white drop-shadow-sm" />
+                  </div>
+                  <div className="text-left">
+                    <div className="text-xs font-medium text-amber-900/70 tracking-wider uppercase mb-1">AXIS 03</div>
+                    <div className="text-2xl font-bold text-amber-950 tracking-tight">交流軸</div>
+                  </div>
+                </div>
+                <p className="text-amber-800 text-sm font-medium">リアルタイム学習とコミュニティ参加</p>
+              </div>
+            </div>
+
+            {/* Main Content Row */}
+            <div className="grid grid-cols-3 divide-x divide-amber-100 min-h-[400px]">
+              {/* Learning Axis */}
+              <div className="p-8 bg-gradient-to-b from-amber-50/30 to-white relative">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-px bg-gradient-to-r from-transparent via-amber-200/50 to-transparent"></div>
+                <div className="h-full flex flex-col">
+                  <div className="mb-8">
+                    <div className="flex items-center justify-between mb-4">
+                      <h3 className="text-lg font-semibold text-amber-900">課題内容</h3>
+                      <span className="bg-gradient-to-r from-amber-100 to-amber-200 text-amber-800 px-4 py-1.5 rounded-lg text-sm font-medium shadow-sm">
+                        30課題
+                      </span>
+                    </div>
+                    <p className="text-slate-600 text-sm leading-relaxed">
+                      バイブコーディング独自のカリキュラムで実践的なスキルを習得
+                    </p>
+                  </div>
+
+                  <div className="flex-1 space-y-5">
+                    <div className="rounded-xl p-5 bg-white border border-amber-100 shadow-sm hover:shadow-md transition-shadow">
+                      <div className="flex items-center gap-3 mb-3">
+                        <div className="p-1.5 bg-gradient-to-br from-amber-100 to-amber-50 rounded-lg shadow-sm">
+                          <Code className="w-5 h-5 text-amber-700" />
+                        </div>
+                        <h4 className="font-semibold text-amber-950">基礎課題</h4>
+                      </div>
+                      <p className="text-sm text-slate-600 pl-10">テトリス、プロンプト量産アプリ、占いbot開発など基礎力の育成</p>
+                    </div>
+
+                    <div className="rounded-xl p-5 bg-white border border-amber-100 shadow-sm hover:shadow-md transition-shadow">
+                      <div className="flex items-center gap-3 mb-3">
+                        <div className="p-1.5 bg-gradient-to-br from-amber-100 to-amber-50 rounded-lg shadow-sm">
+                          <Target className="w-5 h-5 text-amber-700" />
+                        </div>
+                        <h4 className="font-semibold text-amber-950">実践課題</h4>
+                      </div>
+                      <p className="text-sm text-slate-600 pl-10">企業サイト作成、リサーチアプリ開発など実践力養成</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Mentoring Axis */}
+              <div className="p-8 bg-gradient-to-b from-amber-100/20 to-white relative">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-px bg-gradient-to-r from-transparent via-amber-200/50 to-transparent"></div>
+                <div className="h-full flex flex-col">
+                  <div className="mb-8">
+                    <div className="flex items-center justify-between mb-4">
+                      <h3 className="text-lg font-semibold text-amber-900">指導内容</h3>
+                      <span className="bg-gradient-to-r from-amber-200 to-amber-300 text-amber-800 px-4 py-1.5 rounded-lg text-sm font-medium shadow-sm">
+                        マンツーマン
+                      </span>
+                    </div>
+                    <p className="text-slate-600 text-sm leading-relaxed">課題の添削とマンツーマン指導で急速成長を実現</p>
+                  </div>
+
+                  <div className="flex-1 space-y-5">
+                    <div className="rounded-xl p-5 bg-white border border-amber-100 shadow-sm hover:shadow-md transition-shadow">
+                      <div className="flex items-center gap-3 mb-3">
+                        <div className="p-1.5 bg-gradient-to-br from-amber-200 to-amber-100 rounded-lg shadow-sm">
+                          <MessageSquare className="w-5 h-5 text-amber-700" />
+                        </div>
+                        <h4 className="font-semibold text-amber-950">成果物フィードバック</h4>
+                      </div>
+                      <p className="text-sm text-slate-600 pl-10">実際の成果物を見ながら具体的な改善点を指導</p>
+                    </div>
+
+                    <div className="rounded-xl p-5 bg-white border border-amber-100 shadow-sm hover:shadow-md transition-shadow">
+                      <div className="flex items-center gap-3 mb-3">
+                        <div className="p-1.5 bg-gradient-to-br from-amber-200 to-amber-100 rounded-lg shadow-sm">
+                          <CheckCircle2 className="w-5 h-5 text-amber-700" />
+                        </div>
+                        <h4 className="font-semibold text-amber-950">個別サポート</h4>
+                      </div>
+                      <p className="text-sm text-slate-600 pl-10">つまずきポイントを即座に解決</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Community Axis */}
+              <div className="p-8 bg-gradient-to-b from-amber-100/30 to-white relative">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-px bg-gradient-to-r from-transparent via-amber-200/50 to-transparent"></div>
+                <div className="h-full flex flex-col">
+                  <div className="mb-8">
+                    <div className="flex items-center justify-between mb-4">
+                      <h3 className="text-lg font-semibold text-amber-900">参加内容</h3>
+                      <span className="bg-gradient-to-r from-amber-300 to-amber-400 text-amber-800 px-4 py-1.5 rounded-lg text-sm font-medium shadow-sm">
+                        LIVE配信
+                      </span>
+                    </div>
+                    <p className="text-slate-600 text-sm leading-relaxed">生放送に参加して最新トレンドや疑問を一発解消</p>
+                  </div>
+
+                  <div className="flex-1 space-y-5">
+                    <div className="rounded-xl p-5 bg-white border border-amber-100 shadow-sm hover:shadow-md transition-shadow">
+                      <div className="flex items-center gap-3 mb-3">
+                        <div className="p-1.5 bg-gradient-to-br from-amber-300 to-amber-200 rounded-lg shadow-sm">
+                          <Tv className="w-5 h-5 text-amber-700" />
+                        </div>
+                        <h4 className="font-semibold text-amber-950">ライブ講義</h4>
+                      </div>
+                      <p className="text-sm text-slate-600 pl-10">最新技術トレンドをリアルタイムで学習</p>
+                    </div>
+
+                    <div className="rounded-xl p-5 bg-white border border-amber-100 shadow-sm hover:shadow-md transition-shadow">
+                      <div className="flex items-center gap-3 mb-3">
+                        <div className="p-1.5 bg-gradient-to-br from-amber-300 to-amber-200 rounded-lg shadow-sm">
+                          <MessageSquare className="w-5 h-5 text-amber-700" />
+                        </div>
+                        <h4 className="font-semibold text-amber-950">質疑応答</h4>
+                      </div>
+                      <p className="text-sm text-slate-600 pl-10">疑問点をその場で直接質問・解決</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Summary Row */}
+            <div className="bg-gradient-to-r from-amber-50 via-white to-amber-50 border-t border-amber-100 rounded-b-2xl overflow-hidden">
+              <div className="grid grid-cols-3">
+                <div className="p-6 text-center relative group">
+                  <div className="transform transition-transform group-hover:scale-105">
+                    <div className="text-3xl font-bold bg-gradient-to-br from-amber-700 to-amber-500 bg-clip-text text-transparent mb-1">30</div>
+                    <div className="text-sm text-amber-800 font-medium">実践課題</div>
+                  </div>
+                </div>
+                <div className="p-6 text-center relative group">
+                  <div className="transform transition-transform group-hover:scale-105">
+                    <div className="text-3xl font-bold bg-gradient-to-br from-amber-700 to-amber-500 bg-clip-text text-transparent mb-1">個別</div>
+                    <div className="text-sm text-amber-800 font-medium">マンツーマン指導</div>
+                  </div>
+                </div>
+                <div className="p-6 text-center relative group">
+                  <div className="transform transition-transform group-hover:scale-105">
+                    <div className="text-3xl font-bold bg-gradient-to-br from-amber-700 to-amber-500 bg-clip-text text-transparent mb-1">LIVE</div>
+                    <div className="text-sm text-amber-800 font-medium">リアルタイム学習</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom Message */}
+          <div className="text-center mt-8">
+            <p className="text-slate-600">3つの軸が同時に機能することで、確実にスキルアップを実現します</p>
+          </div>
+        </div>
+
         {/* CTAボタン - 目立つオレンジデザイン */}
-        <div className="flex justify-center mt-12 mb-8">
-          <Link href="#contact" className="relative inline-block group scale-100 hover:scale-[1.03] transition-transform duration-300">
-            <div className="absolute inset-0 bg-gradient-to-br from-orange-500 to-orange-400 rounded-xl blur-[2px] opacity-50 group-hover:opacity-70 transition duration-300 group-hover:duration-200 animate-pulse-slow"></div>
-            <button className="relative px-14 py-5 bg-gradient-to-r from-orange-500 to-orange-400 rounded-xl leading-none flex items-center divide-x divide-orange-200/30 shadow-md ring-1 ring-orange-300/50 hover:ring-orange-300/70 overflow-hidden">
-              <span className="pr-6 text-white font-bold text-2xl relative z-10">無料カウンセリング</span>
-              <span className="pl-6 text-white/90 group-hover:text-white transition duration-200 text-lg relative z-10">今すぐ申し込む <span className="group-hover:translate-x-2 inline-block transition-transform duration-200">&rarr;</span></span>
+        <div className="flex justify-center mt-14 mb-10">
+          <Link href="#contact" className="relative inline-block group scale-100 hover:scale-[1.05] transition-transform duration-300">
+            <div className="absolute inset-0 bg-gradient-to-br from-orange-600 to-orange-400 rounded-xl blur-[3px] opacity-60 group-hover:opacity-80 transition duration-300 group-hover:duration-200 animate-pulse-slow"></div>
+            <button className="relative px-20 py-8 bg-gradient-to-r from-orange-600 to-orange-400 rounded-xl leading-none flex flex-col items-center justify-center shadow-lg ring-2 ring-orange-300/50 hover:ring-orange-300/70 overflow-hidden">
+              <span className="text-white font-bold text-4xl relative z-10 mb-3 drop-shadow-md">無料カウンセリング</span>
+              <span className="text-white group-hover:text-white transition duration-200 text-2xl relative z-10">今すぐ申し込む <span className="group-hover:translate-x-2 inline-block transition-transform duration-200">&rarr;</span></span>
               {/* キラキラ光るエフェクト - 常時表示 */}
               <div className="absolute top-0 left-[-100%] w-[120%] h-full bg-gradient-to-r from-transparent via-white/70 to-transparent skew-x-15 animate-shine pointer-events-none"></div>
               <div className="absolute top-0 left-[-100%] w-[80%] h-full bg-gradient-to-r from-transparent via-white/40 to-transparent -skew-x-15 animate-shine-delayed pointer-events-none"></div>
-              {/* キラキラポイント */}
-              <div className="absolute inset-0 z-0">
-                <div className="absolute top-[20%] left-[15%] w-1 h-1 bg-white rounded-full animate-twinkle opacity-0"></div>
-                <div className="absolute top-[70%] left-[25%] w-1.5 h-1.5 bg-white rounded-full animate-twinkle-delayed opacity-0"></div>
-                <div className="absolute top-[30%] left-[75%] w-1 h-1 bg-white rounded-full animate-twinkle-delayed-more opacity-0"></div>
-                <div className="absolute top-[60%] left-[85%] w-0.5 h-0.5 bg-white rounded-full animate-twinkle opacity-0"></div>
-              </div>
             </button>
           </Link>
         </div>

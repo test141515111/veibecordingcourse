@@ -107,8 +107,8 @@ export default function VideoSection() {
                         {/* テキストコンテンツ */}
                         <div className="pt-1">
                           <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-[2.15rem] font-extrabold">Vibe Coding</span>
-                            <span className="ml-2 text-gray-600 text-xl">（バイブコーディング）</span>
+                            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-[2.15rem] font-extrabold block">Vibe Coding</span>
+                            <span className="text-gray-600 text-xl block">（バイブコーディング）</span>
                           </h3>
                           <p className="text-gray-600 leading-relaxed text-lg">
                             AIとの対話だけで高品質なソフトウェアを生み出す次世代の開発手法。
