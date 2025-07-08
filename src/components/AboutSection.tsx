@@ -158,7 +158,7 @@ export default function AboutSection() {
             <div className="relative bg-white rounded-2xl p-6 h-full flex flex-col shadow-md border border-orange-100/50">
               {/* カードヘッダー - オレンジベース */}
               <div className="bg-gradient-to-r from-orange-500 to-orange-400 rounded-xl py-3 px-4 -mt-10 mb-6 shadow-md self-start">
-                <h3 className="text-white font-bold text-lg leading-tight">課題・添削で<br/>AI開発の地力がつく！</h3>
+                <h3 className="text-white font-bold text-lg leading-tight">課題・添削でAI開発の地力がつく！</h3>
               </div>
               
               {/* アイコン - より落ち着いた色に */}
@@ -183,14 +183,22 @@ export default function AboutSection() {
           {/* サポート体制ヘッダー - 改良版 */}
           <div className="relative mb-12">
             <div className="text-center">
-              <div className="mb-2 flex justify-center items-center gap-2">
-                <span className="w-10 h-px bg-orange-400"></span>
-                <span className="w-10 h-px bg-orange-400"></span>
-              </div>
-              <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-4">
-                充実のサポート体制
-              </h2>
-              <div className="h-1 w-24 bg-gradient-to-r from-orange-400 to-orange-300 mx-auto mt-2 rounded-full"></div>
+              <div className="relative inline-block mb-4">
+                {/* かわいいボーダー効果 */}
+                <div className="absolute -inset-0.5 bg-gradient-to-r from-pink-400 to-purple-300 rounded-2xl animate-pulse-slow"></div>
+                <div className="absolute -inset-0.5 bg-white/50 rounded-2xl blur-sm"></div>
+                <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl p-0.5 shadow-lg border border-pink-100">
+                  <div className="absolute -top-2 -right-2 w-5 h-5 bg-pink-200 rounded-full shadow-sm flex items-center justify-center">
+                    <div className="w-3 h-3 bg-pink-400 rounded-full"></div>
+                  </div>
+                  <div className="absolute -bottom-2 -left-2 w-5 h-5 bg-pink-200 rounded-full shadow-sm flex items-center justify-center">
+                    <div className="w-3 h-3 bg-pink-400 rounded-full"></div>
+                  </div>
+                  <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-pink-500 to-purple-400 bg-clip-text text-transparent px-6 py-2 relative">
+                    充実したサポート体制
+                  </h2>
+                </div>
+                              </div>
             </div>
           </div>
           
@@ -374,6 +382,28 @@ export default function AboutSection() {
                     何度でも添削OK！具体的なアドバイスで上達
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 3軸構成の学習プログラムヘッダー */}
+        <div className="relative mb-12 mt-16">
+          <div className="text-center">
+            <div className="relative inline-block mb-4">
+              {/* かわいいボーダー効果 */}
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-pink-400 to-purple-300 rounded-2xl animate-pulse-slow"></div>
+              <div className="absolute -inset-0.5 bg-white/50 rounded-2xl blur-sm"></div>
+              <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl p-0.5 shadow-lg border border-pink-100">
+                <div className="absolute -top-2 -right-2 w-5 h-5 bg-pink-200 rounded-full shadow-sm flex items-center justify-center">
+                  <div className="w-3 h-3 bg-pink-400 rounded-full"></div>
+                </div>
+                <div className="absolute -bottom-2 -left-2 w-5 h-5 bg-pink-200 rounded-full shadow-sm flex items-center justify-center">
+                  <div className="w-3 h-3 bg-pink-400 rounded-full"></div>
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-pink-500 to-purple-400 bg-clip-text text-transparent px-6 py-2 relative">
+                  3軸構成の学習プログラム
+                </h2>
               </div>
             </div>
           </div>
