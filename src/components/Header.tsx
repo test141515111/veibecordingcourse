@@ -20,6 +20,7 @@ export default function Header() {
         <nav className="hidden md:flex items-center space-x-6 text-sm">
           <Link href="#video" className="hover:text-primary transition-colors">コースについて</Link>
           <Link href="#about" className="hover:text-primary transition-colors">カリキュラム</Link>
+          <Link href="#archive" className="hover:text-primary transition-colors">講義アーカイブ</Link>
           <Link href="#voice" className="hover:text-primary transition-colors">受講生の声</Link>
           <Link href="#faq" className="hover:text-primary transition-colors">よくある質問</Link>
         </nav>
