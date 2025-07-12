@@ -18,9 +18,8 @@ export default function Header() {
         </Link>
         
         <nav className="hidden md:flex items-center space-x-6 text-sm">
-          <Link href="#about" className="hover:text-primary transition-colors">コースについて</Link>
-          <Link href="#course" className="hover:text-primary transition-colors">カリキュラム</Link>
-          <Link href="#support" className="hover:text-primary transition-colors">サポート</Link>
+          <Link href="#video" className="hover:text-primary transition-colors">コースについて</Link>
+          <Link href="#about" className="hover:text-primary transition-colors">カリキュラム</Link>
           <Link href="#voice" className="hover:text-primary transition-colors">受講生の声</Link>
           <Link href="#faq" className="hover:text-primary transition-colors">よくある質問</Link>
         </nav>

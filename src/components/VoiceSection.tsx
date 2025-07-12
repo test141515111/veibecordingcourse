@@ -35,8 +35,8 @@ const courseProjects = [
   },
   {
     id: 5,
-    title: "マーメイドアプリ開発",
-    image: "https://placehold.co/600x400/EAF5FF/333333.png?text=マーメイド",
+    title: "作業フロー可視化アプリ開発",
+    image: "/images/作業フロー可視化.png",
     target: "図表作成とドキュメント管理を効率化したい方",
     note: "※ダイアグラム作成の効率化ツール"
   },
@@ -125,7 +125,7 @@ export default function VoiceSection() {
             <div className="inline-block mb-3">
               <p className="text-sm uppercase tracking-[0.25em] py-1.5 px-4 rounded-full bg-gradient-to-r from-primary/10 to-secondary/10 text-gray-700 font-medium relative inline-flex items-center">
                 <span className="w-1.5 h-1.5 bg-gradient-to-br from-primary to-secondary rounded-full mr-2.5"></span>
-                業界からの評価
+                推薦者の声
                 <span className="w-1.5 h-1.5 bg-gradient-to-br from-primary to-secondary rounded-full ml-2.5"></span>
               </p>
             </div>
@@ -135,14 +135,14 @@ export default function VoiceSection() {
               <h2 className="relative inline-block">
                 <span className="relative z-10 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent transform transition-transform duration-300 hover:scale-[1.02]"
                     style={{
-                      fontSize: 'clamp(2.5rem, 5vw, 3.5rem)',
+                      fontSize: 'clamp(2rem, 4vw, 3rem)',
                       fontWeight: 300,
                       letterSpacing: '0.05em',
-                      lineHeight: 1.1,
+                      lineHeight: 1.3,
                       fontFamily: "'Noto Sans JP', 'Hiragino Sans', sans-serif",
                       textShadow: '0 10px 30px rgba(0,0,0,0.05)'
                     }}>
-                  推薦者の声
+                  ユニコスクール推薦文
                 </span>
                 {/* 3D効果の装飾下線 */}
                 <span className="absolute left-0 -bottom-2 w-full h-0.5 bg-gradient-to-r from-primary/50 via-secondary/70 to-primary/50 rounded-full transform rotate-x-12 shadow-lg"></span>
@@ -151,11 +151,64 @@ export default function VoiceSection() {
             </div>
             
             <p className="text-lg max-w-3xl mx-auto text-gray-600 leading-relaxed">
-              バイブコーディングコースの卒業生を採用・評価いただいている企業や専門家からの推薦の声をご紹介します。
+              
             </p>
           </div>
           
-          {/* 推薦者の声コンテンツはそのまま残す */}
+          {/* 推薦者の声コンテンツ - 林俊介氏の画像と推薦文 */}
+          <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
+              {/* 丸いアイコン画像 */}
+              <div className="w-40 h-40 relative flex-shrink-0">
+                <div className="w-full h-full rounded-full overflow-hidden border-4 border-amber-500 shadow-lg relative z-10 transform transition-all duration-300 hover:scale-105" style={{ 
+                  boxShadow: '0 0 25px rgba(245, 158, 11, 0.3), 0 0 15px rgba(245, 158, 11, 0.2), 0 0 5px rgba(245, 158, 11, 0.1)',
+                  background: 'linear-gradient(135deg, rgba(251, 191, 36, 0.1) 0%, rgba(245, 158, 11, 0.2) 100%)'
+                }}>
+                  <div className="absolute inset-0 bg-gradient-to-br from-amber-400/10 to-amber-600/20 z-0"></div>
+                  <Image 
+                    src="/images/林俊介.png"
+                    alt="林俊介氏"
+                    fill
+                    className="object-cover z-10 relative"
+                  />
+                </div>
+                <div className="absolute -bottom-2 -right-2 w-12 h-12 rounded-full bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center text-white shadow-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                  </svg>
+                </div>
+              </div>
+              
+              {/* 推薦文コンテンツ */}
+              <div className="flex-1">
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">林 俊介</h3>
+                <div className="text-gray-700 leading-relaxed space-y-4">
+                  <p>
+                    半年以上にわたり、ユニコさんとほぼ毎日Zoomでバイブコーディングについて議論を重ねてきた経験から、彼のスクールを心から推薦します。
+                  </p>
+                  <p>
+                    ユニコさんの最大の強みは、高い技術力だけでなく、それをビジネスに結びつける発想力にあります。
+                    多くのエンジニアが技術に偏りがちな中、彼は常に「この技術をどう収益化するか」「どうすれば価値を生み出せるか」という視点を持っています。
+                    この視点は、私との日々の対話の中で何度も確認してきました。
+                  </p>
+                  <p>
+                    現在、バイブコーディングについては様々な情報が飛び交っていますが、残念ながらその多くは表面的で、実際に手を動かしていない人の発信も少なくありません。
+                    しかし、技術の世界では実装できなければ意味がありません。ユニコさんは実際にコードを書き、プロダクトを作り、それをビジネスに繋げてきた実績があります。
+                  </p>
+                  <p>
+                    初心者の方でも安心してください。
+                    彼の説明は丁寧で分かりやすく、段階を踏んで確実に理解を深められるよう工夫されています。
+                    ユニコスクールで学べば、バイブコーディングの技術力とビジネスセンスの両方を身につけることができるでしょう。
+                  </p>
+                  <p>
+                    ただし、基礎はスクールで学べますが、その後の成長は自分次第です。
+                    スクールでの勉強を基礎にし、自分の頭で考え、自分でも手を動かして下さい。
+                    この点もユニコさんは実際に手を動かしているので、ユニコさんスタイルの学習方法＆実践手法を参考にして学習を続けてもらえると嬉しいです。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       

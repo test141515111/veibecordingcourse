@@ -17,8 +17,8 @@ export default function Home() {
         <VideoSection />
         <AboutSection />
         <VoiceSection />
-        <FaqSection />
         <ContactSection />
+        <FaqSection />
       </main>
       <Footer />
     </>
