@@ -53,26 +53,43 @@ export default function VoiceSection() {
     <section id="voice" className="py-16 mt-0">
       <div className="container">
         <div className="text-center mb-12">
-          <div className="mb-8">
-            <h2 className="text-5xl font-bold text-neutral-900 mb-2">
-              受講生<span className="text-4xl align-middle">の</span>声
-            </h2>
-            <p className="text-xl tracking-widest text-neutral-700 font-light">v o i c e</p>
-            <div className="flex justify-center items-center gap-2 mt-3">
-              <div className="w-3 h-3 rounded-full bg-blue-500"></div>
-              <div className="w-3 h-3 rounded-full bg-pink-500"></div>
-              <div className="w-3 h-3 rounded-full bg-blue-700"></div>
-              <div className="w-3 h-3 rounded-full bg-red-500"></div>
-              <div className="w-3 h-3 rounded-full bg-purple-500"></div>
-              <div className="w-3 h-3 rounded-full bg-green-500"></div>
-              <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
+          {/* タイトルセクション */}
+          <div className="text-center mb-16 relative">
+            {/* サブタイトル */}
+            <div className="inline-block mb-3">
+              <p className="text-sm uppercase tracking-[0.25em] py-1.5 px-4 rounded-full bg-gradient-to-r from-primary/10 to-secondary/10 text-gray-700 font-medium relative inline-flex items-center">
+                <span className="w-1.5 h-1.5 bg-gradient-to-br from-primary to-secondary rounded-full mr-2.5"></span>
+                受講生の声
+                <span className="w-1.5 h-1.5 bg-gradient-to-br from-primary to-secondary rounded-full ml-2.5"></span>
+              </p>
             </div>
+            
+            {/* メインタイトル */}
+            <div className="relative mb-8 perspective">
+              <h2 className="relative inline-block">
+                <span className="relative z-10 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent transform transition-transform duration-300 hover:scale-[1.02]"
+                    style={{
+                      fontSize: 'clamp(2.5rem, 5vw, 3.5rem)',
+                      fontWeight: 300,
+                      letterSpacing: '0.05em',
+                      lineHeight: 1.1,
+                      fontFamily: "'Noto Sans JP', 'Hiragino Sans', sans-serif",
+                      textShadow: '0 10px 30px rgba(0,0,0,0.05)'
+                    }}>
+                  学習の成果と実績
+                </span>
+                {/* 3D効果の装飾下線 */}
+                <span className="absolute left-0 -bottom-2 w-full h-0.5 bg-gradient-to-r from-primary/50 via-secondary/70 to-primary/50 rounded-full transform rotate-x-12 shadow-lg"></span>
+                <span className="absolute left-0 -bottom-1 w-[90%] h-[1px] mx-[5%] bg-gradient-to-r from-transparent via-secondary/50 to-transparent rounded-full"></span>
+              </h2>
+            </div>
+            
+            <p className="text-lg max-w-3xl mx-auto text-gray-600 leading-relaxed">
+              バイブコーディングコースを受講された方々の声をご紹介します。
+              様々な経歴や目標を持った方が学習し、成果を出しています。
+            </p>
           </div>
           
-          <p className="text-xl max-w-3xl mx-auto">
-            バイブコーディングコースを受講された方々の声をご紹介します。
-            様々な経歴や目標を持った方が学習し、成果を出しています。
-          </p>
         </div>
         
         <div className="mb-8">
@@ -175,16 +192,6 @@ export default function VoiceSection() {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-        
-        <div className="text-center">
-          <div className="inline-block bg-white rounded-full shadow-lg px-8 py-4">
-            <p className="font-bold text-lg">
-              受講生満足度 <span className="text-primary">98%</span>
-              <span className="mx-4 text-gray-300">|</span>
-              <span>累計受講生 <span className="text-primary">500</span>名以上</span>
-            </p>
           </div>
         </div>
       </div>
