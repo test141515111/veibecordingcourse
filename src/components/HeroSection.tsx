@@ -10,7 +10,7 @@ export default function HeroSection() {
       {/* トップに横幅いっぱいの画像を配置 */}
       <div className="w-full relative">
         <Image
-          src="/images/herosection_image.png"
+          src="/images/herosection_image2.png"
           alt="ヒーロー画像"
           width={1920}
           height={1080}
