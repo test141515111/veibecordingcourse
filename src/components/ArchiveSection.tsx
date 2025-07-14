@@ -49,7 +49,7 @@ const archiveItems = [
 
 export default function ArchiveSection() {
   return (
-    <section id="archive" className="py-20 mt-0 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+    <section id="archive" className="py-20 pb-8 mt-0 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
       {/* 背景装飾 */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <div className="absolute top-20 right-20 w-72 h-72 bg-gradient-to-br from-amber-100/30 to-orange-100/20 rounded-full blur-3xl"></div>
@@ -57,7 +57,7 @@ export default function ArchiveSection() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(247,249,251,1)_0%,rgba(255,255,255,0)_50%)]"></div>
       </div>
       
-      <div className="container relative z-10">
+      <div className="container relative z-10 px-2 sm:px-6">
         {/* タイトルセクション */}
         <div className="text-center mb-16 relative">
           {/* サブタイトル */}
@@ -101,7 +101,7 @@ export default function ArchiveSection() {
         </div>
         
         {/* 最新講義アーカイブセクション */}
-        <div className="mb-20">
+        <div className="mb-8">
           <div className="flex items-center justify-center mb-10">
             <div className="h-px bg-gradient-to-r from-transparent via-amber-300/50 to-transparent w-16"></div>
             <h3 className="text-2xl font-bold text-gray-800 px-6">
@@ -110,68 +110,97 @@ export default function ArchiveSection() {
             <div className="h-px bg-gradient-to-r from-transparent via-amber-300/50 to-transparent w-16"></div>
           </div>
           
-          <div className="space-y-8 max-w-5xl mx-auto">
-            {archiveItems.map((item) => (
-              <div 
-                key={item.id} 
-                className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
-              >
-                <div className="flex flex-col md:flex-row">
-                  {/* 画像部分 - より明確に */}
-                  <div className="md:w-2/5 relative h-64 md:h-auto bg-gradient-to-br from-amber-50 to-orange-50 flex items-center justify-center overflow-hidden">
-                    {/* 画像プレースホルダーのデザイン */}
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-full h-full relative">
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <div className="w-20 h-20 rounded-full bg-amber-100 flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                            </svg>
+          {/* スマホ表示時に横スクロール可能なカルーセル */}
+          <div className="relative max-w-5xl mx-auto">
+            {/* スワイプヒントアイコン - スマホのみ表示 */}
+            <div className="md:hidden flex justify-center items-center mb-4">
+              <div className="flex items-center text-amber-500 text-sm font-medium">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1 animate-swipe" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+                横にスワイプ
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1 animate-swipe" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
+          
+            {/* カードコンテナ - スマホ表示時に横スクロール */}
+            <div className="md:space-y-8 md:block flex overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0">
+              {archiveItems.map((item) => (
+                <div 
+                  key={item.id} 
+                  className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 flex-shrink-0 md:flex-shrink w-[85%] md:w-full mr-4 md:mr-0 md:mb-8 snap-start"
+                >
+                  <div className="flex flex-col md:flex-row">
+                    {/* 画像部分 - より明確に */}
+                    <div className="md:w-2/5 relative h-64 md:h-auto bg-gradient-to-br from-amber-50 to-orange-50 flex items-center justify-center overflow-hidden">
+                      {/* 画像プレースホルダーのデザイン */}
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="w-full h-full relative">
+                          <div className="absolute inset-0 flex items-center justify-center">
+                            <div className="w-20 h-20 rounded-full bg-amber-100 flex items-center justify-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                              </svg>
+                            </div>
                           </div>
+                          <Image
+                            src={item.image}
+                            alt={item.title}
+                            fill
+                            className="object-cover z-10 opacity-80 hover:opacity-100 transition-opacity duration-300"
+                          />
                         </div>
-                        <Image
-                          src={item.image}
-                          alt={item.title}
-                          fill
-                          className="object-cover z-10 opacity-80 hover:opacity-100 transition-opacity duration-300"
-                        />
+                      </div>
+                      
+                      {/* 日付バッジ - より目立つデザイン */}
+                      <div className="absolute top-4 left-4 bg-gradient-to-r from-amber-500 to-orange-500 text-white text-sm font-medium py-1.5 px-4 rounded-full shadow-md z-20">
+                        {item.date}
                       </div>
                     </div>
                     
-                    {/* 日付バッジ - より目立つデザイン */}
-                    <div className="absolute top-4 left-4 bg-gradient-to-r from-amber-500 to-orange-500 text-white text-sm font-medium py-1.5 px-4 rounded-full shadow-md z-20">
-                      {item.date}
+                    {/* コンテンツ部分 - 改良版 */}
+                    <div className="md:w-3/5 p-6 md:p-8">
+                      <h4 className="text-xl font-bold text-gray-800 mb-3 line-clamp-2">
+                        {item.title}
+                      </h4>
+                      <p className="text-gray-600 mb-4 line-clamp-3">
+                        {item.description}
+                      </p>
+                      
+                      {/* タグ - より洗練されたデザイン */}
+                      {item.tags.length > 0 && (
+                        <div className="flex flex-wrap gap-2 mt-4">
+                          {item.tags.map((tag, index) => (
+                            <span 
+                              key={index} 
+                              className="bg-gradient-to-r from-amber-50 to-orange-50 text-amber-700 text-xs font-medium py-1.5 px-3 rounded-full border border-amber-100"
+                            >
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+                      )}
+                      
+                      {/* 視聴ボタン削除 */}
                     </div>
-                  </div>
-                  
-                  {/* コンテンツ部分 - 改良版 */}
-                  <div className="md:w-3/5 p-6 md:p-8">
-                    <h4 className="text-xl font-bold text-gray-800 mb-3 line-clamp-2">
-                      {item.title}
-                    </h4>
-                    <p className="text-gray-600 mb-4 line-clamp-3">
-                      {item.description}
-                    </p>
-                    
-                    {/* タグ - より洗練されたデザイン */}
-                    {item.tags.length > 0 && (
-                      <div className="flex flex-wrap gap-2 mt-4">
-                        {item.tags.map((tag, index) => (
-                          <span 
-                            key={index} 
-                            className="bg-gradient-to-r from-amber-50 to-orange-50 text-amber-700 text-xs font-medium py-1.5 px-3 rounded-full border border-amber-100"
-                          >
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-                    )}
-                    
-                    {/* 視聴ボタン削除 */}
                   </div>
                 </div>
+              ))}
+            </div>
+            
+            {/* スクロールインジケーター - スマホ表示時のみ */}
+            <div className="mt-4 flex justify-center md:hidden">
+              <div className="flex space-x-1">
+                {[0, 1, 2, 3, 4].map((_, index) => (
+                  <div 
+                    key={index} 
+                    className="w-2 h-2 rounded-full bg-amber-200 transition-colors duration-300"
+                  ></div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
           
           {/* 追加説明テキスト */}
@@ -226,6 +255,35 @@ export default function ArchiveSection() {
           -webkit-line-clamp: 3;
           -webkit-box-orient: vertical;
           overflow: hidden;
+        }
+
+        /* スクロールバー非表示 */
+        .scrollbar-hide {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+          display: none;  /* Chrome, Safari and Opera */
+        }
+
+        /* スワイプアイコンのアニメーション */
+        @keyframes swipe {
+          0% {
+            transform: translateX(0);
+            opacity: 0.5;
+          }
+          50% {
+            transform: translateX(4px);
+            opacity: 1;
+          }
+          100% {
+            transform: translateX(0);
+            opacity: 0.5;
+          }
+        }
+
+        .animate-swipe {
+          animation: swipe 1.5s ease-in-out infinite;
         }
       `}</style>
     </section>

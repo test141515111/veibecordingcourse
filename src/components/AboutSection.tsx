@@ -7,7 +7,7 @@ import { BookOpen, Users, Tv, Code, MessageSquare, CheckCircle2, Target, Zap } f
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-16 mt-0 relative overflow-hidden">
+    <section id="about" className="py-12 sm:py-16 mt-0 relative overflow-hidden">
       {/* 背景虹色2.png */}
       <div className="absolute inset-0 z-[-10]">
         <Image
@@ -26,8 +26,8 @@ export default function AboutSection() {
         <div className="absolute w-full h-full">
           <div className="absolute w-full h-full bg-[radial-gradient(circle_at_30%_40%,rgba(255,247,237,1)_0%,rgba(255,255,255,0)_50%)]"></div>
           <div className="absolute top-0 left-0 w-full h-[40%] bg-[linear-gradient(180deg,rgba(255,247,237,0.3)_0%,rgba(255,247,237,0)_100%)]"></div>
-          <div className="absolute top-1/4 right-1/3 w-[40rem] h-[40rem] rounded-full bg-gradient-to-br from-orange-400/2 to-transparent blur-3xl"></div>
-          <div className="absolute bottom-1/3 left-1/3 w-[30rem] h-[30rem] rounded-full bg-gradient-to-bl from-orange-300/2 to-transparent blur-[100px]"></div>
+          <div className="absolute top-1/4 right-1/3 w-[20rem] sm:w-[30rem] md:w-[40rem] h-[20rem] sm:h-[30rem] md:h-[40rem] rounded-full bg-gradient-to-br from-orange-400/2 to-transparent blur-3xl"></div>
+          <div className="absolute bottom-1/3 left-1/3 w-[15rem] sm:w-[20rem] md:w-[30rem] h-[15rem] sm:h-[20rem] md:h-[30rem] rounded-full bg-gradient-to-bl from-orange-300/2 to-transparent blur-[100px]"></div>
         </div>
         
         {/* 幾何学模様装飾 - より控えめに */}
@@ -37,7 +37,7 @@ export default function AboutSection() {
         </div>
       </div>
       
-      <div className="container relative z-10 bg-white/80 rounded-xl p-6 shadow-lg backdrop-blur-sm">
+      <div className="w-[95%] sm:container mx-auto px-1 sm:px-6 relative z-10 bg-white/80 rounded-xl p-4 sm:p-6 shadow-lg backdrop-blur-sm">
         {/* タイトルセクション - そのまま維持 */}
         <div className="text-center mb-16 relative">
           {/* サブタイトル */}
@@ -76,28 +76,28 @@ export default function AboutSection() {
         </div>
         
         {/* 4つの特徴カード - より落ち着いたデザイン */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-16 px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 mb-12 sm:mb-16 px-2 sm:px-4">
           {/* カード1: 実践形式で学ぶから伸びが早い */}
           <div className="relative group">
             {/* カードの背景効果 - より控えめに */}
             <div className="absolute -inset-0.5 bg-gradient-to-br from-orange-400 to-orange-300 rounded-2xl blur opacity-20 group-hover:opacity-40 transition-all duration-300"></div>
-            <div className="relative bg-white rounded-2xl p-6 h-full flex flex-col shadow-md border border-orange-100/50">
+            <div className="relative bg-white rounded-2xl p-4 sm:p-6 h-full flex flex-col shadow-md border border-orange-100/50">
               {/* カードヘッダー - オレンジベース */}
-              <div className="bg-gradient-to-r from-orange-500 to-orange-400 rounded-xl py-3 px-4 -mt-10 mb-6 shadow-md self-start">
-                <h3 className="text-white font-bold text-lg leading-tight">実践形式で学ぶから<br/>伸びが早い！</h3>
+              <div className="bg-gradient-to-r from-orange-500 to-orange-400 rounded-xl py-2 sm:py-3 px-3 sm:px-4 -mt-8 sm:-mt-10 mb-4 sm:mb-6 shadow-md self-start">
+                <h3 className="text-white font-bold text-base sm:text-lg leading-tight">実践形式で学ぶから<br/>伸びが早い！</h3>
               </div>
               
               {/* アイコン - より落ち着いた色に */}
-              <div className="mb-4 flex justify-center">
-                <div className="w-20 h-20 rounded-full bg-orange-50 flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="mb-3 sm:mb-4 flex justify-center">
+                <div className="w-16 sm:w-20 h-16 sm:h-20 rounded-full bg-orange-50 flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 sm:h-12 w-8 sm:w-12 text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                   </svg>
                 </div>
               </div>
               
               {/* テキスト - オレンジアクセント */}
-              <p className="text-gray-700 text-center">
+              <p className="text-gray-700 text-center text-sm sm:text-base">
                 完成形を目指して手を動かすから、学んだことが<span className="text-orange-500 font-bold">身につく</span>。
               </p>
             </div>
@@ -106,23 +106,23 @@ export default function AboutSection() {
           {/* カード2: 未経験でもしっかりサポート */}
           <div className="relative group">
             <div className="absolute -inset-0.5 bg-gradient-to-br from-orange-400 to-orange-300 rounded-2xl blur opacity-20 group-hover:opacity-40 transition-all duration-300"></div>
-            <div className="relative bg-white rounded-2xl p-6 h-full flex flex-col shadow-md border border-orange-100/50">
+            <div className="relative bg-white rounded-2xl p-4 sm:p-6 h-full flex flex-col shadow-md border border-orange-100/50">
               {/* カードヘッダー - オレンジベース */}
-              <div className="bg-gradient-to-r from-orange-500 to-orange-400 rounded-xl py-3 px-4 -mt-10 mb-6 shadow-md self-start">
-                <h3 className="text-white font-bold text-lg leading-tight">未経験でも<br/>しっかりサポート！</h3>
+              <div className="bg-gradient-to-r from-orange-500 to-orange-400 rounded-xl py-2 sm:py-3 px-3 sm:px-4 -mt-8 sm:-mt-10 mb-4 sm:mb-6 shadow-md self-start">
+                <h3 className="text-white font-bold text-base sm:text-lg leading-tight">未経験でも<br/>しっかりサポート！</h3>
               </div>
               
               {/* アイコン - より落ち着いた色に */}
-              <div className="mb-4 flex justify-center">
-                <div className="w-20 h-20 rounded-full bg-orange-50 flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="mb-3 sm:mb-4 flex justify-center">
+                <div className="w-16 sm:w-20 h-16 sm:h-20 rounded-full bg-orange-50 flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 sm:h-12 w-8 sm:w-12 text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                   </svg>
                 </div>
               </div>
               
               {/* テキスト - オレンジアクセント */}
-              <p className="text-gray-700 text-center">
+              <p className="text-gray-700 text-center text-sm sm:text-base">
                 つまずきポイントは<span className="text-orange-500 font-bold">AIと人のWサポート</span>で即解決。わからないまま進ませない。
               </p>
             </div>
@@ -131,23 +131,23 @@ export default function AboutSection() {
           {/* カード3: 週2回の生放送で最新情報をGet */}
           <div className="relative group">
             <div className="absolute -inset-0.5 bg-gradient-to-br from-orange-400 to-orange-300 rounded-2xl blur opacity-20 group-hover:opacity-40 transition-all duration-300"></div>
-            <div className="relative bg-white rounded-2xl p-6 h-full flex flex-col shadow-md border border-orange-100/50">
+            <div className="relative bg-white rounded-2xl p-4 sm:p-6 h-full flex flex-col shadow-md border border-orange-100/50">
               {/* カードヘッダー - オレンジベース */}
-              <div className="bg-gradient-to-r from-orange-500 to-orange-400 rounded-xl py-3 px-4 -mt-10 mb-6 shadow-md self-start">
-                <h3 className="text-white font-bold text-lg leading-tight">週2回の生放送で<br/>最新情報をGet！</h3>
+              <div className="bg-gradient-to-r from-orange-500 to-orange-400 rounded-xl py-2 sm:py-3 px-3 sm:px-4 -mt-8 sm:-mt-10 mb-4 sm:mb-6 shadow-md self-start">
+                <h3 className="text-white font-bold text-base sm:text-lg leading-tight">週2回の生放送で<br/>最新情報をGet！</h3>
               </div>
               
               {/* アイコン - より落ち着いた色に */}
-              <div className="mb-4 flex justify-center">
-                <div className="w-20 h-20 rounded-full bg-orange-50 flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="mb-3 sm:mb-4 flex justify-center">
+                <div className="w-16 sm:w-20 h-16 sm:h-20 rounded-full bg-orange-50 flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 sm:h-12 w-8 sm:w-12 text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                   </svg>
                 </div>
               </div>
               
               {/* テキスト - オレンジアクセント */}
-              <p className="text-gray-700 text-center">
+              <p className="text-gray-700 text-center text-sm sm:text-base">
                 講師が<span className="text-orange-500 font-bold">最新トレンドや技術解説</span>。リアルな質問にもその場で答えるから理解が深まる。
               </p>
             </div>
@@ -211,29 +211,29 @@ export default function AboutSection() {
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden group">
               <div className="grid grid-cols-1 lg:grid-cols-12 items-stretch">
                 {/* テキストセクション（右左入れ替え） */}
-                <div className="lg:col-span-7 p-8 flex flex-col justify-center lg:order-1">
+                <div className="lg:col-span-7 p-4 sm:p-6 md:p-8 flex flex-col justify-center lg:order-1 order-2">
                   <div className="inline-block bg-orange-100 px-3 py-1 rounded-full text-orange-600 text-xs font-medium tracking-wider mb-3">LIVE SESSIONS</div>
-                  <h3 className="text-2xl lg:text-3xl font-bold mb-4">週3回のライブ講義</h3>
-                  <p className="text-gray-700 mb-6">
+                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 sm:mb-4">週3回のライブ講義</h3>
+                  <p className="text-sm sm:text-base text-gray-700 mb-4 sm:mb-6">
                     定期的なライブ講義でリアルタイムに質問や相談ができます。講師陣による丁寧な解説と、受講生同士の交流の場としても活用できます。
                   </p>
-                  <div className="bg-gradient-to-br from-orange-50 to-orange-50/50 rounded-lg p-5 mb-4 shadow-sm border border-orange-100/70">
-                    <h4 className="font-bold text-lg mb-4 flex items-center text-gray-800">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-orange-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <div className="bg-gradient-to-br from-orange-50 to-orange-50/50 rounded-lg p-3 sm:p-5 mb-4 shadow-sm border border-orange-100/70">
+                    <h4 className="font-bold text-base sm:text-lg mb-3 sm:mb-4 flex items-center text-gray-800">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 sm:h-5 sm:w-5 text-orange-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
                       </svg>
                       ライブ講義・作業会スケジュール
                     </h4>
-                    <div className="space-y-2.5">
-                      <div className="bg-white rounded-lg p-3 shadow-sm border border-orange-100 transition-shadow duration-300 hover:border-orange-200">
+                    <div className="space-y-2">
+                      <div className="bg-white rounded-lg p-2 sm:p-3 shadow-sm border border-orange-100 transition-shadow duration-300 hover:border-orange-200">
                         <div className="flex items-center">
-                          <div className="w-8 h-8 rounded-full bg-pink-300 flex items-center justify-center shadow-sm flex-shrink-0">
-                            <span className="text-white font-bold text-sm">日</span>
+                          <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-pink-300 flex items-center justify-center shadow-sm flex-shrink-0">
+                            <span className="text-white font-bold text-xs sm:text-sm">日</span>
                           </div>
-                          <div className="ml-3 flex-1">
-                            <div className="flex items-baseline">
-                              <p className="font-bold text-gray-800">ユニコのAI開発生放送</p>
-                              <p className="text-sm text-gray-500 ml-2">20:00〜22:00</p>
+                          <div className="ml-2 sm:ml-3 flex-1">
+                            <div className="flex flex-col sm:flex-row sm:items-baseline">
+                              <p className="font-bold text-gray-800 text-sm sm:text-base">ユニコのAI開発生放送</p>
+                              <p className="text-xs sm:text-sm text-gray-500 sm:ml-2">20:00〜22:00</p>
                             </div>
                             <p className="text-xs text-gray-600 mt-0.5 border-l-2 border-pink-200 pl-2">
                               最新のAI解説・開発実演
@@ -242,15 +242,15 @@ export default function AboutSection() {
                         </div>
                       </div>
                       
-                      <div className="bg-white rounded-lg p-3 shadow-sm border border-orange-100 transition-shadow duration-300 hover:border-orange-200">
+                      <div className="bg-white rounded-lg p-2 sm:p-3 shadow-sm border border-orange-100 transition-shadow duration-300 hover:border-orange-200">
                         <div className="flex items-center">
-                          <div className="w-8 h-8 rounded-full bg-blue-300 flex items-center justify-center shadow-sm flex-shrink-0">
-                            <span className="text-white font-bold text-sm">月</span>
+                          <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-blue-300 flex items-center justify-center shadow-sm flex-shrink-0">
+                            <span className="text-white font-bold text-xs sm:text-sm">月</span>
                           </div>
-                          <div className="ml-3 flex-1">
-                            <div className="flex items-baseline">
-                              <p className="font-bold text-gray-800">ユニコのAI開発生放送</p>
-                              <p className="text-sm text-gray-500 ml-2">22:00〜24:00</p>
+                          <div className="ml-2 sm:ml-3 flex-1">
+                            <div className="flex flex-col sm:flex-row sm:items-baseline">
+                              <p className="font-bold text-gray-800 text-sm sm:text-base">ユニコのAI開発生放送</p>
+                              <p className="text-xs sm:text-sm text-gray-500 sm:ml-2">22:00〜24:00</p>
                             </div>
                             <p className="text-xs text-gray-600 mt-0.5 border-l-2 border-blue-200 pl-2">
                               最新のAI解説・開発実演
@@ -259,15 +259,15 @@ export default function AboutSection() {
                         </div>
                       </div>
                       
-                      <div className="bg-white rounded-lg p-3 shadow-sm border border-orange-100 transition-shadow duration-300 hover:border-orange-200">
+                      <div className="bg-white rounded-lg p-2 sm:p-3 shadow-sm border border-orange-100 transition-shadow duration-300 hover:border-orange-200">
                         <div className="flex items-center">
-                          <div className="w-8 h-8 rounded-full bg-green-300 flex items-center justify-center shadow-sm flex-shrink-0">
-                            <span className="text-white font-bold text-sm">木</span>
+                          <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-green-300 flex items-center justify-center shadow-sm flex-shrink-0">
+                            <span className="text-white font-bold text-xs sm:text-sm">木</span>
                           </div>
-                          <div className="ml-3 flex-1">
-                            <div className="flex items-baseline">
-                              <p className="font-bold text-gray-800">バイブコーディング作業会</p>
-                              <p className="text-sm text-gray-500 ml-2">20:00〜23:00</p>
+                          <div className="ml-2 sm:ml-3 flex-1">
+                            <div className="flex flex-col sm:flex-row sm:items-baseline">
+                              <p className="font-bold text-gray-800 text-sm sm:text-base">バイブコーディング作業会</p>
+                              <p className="text-xs sm:text-sm text-gray-500 sm:ml-2">20:00〜23:00</p>
                             </div>
                             <p className="text-xs text-gray-600 mt-0.5 border-l-2 border-green-200 pl-2">
                               参加型の共同作業会・質問なんでもOK
@@ -288,7 +288,7 @@ export default function AboutSection() {
                 </div>
                 
                 {/* 画像セクション */}
-                <div className="lg:col-span-5 relative lg:order-2 overflow-hidden rounded-r-2xl">
+                <div className="lg:col-span-5 relative lg:order-2 order-1 overflow-hidden rounded-r-2xl">
                   <div className="absolute inset-0 bg-gradient-to-br from-orange-100/30 to-orange-50/10 z-0"></div>
                   <div className="relative h-full flex items-center justify-center">
                     <div className="relative w-5/6 aspect-square overflow-hidden">
@@ -411,59 +411,59 @@ export default function AboutSection() {
         </div>
 
         {/* 学習ロードマップ */}
-        <div className="max-w-6xl mx-auto px-6 mt-8 mb-16">
+        <div className="max-w-6xl mx-auto px-3 sm:px-6 mt-6 sm:mt-8 mb-12 sm:mb-16">
           {/* Main Table */}
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200">
-            {/* Table Header */}
-            <div className="grid grid-cols-3 overflow-hidden rounded-t-2xl">
-              <div className="bg-gradient-to-br from-amber-100 to-amber-200 p-8 text-center relative group">
+            {/* Table Header - モバイル表示ではスタック */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 overflow-hidden rounded-t-2xl">
+              <div className="bg-gradient-to-br from-amber-100 to-amber-200 p-4 sm:p-6 md:p-8 text-center relative group">
                 <div className="absolute inset-0 bg-gradient-to-b from-amber-50/50 via-transparent to-transparent opacity-70"></div>
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-amber-300/30 via-amber-400/50 to-amber-300/30"></div>
-                <div className="relative flex items-center justify-center gap-4 mb-4">
-                  <div className="p-3 bg-gradient-to-br from-amber-500 to-amber-400 rounded-xl shadow-md flex items-center justify-center">
-                    <BookOpen className="w-6 h-6 text-white drop-shadow-sm" />
+                <div className="relative flex items-center justify-center gap-2 sm:gap-4 mb-2 sm:mb-4">
+                  <div className="p-2 sm:p-3 bg-gradient-to-br from-amber-500 to-amber-400 rounded-lg sm:rounded-xl shadow-md flex items-center justify-center">
+                    <BookOpen className="w-4 h-4 sm:w-6 sm:h-6 text-white drop-shadow-sm" />
                   </div>
                   <div className="text-left">
-                    <div className="text-xs font-medium text-amber-900/70 tracking-wider uppercase mb-1">AXIS 01</div>
-                    <div className="text-2xl font-bold text-amber-950 tracking-tight">学習軸</div>
+                    <div className="text-xs font-medium text-amber-900/70 tracking-wider uppercase mb-0.5 sm:mb-1">AXIS 01</div>
+                    <div className="text-lg sm:text-xl md:text-2xl font-bold text-amber-950 tracking-tight">学習軸</div>
                   </div>
                 </div>
-                <p className="text-amber-800 text-sm font-medium">基礎から実践まで段階的学習</p>
+                <p className="text-amber-800 text-xs sm:text-sm font-medium">基礎から実践まで段階的学習</p>
               </div>
 
-              <div className="bg-gradient-to-br from-amber-200 to-amber-300 p-8 text-center relative group">
+              <div className="bg-gradient-to-br from-amber-200 to-amber-300 p-4 sm:p-6 md:p-8 text-center relative group border-t sm:border-t-0 sm:border-l border-amber-200/50">
                 <div className="absolute inset-0 bg-gradient-to-b from-amber-100/50 via-transparent to-transparent opacity-70"></div>
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-amber-400/30 via-amber-500/50 to-amber-400/30"></div>
-                <div className="relative flex items-center justify-center gap-4 mb-4">
-                  <div className="p-3 bg-gradient-to-br from-amber-600 to-amber-500 rounded-xl shadow-md flex items-center justify-center">
-                    <Users className="w-6 h-6 text-white drop-shadow-sm" />
+                <div className="relative flex items-center justify-center gap-2 sm:gap-4 mb-2 sm:mb-4">
+                  <div className="p-2 sm:p-3 bg-gradient-to-br from-amber-600 to-amber-500 rounded-lg sm:rounded-xl shadow-md flex items-center justify-center">
+                    <Users className="w-4 h-4 sm:w-6 sm:h-6 text-white drop-shadow-sm" />
                   </div>
                   <div className="text-left">
-                    <div className="text-xs font-medium text-amber-900/70 tracking-wider uppercase mb-1">AXIS 02</div>
-                    <div className="text-2xl font-bold text-amber-950 tracking-tight">指導軸</div>
+                    <div className="text-xs font-medium text-amber-900/70 tracking-wider uppercase mb-0.5 sm:mb-1">AXIS 02</div>
+                    <div className="text-lg sm:text-xl md:text-2xl font-bold text-amber-950 tracking-tight">指導軸</div>
                   </div>
                 </div>
-                <p className="text-amber-800 text-sm font-medium">マンツーマン指導による成長加速</p>
+                <p className="text-amber-800 text-xs sm:text-sm font-medium">マンツーマン指導による成長加速</p>
               </div>
 
-              <div className="bg-gradient-to-br from-amber-300 to-amber-400 p-8 text-center relative group">
+              <div className="bg-gradient-to-br from-amber-300 to-amber-400 p-4 sm:p-6 md:p-8 text-center relative group border-t sm:border-t-0 sm:border-l border-amber-200/50">
                 <div className="absolute inset-0 bg-gradient-to-b from-amber-200/50 via-transparent to-transparent opacity-70"></div>
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-amber-500/30 via-amber-600/50 to-amber-500/30"></div>
-                <div className="relative flex items-center justify-center gap-4 mb-4">
-                  <div className="p-3 bg-gradient-to-br from-amber-700 to-amber-600 rounded-xl shadow-md flex items-center justify-center">
-                    <Tv className="w-6 h-6 text-white drop-shadow-sm" />
+                <div className="relative flex items-center justify-center gap-2 sm:gap-4 mb-2 sm:mb-4">
+                  <div className="p-2 sm:p-3 bg-gradient-to-br from-amber-700 to-amber-600 rounded-lg sm:rounded-xl shadow-md flex items-center justify-center">
+                    <Tv className="w-4 h-4 sm:w-6 sm:h-6 text-white drop-shadow-sm" />
                   </div>
                   <div className="text-left">
-                    <div className="text-xs font-medium text-amber-900/70 tracking-wider uppercase mb-1">AXIS 03</div>
-                    <div className="text-2xl font-bold text-amber-950 tracking-tight">交流軸</div>
+                    <div className="text-xs font-medium text-amber-900/70 tracking-wider uppercase mb-0.5 sm:mb-1">AXIS 03</div>
+                    <div className="text-lg sm:text-xl md:text-2xl font-bold text-amber-950 tracking-tight">交流軸</div>
                   </div>
                 </div>
-                <p className="text-amber-800 text-sm font-medium">リアルタイム学習とコミュニティ参加</p>
+                <p className="text-amber-800 text-xs sm:text-sm font-medium">リアルタイム学習とコミュニティ参加</p>
               </div>
             </div>
 
-            {/* Main Content Row */}
-            <div className="grid grid-cols-3 divide-x divide-amber-100 min-h-[400px]">
+            {/* Main Content Row - モバイル表示ではスタック */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-amber-100 min-h-[300px] sm:min-h-[400px]">
               {/* Learning Axis */}
               <div className="p-8 bg-gradient-to-b from-amber-50/30 to-white relative">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-px bg-gradient-to-r from-transparent via-amber-200/50 to-transparent"></div>
@@ -613,12 +613,12 @@ export default function AboutSection() {
         </div>
 
         {/* CTAボタン - 目立つオレンジデザイン */}
-        <div className="flex justify-center mt-14 mb-10">
-          <Link href="#contact" className="relative inline-block group scale-100 hover:scale-[1.05] transition-transform duration-300">
+        <div className="flex justify-center mt-10 sm:mt-14 mb-8 sm:mb-10">
+          <Link href="#contact" className="relative inline-block group scale-100 hover:scale-[1.05] transition-transform duration-300 w-[90%] sm:w-auto">
             <div className="absolute inset-0 bg-gradient-to-br from-orange-600 to-orange-400 rounded-xl blur-[3px] opacity-60 group-hover:opacity-80 transition duration-300 group-hover:duration-200 animate-pulse-slow"></div>
-            <button className="relative px-20 py-8 bg-gradient-to-r from-orange-600 to-orange-400 rounded-xl leading-none flex flex-col items-center justify-center shadow-lg ring-2 ring-orange-300/50 hover:ring-orange-300/70 overflow-hidden">
-              <span className="text-white font-bold text-4xl relative z-10 mb-3 drop-shadow-md">無料カウンセリング</span>
-              <span className="text-white group-hover:text-white transition duration-200 text-2xl relative z-10">今すぐ申し込む <span className="group-hover:translate-x-2 inline-block transition-transform duration-200">&rarr;</span></span>
+            <button className="relative w-full px-4 py-4 sm:px-12 sm:py-6 md:px-20 md:py-8 bg-gradient-to-r from-orange-600 to-orange-400 rounded-xl leading-none flex flex-col items-center justify-center shadow-lg ring-2 ring-orange-300/50 hover:ring-orange-300/70 overflow-hidden">
+              <span className="text-white font-bold text-xl sm:text-3xl md:text-4xl relative z-10 mb-2 sm:mb-3 drop-shadow-md">無料カウンセリング</span>
+              <span className="text-white group-hover:text-white transition duration-200 text-base sm:text-xl md:text-2xl relative z-10">今すぐ申し込む <span className="group-hover:translate-x-2 inline-block transition-transform duration-200">&rarr;</span></span>
               {/* キラキラ光るエフェクト - 常時表示 */}
               <div className="absolute top-0 left-[-100%] w-[120%] h-full bg-gradient-to-r from-transparent via-white/70 to-transparent skew-x-15 animate-shine pointer-events-none"></div>
               <div className="absolute top-0 left-[-100%] w-[80%] h-full bg-gradient-to-r from-transparent via-white/40 to-transparent -skew-x-15 animate-shine-delayed pointer-events-none"></div>

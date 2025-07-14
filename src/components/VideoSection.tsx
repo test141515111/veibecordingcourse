@@ -83,22 +83,22 @@ export default function VideoSection() {
             </div>
             
             {/* カード内コンテナ */}
-            <div className="relative z-10 p-10 md:p-14">
+            <div className="relative z-10 p-4 sm:p-6 md:p-10 lg:p-14">
               {/* フレックスコンテナ - 説明と動画を横並び */}
-              <div className="flex flex-col lg:flex-row gap-16 items-stretch">
+              <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-stretch">
                 
                 {/* 説明カード - 左側 */}
                 <div className="lg:w-[42%] flex flex-col justify-center relative">
-                  <div className="space-y-16">
+                  <div className="space-y-8 sm:space-y-12 lg:space-y-16">
                     {/* 項目1: AIとの対話 */}
                     <div className="transform transition-all duration-500 hover:-translate-y-1 hover:translate-x-1">
-                      <div className="flex gap-8 items-start">
+                      <div className="flex gap-4 sm:gap-6 md:gap-8 items-start">
                         {/* アイコンコンテナ */}
                         <div className="relative group">
                           <div className="absolute -inset-0.5 bg-gradient-to-br from-primary to-secondary rounded-xl blur opacity-30 group-hover:opacity-70 transition-opacity duration-300"></div>
-                          <div className="relative flex items-center justify-center w-16 h-16 bg-white rounded-xl shadow-md flex-shrink-0 overflow-hidden border border-white/50">
+                          <div className="relative flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-white rounded-xl shadow-md flex-shrink-0 overflow-hidden border border-white/50">
                             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10 opacity-50"></div>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-gray-700 relative z-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 text-gray-700 relative z-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                             </svg>
                           </div>
@@ -106,11 +106,11 @@ export default function VideoSection() {
                         
                         {/* テキストコンテンツ */}
                         <div className="pt-1">
-                          <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-[2.15rem] font-extrabold block">Vibe Coding</span>
-                            <span className="text-gray-600 text-xl block">（バイブコーディング）</span>
+                          <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-2 sm:mb-4">
+                            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-[1.8rem] sm:text-[2.15rem] font-extrabold block">Vibe Coding</span>
+                            <span className="text-gray-600 text-lg sm:text-xl block">（バイブコーディング）</span>
                           </h3>
-                          <p className="text-gray-600 leading-relaxed text-lg">
+                          <p className="text-gray-600 leading-relaxed text-base sm:text-lg">
                             AIとの対話だけで高品質なソフトウェアを生み出す次世代の開発手法。
                           </p>
                           <div className="h-0.5 w-12 bg-gradient-to-r from-primary/30 to-secondary/30 rounded-full mt-4"></div>
@@ -120,13 +120,13 @@ export default function VideoSection() {
                     
                     {/* 項目2: ゼロから始める */}
                     <div className="transform transition-all duration-500 hover:-translate-y-1 hover:translate-x-1">
-                      <div className="flex gap-8 items-start">
+                      <div className="flex gap-4 sm:gap-6 md:gap-8 items-start">
                         {/* アイコンコンテナ */}
                         <div className="relative group">
                           <div className="absolute -inset-0.5 bg-gradient-to-br from-blue-400 to-purple-500 rounded-xl blur opacity-30 group-hover:opacity-70 transition-opacity duration-300"></div>
-                          <div className="relative flex items-center justify-center w-16 h-16 bg-white rounded-xl shadow-md flex-shrink-0 overflow-hidden border border-white/50">
+                          <div className="relative flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-white rounded-xl shadow-md flex-shrink-0 overflow-hidden border border-white/50">
                             <div className="absolute inset-0 bg-gradient-to-br from-blue-400/10 to-purple-500/10 opacity-50"></div>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-gray-700 relative z-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 text-gray-700 relative z-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                             </svg>
                           </div>
@@ -134,10 +134,10 @@ export default function VideoSection() {
                         
                         {/* テキストコンテンツ */}
                         <div className="pt-1">
-                          <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                          <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-2 sm:mb-4">
                             ゼロからはじめる新しいものづくり
                           </h3>
-                          <p className="text-gray-600 leading-relaxed text-lg">
+                          <p className="text-gray-600 leading-relaxed text-base sm:text-lg">
                             プログラミング経験ゼロから始められる、まったく新しいものづくりの世界へようこそ。
                           </p>
                           <div className="h-0.5 w-12 bg-gradient-to-r from-blue-400/30 to-purple-500/30 rounded-full mt-4"></div>
@@ -166,7 +166,7 @@ export default function VideoSection() {
                       <div className="w-full h-full bg-gradient-to-b from-gray-800 to-black rounded-xl overflow-hidden relative">
                         {/* サムネイル背景 */}
                         <div className="absolute inset-0 bg-black/75 flex items-center justify-center">
-                          <div className="text-white text-xl font-medium tracking-wide text-center px-4 backdrop-blur-sm">
+                          <div className="text-white text-sm sm:text-base md:text-xl font-medium tracking-wide text-center px-4 backdrop-blur-sm">
                             バイブコーディング紹介動画
                           </div>
                         </div>
@@ -181,9 +181,9 @@ export default function VideoSection() {
                             <div className="absolute inset-0 scale-[1.4] rounded-full bg-white/10 animate-ping-slower opacity-40"></div>
                             
                             {/* ボタン本体 */}
-                            <div className="relative w-20 h-20 bg-white/15 backdrop-blur-md rounded-full flex items-center justify-center border border-white/30">
-                              <div className="w-16 h-16 bg-gradient-to-br from-primary via-primary to-secondary rounded-full flex items-center justify-center shadow-lg">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white drop-shadow" viewBox="0 0 20 20" fill="currentColor">
+                            <div className="relative w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-white/15 backdrop-blur-md rounded-full flex items-center justify-center border border-white/30">
+                              <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 bg-gradient-to-br from-primary via-primary to-secondary rounded-full flex items-center justify-center shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 sm:h-6 sm:w-6 md:h-8 md:w-8 text-white drop-shadow" viewBox="0 0 20 20" fill="currentColor">
                                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
                                 </svg>
                               </div>
@@ -192,7 +192,7 @@ export default function VideoSection() {
                         </div>
                         
                         {/* 動画の長さ表示 */}
-                        <div className="absolute bottom-4 right-4 bg-black/50 backdrop-blur-md text-white text-xs px-3 py-1.5 rounded-full border border-white/20 font-medium tracking-wider">
+                        <div className="absolute bottom-2 sm:bottom-3 md:bottom-4 right-2 sm:right-3 md:right-4 bg-black/50 backdrop-blur-md text-white text-xs px-2 sm:px-3 py-1 sm:py-1.5 rounded-full border border-white/20 font-medium tracking-wider">
                           3:00
                         </div>
                       </div>

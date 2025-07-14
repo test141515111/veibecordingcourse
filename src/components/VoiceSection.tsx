@@ -51,8 +51,8 @@ const courseProjects = [
 
 export default function VoiceSection() {
   return (
-    <section id="voice" className="py-16 mt-0">
-      <div className="container">
+    <section id="voice" className="py-12 pt-4 mt-0">
+      <div className="container px-2 sm:px-6">
         <div className="text-center mb-12">
           {/* タイトルセクション */}
           <div className="text-center mb-16 relative">
@@ -92,33 +92,61 @@ export default function VoiceSection() {
           </div>
         </div>
         
-        {/* コースカードグリッド - そのまま維持 */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {courseProjects.map((course) => (
-            <div 
-              key={course.id} 
-              className="bg-white shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100"
-            >
-              {/* コースヘッダー */}
-              <div className="bg-amber-500 text-white py-3 px-4 text-center font-bold">
-                {course.title}
-              </div>
-              
-              {/* コース画像 - マージンとパディングなし */}
-              <div className="relative h-[300px]">
-                <Image
-                  src={course.image}
-                  alt={course.title}
-                  fill
-                  className="object-cover"
-                />
-              </div>
+        {/* コースカードのカルーセルセクション */}
+        <div className="relative mb-16">
+          {/* スワイプヒントアイコン - スマホのみ表示 */}
+          <div className="md:hidden flex justify-center items-center mb-4">
+            <div className="flex items-center text-amber-500 text-sm font-medium">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1 animate-swipe" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+              横にスワイプ
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1 animate-swipe" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
             </div>
-          ))}
+          </div>
+
+          {/* カードコンテナ - スマホ表示時に横スクロール */}
+          <div className="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 flex overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0">
+            {courseProjects.map((course) => (
+              <div 
+                key={course.id} 
+                className="bg-white shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 flex-shrink-0 md:flex-shrink w-[80%] md:w-full mr-4 md:mr-0 snap-start"
+              >
+                {/* コースヘッダー */}
+                <div className="bg-amber-500 text-white py-3 px-4 text-center font-bold">
+                  {course.title}
+                </div>
+                
+                {/* コース画像 - マージンとパディングなし */}
+                <div className="relative h-[300px]">
+                  <Image
+                    src={course.image}
+                    alt={course.title}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* スクロールインジケーター - スマホ表示時のみ */}
+          <div className="mt-4 flex justify-center md:hidden">
+            <div className="flex space-x-1">
+              {courseProjects.map((_, index) => (
+                <div 
+                  key={index} 
+                  className="w-2 h-2 rounded-full bg-amber-200 transition-colors duration-300"
+                ></div>
+              ))}
+            </div>
+          </div>
         </div>
         
         {/* 推薦者の声セクション */}
-        <div className="mt-24 mb-16">
+        <div className="mt-16 mb-16">
           {/* タイトルセクション */}
           <div className="text-center mb-16 relative">
             {/* サブタイトル */}
@@ -219,6 +247,35 @@ export default function VoiceSection() {
         
         .rotate-x-12 {
           transform: rotateX(12deg);
+        }
+
+        /* スクロールバー非表示 */
+        .scrollbar-hide {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+          display: none;  /* Chrome, Safari and Opera */
+        }
+
+        /* スワイプアイコンのアニメーション */
+        @keyframes swipe {
+          0% {
+            transform: translateX(0);
+            opacity: 0.5;
+          }
+          50% {
+            transform: translateX(4px);
+            opacity: 1;
+          }
+          100% {
+            transform: translateX(0);
+            opacity: 0.5;
+          }
+        }
+
+        .animate-swipe {
+          animation: swipe 1.5s ease-in-out infinite;
         }
       `}</style>
     </section>
