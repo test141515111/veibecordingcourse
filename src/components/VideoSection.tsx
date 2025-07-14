@@ -83,64 +83,64 @@ export default function VideoSection() {
             </div>
             
             {/* カード内コンテナ */}
-            <div className="relative z-10 p-4 sm:p-6 md:p-10 lg:p-14">
+            <div className="relative z-10 p-2 sm:p-6 md:p-10 lg:p-14">
               {/* フレックスコンテナ - 説明と動画を横並び */}
-              <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-stretch">
+              <div className="flex flex-col lg:flex-row gap-4 lg:gap-16 items-stretch">
                 
                 {/* 説明カード - 左側 */}
                 <div className="lg:w-[42%] flex flex-col justify-center relative">
-                  <div className="space-y-8 sm:space-y-12 lg:space-y-16">
+                  <div className="space-y-4 sm:space-y-8 lg:space-y-16">
                     {/* 項目1: AIとの対話 */}
                     <div className="transform transition-all duration-500 hover:-translate-y-1 hover:translate-x-1">
-                      <div className="flex gap-4 sm:gap-6 md:gap-8 items-start">
-                        {/* アイコンコンテナ */}
-                        <div className="relative group">
+                      <div className="flex flex-col sm:flex-row gap-2 sm:gap-6 md:gap-8 items-center sm:items-start">
+                        {/* アイコンコンテナ - スマホでは上部中央配置 */}
+                        <div className="relative group mb-2 sm:mb-0">
                           <div className="absolute -inset-0.5 bg-gradient-to-br from-primary to-secondary rounded-xl blur opacity-30 group-hover:opacity-70 transition-opacity duration-300"></div>
-                          <div className="relative flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-white rounded-xl shadow-md flex-shrink-0 overflow-hidden border border-white/50">
+                          <div className="relative flex items-center justify-center w-14 h-14 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-white rounded-xl shadow-md flex-shrink-0 overflow-hidden border border-white/50">
                             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10 opacity-50"></div>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 text-gray-700 relative z-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 sm:h-7 sm:w-7 md:h-8 md:w-8 text-gray-700 relative z-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                             </svg>
                           </div>
                         </div>
                         
-                        {/* テキストコンテンツ */}
-                        <div className="pt-1">
-                          <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-2 sm:mb-4">
-                            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-[1.8rem] sm:text-[2.15rem] font-extrabold block">Vibe Coding</span>
-                            <span className="text-gray-600 text-lg sm:text-xl block">（バイブコーディング）</span>
+                        {/* テキストコンテンツ - スマホでは中央揃え */}
+                        <div className="text-center sm:text-left sm:pt-1">
+                          <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-1 sm:mb-3">
+                            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-[1.8rem] sm:text-[2.15rem] font-extrabold block leading-tight">Vibe Coding</span>
+                            <span className="text-gray-600 text-lg sm:text-xl block mt-0 sm:mt-0">（バイブコーディング）</span>
                           </h3>
-                          <p className="text-gray-600 leading-relaxed text-base sm:text-lg">
+                          <p className="text-gray-600 leading-relaxed text-base sm:text-lg px-2 sm:px-0 max-w-xs mx-auto sm:max-w-none sm:mx-0">
                             AIとの対話だけで高品質なソフトウェアを生み出す次世代の開発手法。
                           </p>
-                          <div className="h-0.5 w-12 bg-gradient-to-r from-primary/30 to-secondary/30 rounded-full mt-4"></div>
+                          <div className="h-0.5 w-16 bg-gradient-to-r from-primary/30 to-secondary/30 rounded-full mt-2 sm:mt-4 mx-auto sm:mx-0 sm:w-12"></div>
                         </div>
                       </div>
                     </div>
                     
                     {/* 項目2: ゼロから始める */}
                     <div className="transform transition-all duration-500 hover:-translate-y-1 hover:translate-x-1">
-                      <div className="flex gap-4 sm:gap-6 md:gap-8 items-start">
-                        {/* アイコンコンテナ */}
-                        <div className="relative group">
+                      <div className="flex flex-col sm:flex-row gap-2 sm:gap-6 md:gap-8 items-center sm:items-start">
+                        {/* アイコンコンテナ - スマホでは上部中央配置 */}
+                        <div className="relative group mb-2 sm:mb-0">
                           <div className="absolute -inset-0.5 bg-gradient-to-br from-blue-400 to-purple-500 rounded-xl blur opacity-30 group-hover:opacity-70 transition-opacity duration-300"></div>
-                          <div className="relative flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-white rounded-xl shadow-md flex-shrink-0 overflow-hidden border border-white/50">
+                          <div className="relative flex items-center justify-center w-14 h-14 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-white rounded-xl shadow-md flex-shrink-0 overflow-hidden border border-white/50">
                             <div className="absolute inset-0 bg-gradient-to-br from-blue-400/10 to-purple-500/10 opacity-50"></div>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 text-gray-700 relative z-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 sm:h-7 sm:w-7 md:h-8 md:w-8 text-gray-700 relative z-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                             </svg>
                           </div>
                         </div>
                         
-                        {/* テキストコンテンツ */}
-                        <div className="pt-1">
-                          <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-2 sm:mb-4">
+                        {/* テキストコンテンツ - スマホでは中央揃え */}
+                        <div className="text-center sm:text-left sm:pt-1">
+                          <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-1 sm:mb-3 px-2 sm:px-0">
                             ゼロからはじめる新しいものづくり
                           </h3>
-                          <p className="text-gray-600 leading-relaxed text-base sm:text-lg">
+                          <p className="text-gray-600 leading-relaxed text-base sm:text-lg px-2 sm:px-0 max-w-xs mx-auto sm:max-w-none sm:mx-0">
                             プログラミング経験ゼロから始められる、まったく新しいものづくりの世界へようこそ。
                           </p>
-                          <div className="h-0.5 w-12 bg-gradient-to-r from-blue-400/30 to-purple-500/30 rounded-full mt-4"></div>
+                          <div className="h-0.5 w-16 bg-gradient-to-r from-blue-400/30 to-purple-500/30 rounded-full mt-2 sm:mt-4 mx-auto sm:mx-0 sm:w-12"></div>
                         </div>
                       </div>
                     </div>
