@@ -18,7 +18,7 @@ const archiveItems = [
     title: "「AI × 恋愛相談」毎日をサポートしてくれるBOTを構築",
     description: "プロンプトエンジニアリング＆ClaudeCodeで活用したバイブコーディング、音声回答システムをにじボイスAPI × ClaudeCodeで構築",
     date: "2025年6月22日",
-    image: "/images/恋愛BOT.png",
+    image: "/images/AI彼女.png",
     tags: ["プロンプトエンジニアリング", "音声システム"]
   },
   {
@@ -26,7 +26,7 @@ const archiveItems = [
     title: "Udemyのようなスクールの受講ページをClaudeCodeで構築！",
     description: "URLを渡すだけでスクールや講座の納品が可能！もちろんwebサービス課金不要で0円！コンテンツライティング編も収録",
     date: "2025年6月23日",
-    image: "/images/Udemy風.png",
+    image: "/images/Udemy.png",
     tags: ["Webサービス開発"]
   },
   {
@@ -42,7 +42,7 @@ const archiveItems = [
     title: "「セールスライティング × Webデザイン × バイブコーディング」に挑戦！",
     description: "GoogleCloudのImagen 4.0で画像を生成してHPをリッチに！#ユニコスクール「バイブコーディング」コースのHPを作り込もう",
     date: "2025年6月30日",
-    image: "/images/セールスライティング × Webデザイン × バイブコーディング.png",
+    image: "/images/セールスコピーライティング.png",
     tags: ["ライティング", "画像生成"]
   }
 ];
