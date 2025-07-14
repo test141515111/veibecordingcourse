@@ -6,13 +6,13 @@ import Link from 'next/link';
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden mt-16 sm:mt-16 bg-[#fee3e7]">
+    <section className="relative overflow-hidden bg-[#fee3e7] sm:pt-0 pt-16">
       {/* トップに横幅いっぱいの画像を配置 */}
       <div className="w-full relative z-10">
         {/* スマホ表示用の画像 (sm:未満で表示) */}
         <div className="block sm:hidden w-full relative">
           <Image
-            src="/images/herosection_image_smartphone2.png"
+            src="/images/herosection_image_smartphone3.png"
             alt="ヒーロー画像（スマホ表示）"
             width={750}
             height={1334}
