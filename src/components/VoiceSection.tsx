@@ -209,7 +209,7 @@ export default function VoiceSection() {
               
               {/* 推薦文コンテンツ */}
               <div className="flex-1">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">林 俊介</h3>
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">ハヤシシュンスケ</h3>
                 <div className="text-gray-700 leading-relaxed space-y-4">
                   <p>
                     半年以上にわたり、ユニコさんとほぼ毎日Zoomでバイブコーディングについて議論を重ねてきた経験から、彼のスクールを心から推薦します。
