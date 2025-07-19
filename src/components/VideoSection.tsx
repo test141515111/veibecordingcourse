@@ -164,37 +164,17 @@ export default function VideoSection() {
                       
                       {/* 動画コンテンツエリア */}
                       <div className="w-full h-full bg-gradient-to-b from-gray-800 to-black rounded-xl overflow-hidden relative">
-                        {/* サムネイル背景 */}
-                        <div className="absolute inset-0 bg-black/75 flex items-center justify-center">
-                          <div className="text-white text-sm sm:text-base md:text-xl font-medium tracking-wide text-center px-4 backdrop-blur-sm">
-                            バイブコーディング紹介動画
-                          </div>
-                        </div>
-                        
-                        {/* 再生ボタン - 高級感のあるデザイン */}
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <div className="relative transform transition-all duration-500 hover:scale-110">
-                            {/* 外側の光るリング */}
-                            <div className="absolute -inset-1 bg-gradient-to-br from-primary to-secondary rounded-full blur-sm opacity-70"></div>
-                            {/* 拡散エフェクト */}
-                            <div className="absolute inset-0 scale-[1.8] rounded-full bg-white/5 animate-ping-slow opacity-30"></div>
-                            <div className="absolute inset-0 scale-[1.4] rounded-full bg-white/10 animate-ping-slower opacity-40"></div>
-                            
-                            {/* ボタン本体 */}
-                            <div className="relative w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-white/15 backdrop-blur-md rounded-full flex items-center justify-center border border-white/30">
-                              <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 bg-gradient-to-br from-primary via-primary to-secondary rounded-full flex items-center justify-center shadow-lg">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 sm:h-6 sm:w-6 md:h-8 md:w-8 text-white drop-shadow" viewBox="0 0 20 20" fill="currentColor">
-                                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
-                                </svg>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        
-                        {/* 動画の長さ表示 */}
-                        <div className="absolute bottom-2 sm:bottom-3 md:bottom-4 right-2 sm:right-3 md:right-4 bg-black/50 backdrop-blur-md text-white text-xs px-2 sm:px-3 py-1 sm:py-1.5 rounded-full border border-white/20 font-medium tracking-wider">
-                          3:00
-                        </div>
+                        <iframe 
+                          width="100%" 
+                          height="100%" 
+                          src="https://www.youtube.com/embed/0hVnzJ-7iww?si=IqPAaXJeXuMqo-Jn" 
+                          title="YouTube video player" 
+                          frameBorder="0" 
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                          referrerPolicy="strict-origin-when-cross-origin" 
+                          allowFullScreen
+                          className="w-full h-full rounded-xl"
+                        ></iframe>
                       </div>
                     </div>
                     
