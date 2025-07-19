@@ -2,6 +2,9 @@
 # 「バイブコーディングコース in #ユニコスクール」
 **Web サイト要件定義書（Ver 1.0）**
 
+## デプロイ情報
+**本番環境URL**: https://veibecordingcourse-lilac.vercel.app/
+
 ---
 
 ## 1. 文書情報
