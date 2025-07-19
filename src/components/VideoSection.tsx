@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function VideoSection() {
   return (
-    <section id="video" className="py-28 bg-gradient-to-b from-white via-white to-gray-50 relative overflow-hidden">
+    <section id="video" className="py-16 bg-gradient-to-b from-white via-white to-gray-50 relative overflow-hidden">
       {/* モダンな背景要素 */}
       <div className="absolute inset-0 overflow-hidden z-0">
         {/* 高級感のある抽象的背景 */}
@@ -38,40 +38,10 @@ export default function VideoSection() {
       </div>
       
       <div className="container relative z-10 max-w-7xl mx-auto">
-        {/* タイトルセクション - 高級デザイン */}
-        <div className="text-center mb-20 relative">
-          {/* サブタイトル */}
-          <div className="inline-block mb-3">
-            <p className="text-sm uppercase tracking-[0.25em] py-1.5 px-4 rounded-full bg-gradient-to-r from-primary/10 to-secondary/10 text-gray-700 font-medium relative inline-flex items-center">
-              <span className="w-1.5 h-1.5 bg-gradient-to-br from-primary to-secondary rounded-full mr-2.5"></span>
-              次世代の開発手法
-              <span className="w-1.5 h-1.5 bg-gradient-to-br from-primary to-secondary rounded-full ml-2.5"></span>
-            </p>
-          </div>
-          
-          {/* メインタイトル - 洗練バージョン */}
-          <div className="relative mb-5 perspective">
-            <h2 className="relative inline-block">
-              <span className="relative z-10 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent transform transition-transform duration-300 hover:scale-[1.02]"
-                  style={{
-                    fontSize: 'clamp(2.5rem, 5vw, 3.5rem)',
-                    fontWeight: 300,
-                    letterSpacing: '0.05em',
-                    lineHeight: 1.1,
-                    fontFamily: "'Noto Sans JP', 'Hiragino Sans', sans-serif",
-                    textShadow: '0 10px 30px rgba(0,0,0,0.05)'
-                  }}>
-                バイブコーディングとは？
-              </span>
-              {/* 3D効果の装飾下線 */}
-              <span className="absolute left-0 -bottom-2 w-full h-0.5 bg-gradient-to-r from-primary/50 via-secondary/70 to-primary/50 rounded-full transform rotate-x-12 shadow-lg"></span>
-              <span className="absolute left-0 -bottom-1 w-[90%] h-[1px] mx-[5%] bg-gradient-to-r from-transparent via-secondary/50 to-transparent rounded-full"></span>
-            </h2>
-          </div>
-        </div>
+
         
         {/* コンテンツエリア - プレミアムデザイン */}
-        <div className="mx-auto px-4 relative">
+        <div className="mx-auto px-2 relative">
           {/* メインコンテンツカード */}
           <div className="bg-white/70 backdrop-blur-xl rounded-3xl overflow-hidden relative group transform transition-all duration-700 hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)]">
             {/* 内部装飾効果 */}
@@ -83,105 +53,82 @@ export default function VideoSection() {
             </div>
             
             {/* カード内コンテナ */}
-            <div className="relative z-10 p-2 sm:p-6 md:p-10 lg:p-14">
-              {/* フレックスコンテナ - 説明と動画を横並び */}
-              <div className="flex flex-col lg:flex-row gap-4 lg:gap-16 items-stretch">
-                
-                {/* 説明カード - 左側 */}
-                <div className="lg:w-[42%] flex flex-col justify-center relative">
-                  <div className="space-y-4 sm:space-y-8 lg:space-y-16">
-                    {/* 項目1: AIとの対話 */}
-                    <div className="transform transition-all duration-500 hover:-translate-y-1 hover:translate-x-1">
-                      <div className="flex flex-col sm:flex-row gap-2 sm:gap-6 md:gap-8 items-center sm:items-start">
-                        {/* アイコンコンテナ - スマホでは上部中央配置 */}
-                        <div className="relative group mb-2 sm:mb-0">
-                          <div className="absolute -inset-0.5 bg-gradient-to-br from-primary to-secondary rounded-xl blur opacity-30 group-hover:opacity-70 transition-opacity duration-300"></div>
-                          <div className="relative flex items-center justify-center w-14 h-14 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-white rounded-xl shadow-md flex-shrink-0 overflow-hidden border border-white/50">
-                            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10 opacity-50"></div>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 sm:h-7 sm:w-7 md:h-8 md:w-8 text-gray-700 relative z-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
-                            </svg>
-                          </div>
-                        </div>
-                        
-                        {/* テキストコンテンツ - スマホでは中央揃え */}
-                        <div className="text-center sm:text-left sm:pt-1">
-                          <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-1 sm:mb-3">
-                            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-[1.8rem] sm:text-[2.15rem] font-extrabold block leading-tight">Vibe Coding</span>
-                            <span className="text-gray-600 text-lg sm:text-xl block mt-0 sm:mt-0">（バイブコーディング）</span>
-                          </h3>
-                          <p className="text-gray-600 leading-relaxed text-base sm:text-lg px-2 sm:px-0 max-w-xs mx-auto sm:max-w-none sm:mx-0">
-                            AIとの対話だけで高品質なソフトウェアを生み出す次世代の開発手法。
-                          </p>
-                          <div className="h-0.5 w-16 bg-gradient-to-r from-primary/30 to-secondary/30 rounded-full mt-2 sm:mt-4 mx-auto sm:mx-0 sm:w-12"></div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    {/* 項目2: ゼロから始める */}
-                    <div className="transform transition-all duration-500 hover:-translate-y-1 hover:translate-x-1">
-                      <div className="flex flex-col sm:flex-row gap-2 sm:gap-6 md:gap-8 items-center sm:items-start">
-                        {/* アイコンコンテナ - スマホでは上部中央配置 */}
-                        <div className="relative group mb-2 sm:mb-0">
-                          <div className="absolute -inset-0.5 bg-gradient-to-br from-blue-400 to-purple-500 rounded-xl blur opacity-30 group-hover:opacity-70 transition-opacity duration-300"></div>
-                          <div className="relative flex items-center justify-center w-14 h-14 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-white rounded-xl shadow-md flex-shrink-0 overflow-hidden border border-white/50">
-                            <div className="absolute inset-0 bg-gradient-to-br from-blue-400/10 to-purple-500/10 opacity-50"></div>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 sm:h-7 sm:w-7 md:h-8 md:w-8 text-gray-700 relative z-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                            </svg>
-                          </div>
-                        </div>
-                        
-                        {/* テキストコンテンツ - スマホでは中央揃え */}
-                        <div className="text-center sm:text-left sm:pt-1">
-                          <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-1 sm:mb-3 px-2 sm:px-0">
-                            ゼロからはじめる新しいものづくり
-                          </h3>
-                          <p className="text-gray-600 leading-relaxed text-base sm:text-lg px-2 sm:px-0 max-w-xs mx-auto sm:max-w-none sm:mx-0">
-                            プログラミング経験ゼロから始められる、まったく新しいものづくりの世界へようこそ。
-                          </p>
-                          <div className="h-0.5 w-16 bg-gradient-to-r from-blue-400/30 to-purple-500/30 rounded-full mt-2 sm:mt-4 mx-auto sm:mx-0 sm:w-12"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                {/* 区切り装飾 */}
-                <div className="hidden lg:block lg:w-[2px] self-stretch mx-4">
-                  <div className="h-full w-px bg-gradient-to-b from-transparent via-gray-300/50 to-transparent"></div>
-                </div>
-                <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-300/70 to-transparent my-6 lg:hidden"></div>
-                
-                {/* 動画エリア - 右側 */}
-                <div className="lg:w-[55%] flex flex-col">
-                  <div className="relative group h-full flex items-center perspective">
-                    {/* 動画フレーム - 高級感と3D効果 */}
-                    <div className="w-full aspect-video bg-white rounded-2xl overflow-hidden shadow-[0_20px_60px_-15px_rgba(0,0,0,0.15)] border border-white transform transition-transform duration-500 group-hover:translate-z-10 group-hover:shadow-[0_30px_70px_-10px_rgba(0,0,0,0.2)]">
-                      {/* フレーム装飾 */}
-                      <div className="absolute inset-0 border border-gray-100 rounded-2xl pointer-events-none"></div>
-                      <div className="absolute inset-[1px] border border-white rounded-2xl pointer-events-none"></div>
+            <div className="relative z-10 p-1 sm:p-2 md:p-3 lg:p-4">
+
+              
+
+              
+              {/* 動画誘導テキスト - 横幅調整版 */}
+              <div className="text-center mb-2 sm:mb-3 lg:mb-4 w-full">
+                <div className="relative w-full">
+                  {/* 装飾的な背景効果 - 横幅調整 */}
+                  <div className="absolute -inset-3 bg-gradient-to-r from-primary/20 via-secondary/20 to-primary/20 rounded-2xl blur-md"></div>
+                  <div className="absolute -inset-1.5 bg-gradient-to-r from-primary/10 via-secondary/10 to-primary/10 rounded-xl"></div>
+                  
+                  {/* メインテキスト - 横幅調整 */}
+                  <div className="relative bg-white/90 backdrop-blur-sm rounded-xl px-3 py-2 sm:px-4 sm:py-3 lg:px-6 lg:py-4 shadow-lg border border-primary/20 w-full">
+                    <div className="relative">
+                      {/* 装飾的な囲い線 */}
+                      <div className="absolute inset-0 border-2 border-gradient-to-r from-primary/30 to-secondary/30 rounded-lg"></div>
+                      <div className="absolute inset-1 border border-gradient-to-r from-primary/20 to-secondary/20 rounded-md"></div>
                       
-                      {/* 動画コンテンツエリア */}
-                      <div className="w-full h-full bg-gradient-to-b from-gray-800 to-black rounded-xl overflow-hidden relative">
-                        <iframe 
-                          width="100%" 
-                          height="100%" 
-                          src="https://www.youtube.com/embed/0hVnzJ-7iww?si=IqPAaXJeXuMqo-Jn" 
-                          title="YouTube video player" 
-                          frameBorder="0" 
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                          referrerPolicy="strict-origin-when-cross-origin" 
-                          allowFullScreen
-                          className="w-full h-full rounded-xl"
-                        ></iframe>
-                      </div>
+                      {/* メインテキスト */}
+                      <p className="text-xl sm:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent leading-tight px-2 py-1 relative z-10">
+                        まずはバイブコーディングの世界を体験ください
+                      </p>
+                      
+                      {/* 装飾的な角要素 */}
+                      <div className="absolute -top-1 -left-1 w-3 h-3 border-l-2 border-t-2 border-primary/50 rounded-tl-lg"></div>
+                      <div className="absolute -top-1 -right-1 w-3 h-3 border-r-2 border-t-2 border-secondary/50 rounded-tr-lg"></div>
+                      <div className="absolute -bottom-1 -left-1 w-3 h-3 border-l-2 border-b-2 border-secondary/50 rounded-bl-lg"></div>
+                      <div className="absolute -bottom-1 -right-1 w-3 h-3 border-r-2 border-b-2 border-primary/50 rounded-br-lg"></div>
                     </div>
                     
-                    {/* 3Dシャドウ効果 */}
-                    <div className="absolute -bottom-6 left-4 right-4 h-10 bg-black/10 blur-lg rounded-full transform skew-x-2 scale-x-[0.95] z-0"></div>
+                    {/* 装飾的な矢印 - 調整 */}
+                    <div className="flex justify-center mt-2 sm:mt-3 lg:mt-4">
+                      <div className="flex items-center space-x-2">
+                        <div className="w-2 h-2 bg-gradient-to-r from-primary to-secondary rounded-full animate-pulse"></div>
+                        <div className="w-3 h-3 bg-gradient-to-r from-primary to-secondary rounded-full animate-pulse" style={{animationDelay: '0.2s'}}></div>
+                        <div className="w-4 h-4 bg-gradient-to-r from-primary to-secondary rounded-full animate-pulse" style={{animationDelay: '0.4s'}}></div>
+                        <svg className="w-5 h-5 text-primary animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* キラキラ効果 - 調整 */}
+                  <div className="absolute -top-1 -right-1 w-3 h-3 bg-yellow-400 rounded-full animate-ping opacity-60"></div>
+                  <div className="absolute -bottom-1 -left-1 w-2 h-2 bg-blue-400 rounded-full animate-ping opacity-60" style={{animationDelay: '0.5s'}}></div>
+                </div>
+              </div>
+              
+              {/* 動画エリア - 横幅いっぱい、最下部 */}
+              <div className="w-full relative group perspective">
+                {/* 動画フレーム - 高級感と3D効果 */}
+                <div className="w-full aspect-video bg-white rounded-2xl overflow-hidden shadow-[0_20px_60px_-15px_rgba(0,0,0,0.15)] border border-white transform transition-transform duration-500 group-hover:translate-z-10 group-hover:shadow-[0_30px_70px_-10px_rgba(0,0,0,0.2)]">
+                  {/* フレーム装飾 */}
+                  <div className="absolute inset-0 border border-gray-100 rounded-2xl pointer-events-none"></div>
+                  <div className="absolute inset-[1px] border border-white rounded-2xl pointer-events-none"></div>
+                  
+                  {/* 動画コンテンツエリア */}
+                  <div className="w-full h-full bg-gradient-to-b from-gray-800 to-black rounded-xl overflow-hidden relative">
+                    <iframe 
+                      width="100%" 
+                      height="100%" 
+                      src="https://www.youtube.com/embed/0hVnzJ-7iww?si=IqPAaXJeXuMqo-Jn" 
+                      title="YouTube video player" 
+                      frameBorder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                      referrerPolicy="strict-origin-when-cross-origin" 
+                      allowFullScreen
+                      className="w-full h-full rounded-xl"
+                    ></iframe>
                   </div>
                 </div>
+                
+                {/* 3Dシャドウ効果 */}
+                <div className="absolute -bottom-6 left-4 right-4 h-10 bg-black/10 blur-lg rounded-full transform skew-x-2 scale-x-[0.95] z-0"></div>
               </div>
             </div>
           </div>

@@ -75,109 +75,7 @@ export default function AboutSection() {
           </p>
         </div>
         
-        {/* 4つの特徴カード - より落ち着いたデザイン */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 mb-12 sm:mb-16 px-2 sm:px-4">
-          {/* カード1: 実践形式で学ぶから伸びが早い */}
-          <div className="relative group">
-            {/* カードの背景効果 - より控えめに */}
-            <div className="absolute -inset-0.5 bg-gradient-to-br from-orange-400 to-orange-300 rounded-2xl blur opacity-20 group-hover:opacity-40 transition-all duration-300"></div>
-            <div className="relative bg-white rounded-2xl p-4 sm:p-6 h-full flex flex-col shadow-md border border-orange-100/50">
-              {/* カードヘッダー - オレンジベース */}
-              <div className="bg-gradient-to-r from-orange-500 to-orange-400 rounded-xl py-2 sm:py-3 px-3 sm:px-4 -mt-8 sm:-mt-10 mb-4 sm:mb-6 shadow-md self-start">
-                <h3 className="text-white font-bold text-base sm:text-lg leading-tight">実践形式で学ぶから<br/>伸びが早い！</h3>
-              </div>
-              
-              {/* アイコン - より落ち着いた色に */}
-              <div className="mb-3 sm:mb-4 flex justify-center">
-                <div className="w-16 sm:w-20 h-16 sm:h-20 rounded-full bg-orange-50 flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 sm:h-12 w-8 sm:w-12 text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                  </svg>
-                </div>
-              </div>
-              
-              {/* テキスト - オレンジアクセント */}
-              <p className="text-gray-700 text-center text-sm sm:text-base">
-                完成形を目指して手を動かすから、学んだことが<span className="text-orange-500 font-bold">身につく</span>。
-              </p>
-            </div>
-          </div>
-          
-          {/* カード2: 未経験でもしっかりサポート */}
-          <div className="relative group">
-            <div className="absolute -inset-0.5 bg-gradient-to-br from-orange-400 to-orange-300 rounded-2xl blur opacity-20 group-hover:opacity-40 transition-all duration-300"></div>
-            <div className="relative bg-white rounded-2xl p-4 sm:p-6 h-full flex flex-col shadow-md border border-orange-100/50">
-              {/* カードヘッダー - オレンジベース */}
-              <div className="bg-gradient-to-r from-orange-500 to-orange-400 rounded-xl py-2 sm:py-3 px-3 sm:px-4 -mt-8 sm:-mt-10 mb-4 sm:mb-6 shadow-md self-start">
-                <h3 className="text-white font-bold text-base sm:text-lg leading-tight">未経験でも<br/>しっかりサポート！</h3>
-              </div>
-              
-              {/* アイコン - より落ち着いた色に */}
-              <div className="mb-3 sm:mb-4 flex justify-center">
-                <div className="w-16 sm:w-20 h-16 sm:h-20 rounded-full bg-orange-50 flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 sm:h-12 w-8 sm:w-12 text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
-                  </svg>
-                </div>
-              </div>
-              
-              {/* テキスト - オレンジアクセント */}
-              <p className="text-gray-700 text-center text-sm sm:text-base">
-                つまずきポイントは<span className="text-orange-500 font-bold">AIと人のWサポート</span>で即解決。わからないまま進ませない。
-              </p>
-            </div>
-          </div>
-          
-          {/* カード3: 週2回の生放送で最新情報をGet */}
-          <div className="relative group">
-            <div className="absolute -inset-0.5 bg-gradient-to-br from-orange-400 to-orange-300 rounded-2xl blur opacity-20 group-hover:opacity-40 transition-all duration-300"></div>
-            <div className="relative bg-white rounded-2xl p-4 sm:p-6 h-full flex flex-col shadow-md border border-orange-100/50">
-              {/* カードヘッダー - オレンジベース */}
-              <div className="bg-gradient-to-r from-orange-500 to-orange-400 rounded-xl py-2 sm:py-3 px-3 sm:px-4 -mt-8 sm:-mt-10 mb-4 sm:mb-6 shadow-md self-start">
-                <h3 className="text-white font-bold text-base sm:text-lg leading-tight">週2回の生放送で<br/>最新情報をGet！</h3>
-              </div>
-              
-              {/* アイコン - より落ち着いた色に */}
-              <div className="mb-3 sm:mb-4 flex justify-center">
-                <div className="w-16 sm:w-20 h-16 sm:h-20 rounded-full bg-orange-50 flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 sm:h-12 w-8 sm:w-12 text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                  </svg>
-                </div>
-              </div>
-              
-              {/* テキスト - オレンジアクセント */}
-              <p className="text-gray-700 text-center text-sm sm:text-base">
-                講師が<span className="text-orange-500 font-bold">最新トレンドや技術解説</span>。リアルな質問にもその場で答えるから理解が深まる。
-              </p>
-            </div>
-          </div>
-          
-          {/* カード4: ユニコ課題・添削でAI開発の地力がつく */}
-          <div className="relative group">
-            <div className="absolute -inset-0.5 bg-gradient-to-br from-orange-400 to-orange-300 rounded-2xl blur opacity-20 group-hover:opacity-40 transition-all duration-300"></div>
-            <div className="relative bg-white rounded-2xl p-6 h-full flex flex-col shadow-md border border-orange-100/50">
-              {/* カードヘッダー - オレンジベース */}
-              <div className="bg-gradient-to-r from-orange-500 to-orange-400 rounded-xl py-3 px-4 -mt-10 mb-6 shadow-md self-start">
-                <h3 className="text-white font-bold text-lg leading-tight">課題・添削でAI開発の地力がつく！</h3>
-              </div>
-              
-              {/* アイコン - より落ち着いた色に */}
-              <div className="mb-4 flex justify-center">
-                <div className="w-20 h-20 rounded-full bg-orange-50 flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-                  </svg>
-                </div>
-              </div>
-              
-              {/* テキスト - オレンジアクセント */}
-              <p className="text-gray-700 text-center">
-                30を超える実践課題と講師の添削で<span className="text-orange-500 font-bold">考え抜く力と応用力</span>が身につく。
-              </p>
-            </div>
-          </div>
-        </div>
+
         
         {/* サポート体制セクション - 改良版 */}
         <div className="max-w-5xl mx-auto mb-16 px-4">
@@ -232,7 +130,7 @@ export default function AboutSection() {
                           </div>
                           <div className="ml-2 sm:ml-3 flex-1">
                             <div className="flex flex-col sm:flex-row sm:items-baseline">
-                              <p className="font-bold text-gray-800 text-sm sm:text-base">ユニコのAI開発生放送</p>
+                              <p className="font-bold text-gray-800 text-sm sm:text-base">ユニコ🦄のAI開発生放送</p>
                               <p className="text-xs sm:text-sm text-gray-500 sm:ml-2">20:00〜22:00</p>
                             </div>
                             <p className="text-xs text-gray-600 mt-0.5 border-l-2 border-pink-200 pl-2">
@@ -249,7 +147,7 @@ export default function AboutSection() {
                           </div>
                           <div className="ml-2 sm:ml-3 flex-1">
                             <div className="flex flex-col sm:flex-row sm:items-baseline">
-                              <p className="font-bold text-gray-800 text-sm sm:text-base">ユニコのAI開発生放送</p>
+                              <p className="font-bold text-gray-800 text-sm sm:text-base">ユニコ🦄のAI開発生放送</p>
                               <p className="text-xs sm:text-sm text-gray-500 sm:ml-2">22:00〜24:00</p>
                             </div>
                             <p className="text-xs text-gray-600 mt-0.5 border-l-2 border-blue-200 pl-2">
@@ -262,6 +160,23 @@ export default function AboutSection() {
                       <div className="bg-white rounded-lg p-2 sm:p-3 shadow-sm border border-orange-100 transition-shadow duration-300 hover:border-orange-200">
                         <div className="flex items-center">
                           <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-green-300 flex items-center justify-center shadow-sm flex-shrink-0">
+                            <span className="text-white font-bold text-xs sm:text-sm">火</span>
+                          </div>
+                          <div className="ml-2 sm:ml-3 flex-1">
+                            <div className="flex flex-col sm:flex-row sm:items-baseline">
+                              <p className="font-bold text-gray-800 text-sm sm:text-base">ハヤシシュンスケと<br/>ユニコ🦄のAI開発生放送</p>
+                              <p className="text-xs sm:text-sm text-gray-500 sm:ml-2">23:00〜24:00</p>
+                            </div>
+                            <p className="text-xs text-gray-600 mt-0.5 border-l-2 border-green-200 pl-2">
+                              最新のAI解説・開発実演
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div className="bg-white rounded-lg p-2 sm:p-3 shadow-sm border border-orange-100 transition-shadow duration-300 hover:border-orange-200">
+                        <div className="flex items-center">
+                          <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-purple-300 flex items-center justify-center shadow-sm flex-shrink-0">
                             <span className="text-white font-bold text-xs sm:text-sm">木</span>
                           </div>
                           <div className="ml-2 sm:ml-3 flex-1">
@@ -269,7 +184,7 @@ export default function AboutSection() {
                               <p className="font-bold text-gray-800 text-sm sm:text-base">バイブコーディング作業会</p>
                               <p className="text-xs sm:text-sm text-gray-500 sm:ml-2">20:00〜23:00</p>
                             </div>
-                            <p className="text-xs text-gray-600 mt-0.5 border-l-2 border-green-200 pl-2">
+                            <p className="text-xs text-gray-600 mt-0.5 border-l-2 border-purple-200 pl-2">
                               参加型の共同作業会・質問なんでもOK
                             </p>
                           </div>
@@ -285,6 +200,7 @@ export default function AboutSection() {
                     </svg>
                     ライブ講義はすべてアーカイブ保存され、後からでも視聴可能です
                   </p>
+
                 </div>
                 
                 {/* 画像セクション */}
@@ -382,6 +298,164 @@ export default function AboutSection() {
                     </svg>
                     何度でも添削OK！具体的なアドバイスで上達
                   </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 4つの特徴カード - ユニコ🦄の手厚いサポート体制 */}
+        <div className="relative mb-12 sm:mb-16">
+          {/* タイトル */}
+          <div className="text-center mb-8">
+            <h2 className="text-2xl sm:text-3xl font-bold text-pink-600 mb-2">
+              ユニコ🦄の手厚いサポート体制!
+            </h2>
+            <div className="w-24 h-1 bg-yellow-400 mx-auto rounded-full"></div>
+          </div>
+          
+          {/* 装飾要素 - ピンクの星 */}
+          <div className="absolute top-0 left-4 w-3 h-3 text-pink-400 opacity-60">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+          </div>
+          <div className="absolute top-2 right-6 w-2 h-2 text-pink-400 opacity-60">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+          </div>
+          
+          {/* カードグリッド */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 px-2 sm:px-4">
+            {/* カード1: 48時間以内のメッセージ返信 */}
+            <div className="relative bg-white rounded-2xl border border-gray-200 p-6 sm:p-8 h-full flex flex-col shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 group overflow-hidden">
+              {/* 背景装飾 - より上品に */}
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-50/50 via-white to-gray-50/30 rounded-2xl"></div>
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-500 to-purple-500"></div>
+              
+              {/* プロフェッショナルなラベル */}
+              <div className="absolute top-4 left-4">
+                <div className="bg-gradient-to-r from-pink-500 to-purple-500 text-white px-3 py-1.5 rounded-lg text-xs font-semibold tracking-wide shadow-sm">
+                  Point 1
+                </div>
+              </div>
+              
+              {/* 上品な装飾要素 */}
+              <div className="absolute top-4 right-4 w-2 h-2 bg-gradient-to-r from-pink-400 to-purple-400 rounded-full opacity-60"></div>
+              
+              {/* テキスト - プロフェッショナル版 */}
+              <div className="mt-8 flex-1 flex flex-col justify-center text-center relative z-10">
+                <p className="text-gray-800 text-lg sm:text-xl font-semibold mb-3 leading-tight">
+                  48時間以内の<br/>メッセージ返信
+                </p>
+                
+                {/* プロフェッショナルなアイコン */}
+                <div className="mt-6 flex justify-center">
+                  <div className="w-14 h-14 bg-gradient-to-br from-pink-50 to-purple-50 border border-pink-200 rounded-xl flex items-center justify-center shadow-sm">
+                    <svg className="w-7 h-7 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* カード2: 24時間対応のチョク電話 */}
+            <div className="relative bg-white rounded-2xl border border-gray-200 p-6 sm:p-8 h-full flex flex-col shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 group overflow-hidden">
+              {/* 背景装飾 - より上品に */}
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-50/50 via-white to-gray-50/30 rounded-2xl"></div>
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-indigo-500"></div>
+              
+              {/* プロフェッショナルなラベル */}
+              <div className="absolute top-4 left-4">
+                <div className="bg-gradient-to-r from-blue-500 to-indigo-500 text-white px-3 py-1.5 rounded-lg text-xs font-semibold tracking-wide shadow-sm">
+                  Point 2
+                </div>
+              </div>
+              
+              {/* 上品な装飾要素 */}
+              <div className="absolute top-4 right-4 w-2 h-2 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-full opacity-60"></div>
+              
+              {/* テキスト - プロフェッショナル版 */}
+              <div className="mt-8 flex-1 flex flex-col justify-center text-center relative z-10">
+                <p className="text-gray-800 text-lg sm:text-xl font-semibold mb-3 leading-tight">
+                  24時間対応の<br/>チョク電話
+                </p>
+                
+                {/* プロフェッショナルなアイコン */}
+                <div className="mt-6 flex justify-center">
+                  <div className="w-14 h-14 bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200 rounded-xl flex items-center justify-center shadow-sm">
+                    <svg className="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* カード3: ユニコ🦄とのマンツーマンZOOM */}
+            <div className="relative bg-white rounded-2xl border border-gray-200 p-6 sm:p-8 h-full flex flex-col shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 group overflow-hidden">
+              {/* 背景装飾 - より上品に */}
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-50/50 via-white to-gray-50/30 rounded-2xl"></div>
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-pink-500"></div>
+              
+              {/* プロフェッショナルなラベル */}
+              <div className="absolute top-4 left-4">
+                <div className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-3 py-1.5 rounded-lg text-xs font-semibold tracking-wide shadow-sm">
+                  Point 3
+                </div>
+              </div>
+              
+              {/* 上品な装飾要素 */}
+              <div className="absolute top-4 right-4 w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full opacity-60"></div>
+              
+              {/* テキスト - プロフェッショナル版 */}
+              <div className="mt-8 flex-1 flex flex-col justify-center text-center relative z-10">
+                <p className="text-gray-800 text-lg sm:text-xl font-semibold leading-tight">
+                  ユニコ🦄との<br/>マンツーマンZOOM
+                </p>
+                
+                {/* プロフェッショナルなアイコン */}
+                <div className="mt-6 flex justify-center">
+                  <div className="w-14 h-14 bg-gradient-to-br from-purple-50 to-pink-50 border border-purple-200 rounded-xl flex items-center justify-center shadow-sm">
+                    <svg className="w-7 h-7 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* カード4: 毎週合計8時間超え! 最新AI情報を伝える生放送 */}
+            <div className="relative bg-white rounded-2xl border border-gray-200 p-6 sm:p-8 h-full flex flex-col shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 group overflow-hidden">
+              {/* 背景装飾 - より上品に */}
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-50/50 via-white to-gray-50/30 rounded-2xl"></div>
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-500 to-red-500"></div>
+              
+              {/* プロフェッショナルなラベル */}
+              <div className="absolute top-4 left-4">
+                <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-3 py-1.5 rounded-lg text-xs font-semibold tracking-wide shadow-sm">
+                  Point 4
+                </div>
+              </div>
+              
+              {/* 上品な装飾要素 */}
+              <div className="absolute top-4 right-4 w-2 h-2 bg-gradient-to-r from-orange-400 to-red-400 rounded-full opacity-60"></div>
+              
+              {/* テキスト - プロフェッショナル版 */}
+              <div className="mt-8 flex-1 flex flex-col justify-center text-center relative z-10">
+                <p className="text-gray-800 text-lg sm:text-xl font-semibold mb-3 leading-tight">
+                  毎週合計8時間超え<br/>最新AI活用講義
+                </p>
+                
+                {/* プロフェッショナルなアイコン */}
+                <div className="mt-6 flex justify-center">
+                  <div className="w-14 h-14 bg-gradient-to-br from-orange-50 to-red-50 border border-orange-200 rounded-xl flex items-center justify-center shadow-sm">
+                    <svg className="w-7 h-7 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                    </svg>
+                  </div>
                 </div>
               </div>
             </div>

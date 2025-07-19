@@ -31,7 +31,7 @@ const faqs = [
   {
     id: 6,
     question: "申し込み後のスケジュールを教えてください。",
-    answer: "決済確認後、48時間以内にスクールのスタートが可能となります。"
+    answer: "決済確認後、72時間以内にスクールのスタートが可能となります。"
   }
 ];
 
@@ -78,6 +78,8 @@ export default function FaqSection() {
           </p>
         </div>
         
+
+
         {/* FAQ項目 */}
         <div className="max-w-3xl mx-auto">
           <div className="space-y-8">
