@@ -40,7 +40,7 @@ export default function HeroSection() {
               <div className="text-center text-white text-xl md:text-2xl font-bold mb-4">
                 簡単申込60秒！
               </div>
-              <Link href="#contact">
+              <a href="https://s.lmes.jp/landing-qr/1657937154-ZxeaYPRw?uLand=Bwaxsu" target="_blank" rel="noopener noreferrer">
                 <div className="bg-white rounded-full p-1 shadow-md animate-pulse-slow">
                   <div className="bg-white rounded-full py-5 px-6 flex items-center justify-center">
                     <div className="flex flex-col items-center justify-center">
@@ -53,7 +53,7 @@ export default function HeroSection() {
                     </div>
                   </div>
                 </div>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -65,7 +65,7 @@ export default function HeroSection() {
           <div className="text-center text-white text-xl font-bold mb-4">
             簡単申込60秒！
           </div>
-          <Link href="#contact">
+          <a href="https://s.lmes.jp/landing-qr/1657937154-ZxeaYPRw?uLand=Bwaxsu" target="_blank" rel="noopener noreferrer">
             <div className="bg-white rounded-full p-1 shadow-md animate-pulse-slow">
               <div className="bg-white rounded-full py-4 px-5 flex items-center justify-center">
                 <div className="flex flex-col items-center justify-center">
@@ -78,7 +78,7 @@ export default function HeroSection() {
                 </div>
               </div>
             </div>
-          </Link>
+          </a>
         </div>
       </div>
       

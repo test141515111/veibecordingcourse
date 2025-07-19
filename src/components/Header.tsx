@@ -34,12 +34,14 @@ export default function Header() {
         </nav>
         
         <div className="flex items-center space-x-3">
-          <Link 
-            href="#contact" 
+          <a 
+            href="https://s.lmes.jp/landing-qr/1657937154-ZxeaYPRw?uLand=Bwaxsu" 
+            target="_blank" 
+            rel="noopener noreferrer"
             className="hidden md:flex text-base py-3 px-6 items-center justify-center min-h-[42px] rounded-full font-bold text-white transition-all hover:shadow-lg hover:scale-105 bg-gradient-to-r from-[#FF7A00] to-[#FF9D4A]"
           >
             無料カウンセリングに申し込む
-          </Link>
+          </a>
           <button 
             className="md:hidden p-2" 
             onClick={toggleMenu}
@@ -98,13 +100,15 @@ export default function Header() {
               よくある質問
             </Link>
             <div className="px-5 py-4">
-              <Link 
-                href="#contact" 
+              <a 
+                href="https://s.lmes.jp/landing-qr/1657937154-ZxeaYPRw?uLand=Bwaxsu" 
+                target="_blank" 
+                rel="noopener noreferrer"
                 className="flex text-base py-3 px-6 items-center justify-center min-h-[42px] rounded-full font-bold text-white transition-all bg-gradient-to-r from-[#FF7A00] to-[#FF9D4A] w-full"
                 onClick={() => setIsMenuOpen(false)}
               >
                 無料カウンセリングに申し込む
-              </Link>
+              </a>
             </div>
           </div>
         </div>
