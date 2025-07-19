@@ -111,7 +111,7 @@ export default function AboutSection() {
                 {/* テキストセクション（右左入れ替え） */}
                 <div className="lg:col-span-7 p-4 sm:p-6 md:p-8 flex flex-col justify-center lg:order-1 order-2">
                   <div className="inline-block bg-orange-100 px-3 py-1 rounded-full text-orange-600 text-xs font-medium tracking-wider mb-3">LIVE SESSIONS</div>
-                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 sm:mb-4">週3回のライブ講義</h3>
+                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 sm:mb-4">週4回のライブ講義</h3>
                   <p className="text-sm sm:text-base text-gray-700 mb-4 sm:mb-6">
                     定期的なライブ講義でリアルタイムに質問や相談ができます。講師陣による丁寧な解説と、受講生同士の交流の場としても活用できます。
                   </p>

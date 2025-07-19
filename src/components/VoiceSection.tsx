@@ -1,6 +1,6 @@
 "use client";
 
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 
 // 受講生が開発したアプリ/コースのデータ
@@ -50,9 +50,11 @@ const courseProjects = [
 ];
 
 export default function VoiceSection() {
+  const [showFullText, setShowFullText] = useState(false);
+
   return (
     <section id="voice" className="py-12 pt-4 mt-0">
-      <div className="container px-2 sm:px-6">
+      <div className="container px-0 sm:px-6">
         <div className="text-center mb-12">
           {/* タイトルセクション */}
           <div className="text-center mb-16 relative">
@@ -184,7 +186,7 @@ export default function VoiceSection() {
           </div>
           
           {/* 推薦者の声コンテンツ - 林俊介氏の画像と推薦文 */}
-          <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+          <div className="max-w-4xl mx-auto bg-white p-4 sm:p-8 rounded-lg shadow-lg mx-2 sm:mx-auto">
             <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
               {/* 丸いアイコン画像 */}
               <div className="w-40 h-40 relative flex-shrink-0">
@@ -209,37 +211,109 @@ export default function VoiceSection() {
               
               {/* 推薦文コンテンツ */}
               <div className="flex-1">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">ハヤシシュンスケ</h3>
-                <div className="text-gray-700 leading-relaxed space-y-6">
-                  <div className="bg-amber-50/50 rounded-lg p-4 border-l-4 border-amber-400">
-                    <p className="text-lg font-medium text-gray-800 mb-2">
-                      半年以上にわたり、ユニコさんとほぼ毎日Zoomで<b>バイブコーディング</b>について議論を重ねてきた経験から、彼のスクールを心から推薦します。
-                    </p>
-                  </div>
-                  
-                  <div className="space-y-4">
-                    <p>
-                      ユニコさんの最大の強みは、<b>高い技術力</b>だけでなく、それを<b>ビジネスに結びつける発想力</b>にあります。
-                      多くのエンジニアが技術に偏りがちな中、彼は常に「この技術をどう収益化するか」「どうすれば価値を生み出せるか」という視点を持っています。
+                <h3 className="text-2xl font-bold text-gray-800 mb-6">ハヤシシュンスケ</h3>
+                <div className="bg-gray-50 p-4 sm:p-6 rounded-lg">
+                  <div className="text-gray-700 leading-relaxed space-y-6">
+                    {/* 導入部分 */}
+                    <p className="text-lg font-medium text-gray-800 leading-relaxed">
+                      半年以上、ユニコさんと毎日Zoomで<b>バイブコーディング</b>について議論してきた経験から、心から推薦します。
                     </p>
                     
-                    <p>
-                      現在、<b>バイブコーディング</b>については様々な情報が飛び交っていますが、残念ながらその多くは表面的で、実際に手を動かしていない人の発信も少なくありません。
-                      しかし、技術の世界では<b>実装できなければ意味がありません</b>。ユニコさんは実際にコードを書き、プロダクトを作り、それをビジネスに繋げてきた実績があります。
-                    </p>
-                    
-                    <div className="bg-blue-50/50 rounded-lg p-4 border-l-4 border-blue-400">
-                      <p className="font-medium text-gray-800">
-                        初心者の方でも安心してください。彼の説明は<b>丁寧で分かりやすく</b>、段階を踏んで確実に理解を深められるよう工夫されています。
-                        ユニコスクールで学べば、<b>バイブコーディングの技術力とビジネスセンスの両方</b>を身につけることができるでしょう。
-                      </p>
+                    {/* メインコンテンツ */}
+                    <div className="space-y-6">
+                      {/* 強みについて */}
+                      <div>
+                        <p className="text-base leading-relaxed mb-4">
+                          ユニコさんの強みは<b>高い技術力</b>と<b>ビジネスに結びつける発想力</b>です。
+                        </p>
+                        
+                        <p className="text-base leading-relaxed mb-4">
+                          多くのエンジニアが技術に偏りがちな中、彼は常に
+                        </p>
+                        
+                        {/* 重要なポイント */}
+                        <div className="bg-white/70 p-4 rounded-lg mb-4">
+                          <div className="space-y-2">
+                            <p className="text-gray-800 font-semibold">「この技術をどう収益化するか」</p>
+                            <p className="text-gray-800 font-semibold">「どうすれば価値を生み出せるか」</p>
+                          </div>
+                        </div>
+                        
+                        <p className="text-base leading-relaxed">という視点を持っています。</p>
+                      </div>
+                      
+                      {/* 続きを読むボタン */}
+                      <div className="text-center mt-6">
+                        <button
+                          onClick={() => setShowFullText(!showFullText)}
+                          className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-medium rounded-lg hover:from-amber-600 hover:to-amber-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                        >
+                          {showFullText ? (
+                            <>
+                              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+                              </svg>
+                              閉じる
+                            </>
+                          ) : (
+                            <>
+                              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                              </svg>
+                              続きを読む
+                            </>
+                          )}
+                        </button>
+                      </div>
+                      
+                      {/* 続きのテキスト - 条件付き表示 */}
+                      {showFullText && (
+                        <div className="space-y-6 mt-6">
+                          {/* 実績について */}
+                          <div>
+                            <p className="text-base leading-relaxed">
+                              現在、<b>バイブコーディング</b>の情報は多くありますが、その多くは表面的です。しかし、技術の世界では<b>実装できなければ意味がありません</b>。ユニコさんは実際にコードを書き、プロダクトを作り、ビジネスに繋げてきた実績があります。
+                            </p>
+                          </div>
+                          
+                          {/* 初心者へのメッセージ */}
+                          <div>
+                            <p className="text-base leading-relaxed">
+                              初心者の方でも安心してください。彼の説明は<b>丁寧で分かりやすく</b>、段階を踏んで理解を深められます。ユニコスクールで学べば、<b>バイブコーディングの技術力とビジネスセンスの両方</b>を身につけられます。
+                            </p>
+                          </div>
+                          
+                          {/* 成長について */}
+                          <div>
+                            <p className="text-base leading-relaxed mb-4">
+                              ただし、基礎はスクールで学べますが、その後の成長は自分次第です。
+                            </p>
+                            
+                            <p className="text-base leading-relaxed mb-4">
+                              スクールでの学びを起点に、
+                            </p>
+                            
+                            {/* 重要なポイント */}
+                            <div className="bg-white/70 p-4 rounded-lg mb-4">
+                              <div className="space-y-2">
+                                <p className="text-gray-800 font-semibold">自分の頭で考え、</p>
+                                <p className="text-gray-800 font-semibold">自分の手を動かし、</p>
+                                <p className="text-gray-800 font-semibold">試行錯誤を続けること</p>
+                              </div>
+                            </div>
+                            
+                            <p className="text-base leading-relaxed">
+                              が大切です。
+                            </p>
+                          </div>
+                          
+                          {/* 締めのメッセージ */}
+                          <p className="text-base leading-relaxed">
+                            ユニコさん自身が手を動かして結果を出してきたからこそ、その姿勢を参考に学習を続けてもらえたらと思います。
+                          </p>
+                        </div>
+                      )}
                     </div>
-                    
-                    <p>
-                      ただし、基礎はスクールで学べますが、その後の成長は自分次第です。
-                      スクールでの勉強を基礎にし、<b>自分の頭で考え、自分でも手を動かして</b>下さい。
-                      この点もユニコさんは実際に手を動かしているので、<b>ユニコさんスタイルの学習方法＆実践手法</b>を参考にして学習を続けてもらえると嬉しいです。
-                    </p>
                   </div>
                 </div>
               </div>

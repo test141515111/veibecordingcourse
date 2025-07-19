@@ -38,8 +38,6 @@ export default function VideoSection() {
       </div>
       
       <div className="container relative z-10 max-w-7xl mx-auto">
-
-        
         {/* コンテンツエリア - プレミアムデザイン */}
         <div className="mx-auto px-2 relative">
           {/* メインコンテンツカード */}
@@ -54,11 +52,36 @@ export default function VideoSection() {
             
             {/* カード内コンテナ */}
             <div className="relative z-10 p-1 sm:p-2 md:p-3 lg:p-4">
-
               
-
+              {/* 1. バイブコーディングとは？タイトル - AboutSection.tsxと同じデザイン */}
+              <div className="text-center mb-12 relative">
+                {/* メインタイトル */}
+                <div className="relative mb-8 perspective">
+                  <h2 className="relative inline-block">
+                    <span className="relative z-10 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent transform transition-transform duration-300 hover:scale-[1.02]"
+                        style={{
+                          fontSize: 'clamp(2.5rem, 5vw, 3.5rem)',
+                          fontWeight: 300,
+                          letterSpacing: '0.05em',
+                          lineHeight: 1.1,
+                          fontFamily: "'Noto Sans JP', 'Hiragino Sans', sans-serif",
+                          textShadow: '0 10px 30px rgba(0,0,0,0.05)'
+                        }}>
+                      バイブコーディングとは？
+                    </span>
+                    {/* 3D効果の装飾下線 */}
+                    <span className="absolute left-0 -bottom-2 w-full h-0.5 bg-gradient-to-r from-primary/50 via-secondary/70 to-primary/50 rounded-full transform rotate-x-12 shadow-lg"></span>
+                    <span className="absolute left-0 -bottom-1 w-[90%] h-[1px] mx-[5%] bg-gradient-to-r from-transparent via-secondary/50 to-transparent rounded-full"></span>
+                  </h2>
+                </div>
+                
+                {/* 説明文 */}
+                <p className="text-lg max-w-4xl mx-auto text-gray-600 leading-relaxed">
+                  バイブコーディングは、AIとの対話を通じてコードを生成・最適化する次世代の開発手法です。
+                </p>
+              </div>
               
-              {/* 動画誘導テキスト - 横幅調整版 */}
+              {/* 2. 動画誘導テキスト - 横幅調整版 */}
               <div className="text-center mb-2 sm:mb-3 lg:mb-4 w-full">
                 <div className="relative w-full">
                   {/* 装飾的な背景効果 - 横幅調整 */}
@@ -103,8 +126,8 @@ export default function VideoSection() {
                 </div>
               </div>
               
-              {/* 動画エリア - 横幅いっぱい、最下部 */}
-              <div className="w-full relative group perspective">
+              {/* 3. 動画エリア - 横幅いっぱい */}
+              <div className="w-full relative group perspective mb-12">
                 {/* 動画フレーム - 高級感と3D効果 */}
                 <div className="w-full aspect-video bg-white rounded-2xl overflow-hidden shadow-[0_20px_60px_-15px_rgba(0,0,0,0.15)] border border-white transform transition-transform duration-500 group-hover:translate-z-10 group-hover:shadow-[0_30px_70px_-10px_rgba(0,0,0,0.2)]">
                   {/* フレーム装飾 */}
@@ -129,6 +152,127 @@ export default function VideoSection() {
                 
                 {/* 3Dシャドウ効果 */}
                 <div className="absolute -bottom-6 left-4 right-4 h-10 bg-black/10 blur-lg rounded-full transform skew-x-2 scale-x-[0.95] z-0"></div>
+              </div>
+              
+                              {/* 4. 速度比較セクション */}
+                <div className="mt-16 mb-12">
+                
+                {/* 左右分割レイアウト */}
+                <div className="max-w-7xl mx-auto">
+                  <h4 className="text-3xl font-bold text-center text-slate-800 mb-4">
+                    従来の開発 vs バイブコーディング
+                  </h4>
+                  <p className="text-lg sm:text-xl text-center text-slate-600 mb-12">
+                    ゼロからWebサービスを作ろうとした場合
+                  </p>
+                  
+                  {/* 比較テーブル */}
+                  <div className="mb-12">
+                      <div className="bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden">
+                        {/* テーブルヘッダー */}
+                        <div className="grid grid-cols-3 bg-gradient-to-r from-orange-100 to-pink-100 border-b-2 border-orange-200">
+                          <div className="p-3 sm:p-4 md:p-6 text-center">
+                            <h5 className="text-sm sm:text-base md:text-lg font-semibold text-slate-800 mb-1 sm:mb-2">比較項目</h5>
+                          </div>
+                          <div className="p-3 sm:p-4 md:p-6 text-center border-l-2 border-r border-orange-200">
+                            <h5 className="text-sm sm:text-base md:text-lg font-semibold text-slate-700">従来の開発</h5>
+                          </div>
+                          <div className="p-3 sm:p-4 md:p-6 text-center border-r-2 border-orange-200">
+                            <h5 className="text-sm sm:text-base md:text-lg font-semibold text-orange-600">バイブコーディング</h5>
+                          </div>
+                        </div>
+                        
+                        {/* 比較項目 */}
+                        <div className="divide-y divide-slate-100">
+                          {/* 開発時間 */}
+                          <div className="grid grid-cols-3 items-center">
+                            <div className="p-3 sm:p-4 md:p-6 bg-slate-50">
+                              <div className="flex items-center">
+                                <div className="w-6 h-6 sm:w-8 sm:h-8 bg-orange-100 rounded-lg flex items-center justify-center mr-2 sm:mr-3">
+                                  <svg className="w-3 h-3 sm:w-4 sm:h-4 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                  </svg>
+                                </div>
+                                <span className="text-xs sm:text-sm md:text-base font-medium text-slate-800">開発時間</span>
+                              </div>
+                            </div>
+                            <div className="p-3 sm:p-4 md:p-6 text-center border-l-2 border-r border-orange-100">
+                              <div className="text-lg sm:text-xl md:text-2xl font-bold text-slate-700 mb-1">100時間</div>
+                              <p className="text-xs sm:text-sm text-slate-600">4週間の開発期間</p>
+                            </div>
+                            <div className="p-3 sm:p-4 md:p-6 text-center border-r-2 border-orange-100">
+                              <div className="text-lg sm:text-xl md:text-2xl font-bold text-orange-600 mb-1">25時間</div>
+                              <p className="text-xs sm:text-sm text-orange-600 font-medium">1週間で完了</p>
+                            </div>
+                          </div>
+                          
+                          {/* デバッグ時間 */}
+                          <div className="grid grid-cols-3 items-center">
+                            <div className="p-3 sm:p-4 md:p-6 bg-slate-50">
+                              <div className="flex items-center">
+                                <div className="w-6 h-6 sm:w-8 sm:h-8 bg-pink-100 rounded-lg flex items-center justify-center mr-2 sm:mr-3">
+                                  <svg className="w-3 h-3 sm:w-4 sm:h-4 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                                  </svg>
+                                </div>
+                                <span className="text-xs sm:text-sm md:text-base font-medium text-slate-800">デバッグ時間</span>
+                              </div>
+                            </div>
+                            <div className="p-3 sm:p-4 md:p-6 text-center border-l-2 border-r border-orange-100">
+                              <div className="text-lg sm:text-xl md:text-2xl font-bold text-slate-700 mb-1">40時間</div>
+                              <p className="text-xs sm:text-sm text-slate-600">開発時間の40%</p>
+                            </div>
+                            <div className="p-3 sm:p-4 md:p-6 text-center border-r-2 border-orange-100">
+                              <div className="text-lg sm:text-xl md:text-2xl font-bold text-pink-600 mb-1">5時間</div>
+                              <p className="text-xs sm:text-sm text-pink-600 font-medium">開発時間の20%</p>
+                            </div>
+                          </div>
+                          
+                          {/* 学習コスト */}
+                          <div className="grid grid-cols-3 items-center">
+                            <div className="p-3 sm:p-4 md:p-6 bg-slate-50">
+                              <div className="flex items-center">
+                                <div className="w-6 h-6 sm:w-8 sm:h-8 bg-orange-100 rounded-lg flex items-center justify-center mr-2 sm:mr-3">
+                                  <svg className="w-3 h-3 sm:w-4 sm:h-4 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                                  </svg>
+                                </div>
+                                <span className="text-xs sm:text-sm md:text-base font-medium text-slate-800">学習コスト</span>
+                              </div>
+                            </div>
+                            <div className="p-3 sm:p-4 md:p-6 text-center border-l-2 border-r border-orange-100">
+                              <div className="text-lg sm:text-xl md:text-2xl font-bold text-slate-700 mb-1">高</div>
+                              <p className="text-xs sm:text-sm text-slate-600">技術的スキルが必要</p>
+                            </div>
+                            <div className="p-3 sm:p-4 md:p-6 text-center border-r-2 border-orange-100">
+                              <div className="text-lg sm:text-xl md:text-2xl font-bold text-orange-600 mb-1">低</div>
+                              <p className="text-xs sm:text-sm text-orange-600 font-medium">アイデア重視</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+                  {/* 説明セクション */}
+                  <div className="max-w-4xl mx-auto">
+                    <div className="text-center text-slate-700 space-y-6">
+                      <p className="text-lg sm:text-xl leading-relaxed">
+                        バイブコーディングはただ効率化するだけの手法ではありません。
+                      </p>
+                      <p className="text-lg sm:text-xl leading-relaxed">
+                        「作れたらいいな」が「もう作れてる」に変わる。
+                      </p>
+                      <p className="text-lg sm:text-xl leading-relaxed">
+                        この劇的な変化が、たった数ヶ月で起こるのがバイブコーディングのすごさです。
+                      </p>
+                      <p className="text-lg sm:text-xl leading-relaxed">
+                        面倒な環境構築や、つまずきやすい初学者の壁をAIが取り除いてくれるので、"つくる楽しさ" にすぐ手が届くのが魅力です。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+
               </div>
             </div>
           </div>
@@ -183,7 +327,33 @@ export default function VideoSection() {
         .translate-z-10 {
           transform: translateZ(10px);
         }
+        
+        @keyframes progress {
+          0% {
+            stroke-dasharray: 0, 100;
+          }
+          100% {
+            stroke-dasharray: var(--progress), 100;
+          }
+        }
+        
+        .animate-progress {
+          animation: progress 2s ease-out forwards;
+        }
+        
+        @keyframes progress-bar {
+          0% {
+            width: 0%;
+          }
+          100% {
+            width: var(--progress-width);
+          }
+        }
+        
+        .animate-progress-bar {
+          animation: progress-bar 2s ease-out forwards;
+        }
       `}</style>
     </section>
   );
-} 
+}
