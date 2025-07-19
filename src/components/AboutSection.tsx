@@ -688,7 +688,7 @@ export default function AboutSection() {
 
         {/* CTAボタン - 目立つオレンジデザイン */}
         <div className="flex justify-center mt-10 sm:mt-14 mb-8 sm:mb-10">
-          <Link href="#contact" className="relative inline-block group scale-100 hover:scale-[1.05] transition-transform duration-300 w-[90%] sm:w-auto">
+          <a href="https://s.lmes.jp/landing-qr/1657937154-ZxeaYPRw?uLand=Bwaxsu" target="_blank" rel="noopener noreferrer" className="relative inline-block group scale-100 hover:scale-[1.05] transition-transform duration-300 w-[90%] sm:w-auto">
             <div className="absolute inset-0 bg-gradient-to-br from-orange-600 to-orange-400 rounded-xl blur-[3px] opacity-60 group-hover:opacity-80 transition duration-300 group-hover:duration-200 animate-pulse-slow"></div>
             <button className="relative w-full px-4 py-4 sm:px-12 sm:py-6 md:px-20 md:py-8 bg-gradient-to-r from-orange-600 to-orange-400 rounded-xl leading-none flex flex-col items-center justify-center shadow-lg ring-2 ring-orange-300/50 hover:ring-orange-300/70 overflow-hidden">
               <span className="text-white font-bold text-xl sm:text-3xl md:text-4xl relative z-10 mb-2 sm:mb-3 drop-shadow-md">無料カウンセリング</span>
@@ -697,7 +697,7 @@ export default function AboutSection() {
               <div className="absolute top-0 left-[-100%] w-[120%] h-full bg-gradient-to-r from-transparent via-white/70 to-transparent skew-x-15 animate-shine pointer-events-none"></div>
               <div className="absolute top-0 left-[-100%] w-[80%] h-full bg-gradient-to-r from-transparent via-white/40 to-transparent -skew-x-15 animate-shine-delayed pointer-events-none"></div>
             </button>
-          </Link>
+          </a>
         </div>
       </div>
       

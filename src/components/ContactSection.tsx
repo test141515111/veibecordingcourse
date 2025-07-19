@@ -126,7 +126,7 @@ export default function ContactSection() {
         
         {/* CTAボタン - 目立つオレンジデザイン */}
         <div className="flex justify-center pb-20">
-          <Link href="#contact" className="relative inline-block group scale-100 hover:scale-[1.05] transition-transform duration-300">
+          <a href="https://s.lmes.jp/landing-qr/1657937154-ZxeaYPRw?uLand=Bwaxsu" target="_blank" rel="noopener noreferrer" className="relative inline-block group scale-100 hover:scale-[1.05] transition-transform duration-300">
             <div className="absolute inset-0 bg-gradient-to-br from-orange-600 to-orange-400 rounded-xl blur-[3px] opacity-60 group-hover:opacity-80 transition duration-300 group-hover:duration-200 animate-pulse-slow"></div>
             <button className="relative px-6 py-5 sm:px-20 sm:py-8 bg-gradient-to-r from-orange-600 to-orange-400 rounded-xl leading-none flex flex-col items-center justify-center shadow-lg ring-2 ring-orange-300/50 hover:ring-orange-300/70 overflow-hidden">
               <span className="text-white font-bold text-2xl sm:text-4xl relative z-10 mb-2 sm:mb-3 drop-shadow-md">無料カウンセリング</span>
@@ -135,7 +135,7 @@ export default function ContactSection() {
               <div className="absolute top-0 left-[-100%] w-[120%] h-full bg-gradient-to-r from-transparent via-white/70 to-transparent skew-x-15 animate-shine pointer-events-none"></div>
               <div className="absolute top-0 left-[-100%] w-[80%] h-full bg-gradient-to-r from-transparent via-white/40 to-transparent -skew-x-15 animate-shine-delayed pointer-events-none"></div>
             </button>
-          </Link>
+          </a>
         </div>
       </div>
       
