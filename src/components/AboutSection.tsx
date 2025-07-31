@@ -267,8 +267,8 @@ export default function AboutSection() {
                     {/* 4つのステップを1行ずつ表示 */}
                     <div className="space-y-4">
                       {/* ステップ1 */}
-                      <div className="flex items-stretch bg-gradient-to-r from-orange-50 to-amber-50 rounded-lg p-5 border border-orange-200 shadow-sm hover:shadow-md transition-shadow">
-                        <div className="w-64 aspect-video bg-gradient-to-br from-orange-100 to-amber-100 rounded-lg flex items-center justify-center mr-5 shadow-md flex-shrink-0 border-2 border-orange-200 overflow-hidden">
+                      <div className="flex flex-col lg:flex-row items-stretch bg-gradient-to-r from-orange-50 to-amber-50 rounded-lg p-3 sm:p-4 lg:p-5 border border-orange-200 shadow-sm hover:shadow-md transition-shadow">
+                        <div className="w-full lg:w-48 xl:w-64 aspect-video bg-gradient-to-br from-orange-100 to-amber-100 rounded-lg flex items-center justify-center mb-4 lg:mb-0 lg:mr-5 shadow-md flex-shrink-0 border-2 border-orange-200 overflow-hidden">
                           <Image
                             src="/Feedback_images/課題動画.png"
                             alt="動画解説視聴"
@@ -278,8 +278,8 @@ export default function AboutSection() {
                           />
                         </div>
                         <div className="flex-1">
-                          <h5 className="font-bold text-orange-800 text-xl mb-2">STEP1 動画解説＋テキストコンテンツで課題を視聴</h5>
-                          <p className="text-base text-gray-700">テーマを絞った分かりやすい動画解説で、初心者でも安心して取り組めます。動画だけでなく図解やキャプチャなどテキストベースの説明も充実。使用している参考プロンプトも共有されるので、完成例が見えている状態で取り組みやすくなっています。</p>
+                          <h5 className="font-bold text-orange-800 text-lg sm:text-xl mb-2">STEP1 動画解説＋テキストコンテンツで課題を視聴</h5>
+                          <p className="text-sm sm:text-base text-gray-700">テーマを絞った分かりやすい動画解説で、初心者でも安心して取り組めます。動画だけでなく図解やキャプチャなどテキストベースの説明も充実。使用している参考プロンプトも共有されるので、完成例が見えている状態で取り組みやすくなっています。</p>
                         </div>
                       </div>
                       
@@ -291,8 +291,8 @@ export default function AboutSection() {
                       </div>
                       
                       {/* ステップ2 */}
-                      <div className="flex items-stretch bg-gradient-to-r from-orange-50 to-amber-50 rounded-lg p-5 border border-orange-200 shadow-sm hover:shadow-md transition-shadow">
-                        <div className="w-64 aspect-video bg-gradient-to-br from-orange-100 to-amber-100 rounded-lg flex items-center justify-center mr-5 shadow-md flex-shrink-0 border-2 border-orange-200 overflow-hidden">
+                      <div className="flex flex-col lg:flex-row items-stretch bg-gradient-to-r from-orange-50 to-amber-50 rounded-lg p-3 sm:p-4 lg:p-5 border border-orange-200 shadow-sm hover:shadow-md transition-shadow">
+                        <div className="w-full lg:w-48 xl:w-64 aspect-video bg-gradient-to-br from-orange-100 to-amber-100 rounded-lg flex items-center justify-center mb-4 lg:mb-0 lg:mr-5 shadow-md flex-shrink-0 border-2 border-orange-200 overflow-hidden">
                           <Image
                             src="/Feedback_images/バイブコーディング.png"
                             alt="バイブコーディング"
@@ -302,8 +302,8 @@ export default function AboutSection() {
                           />
                         </div>
                         <div className="flex-1">
-                          <h5 className="font-bold text-orange-800 text-xl mb-2">STEP2 バイブコーディングで開発</h5>
-                          <p className="text-base text-gray-700">指定ツールを用いてバイブコーディングによる開発に取り組みます。うまくいかない場合は講師になんでも相談OK！何回でも、解決するまで何度でも相談できるので、挫折することなく安心して開発を進められます。</p>
+                          <h5 className="font-bold text-orange-800 text-lg sm:text-xl mb-2">STEP2 バイブコーディングで開発</h5>
+                          <p className="text-sm sm:text-base text-gray-700">指定ツールを用いてバイブコーディングによる開発に取り組みます。うまくいかない場合は講師になんでも相談OK！何回でも、解決するまで何度でも相談できるので、挫折することなく安心して開発を進められます。</p>
                         </div>
                       </div>
                       
@@ -315,8 +315,8 @@ export default function AboutSection() {
                       </div>
                       
                       {/* ステップ3 */}
-                      <div className="flex items-stretch bg-gradient-to-r from-orange-50 to-amber-50 rounded-lg p-5 border border-orange-200 shadow-sm hover:shadow-md transition-shadow">
-                        <div className="w-64 aspect-video bg-gradient-to-br from-orange-100 to-amber-100 rounded-lg flex items-center justify-center mr-5 shadow-md flex-shrink-0 border-2 border-orange-200 overflow-hidden">
+                      <div className="flex flex-col lg:flex-row items-stretch bg-gradient-to-r from-orange-50 to-amber-50 rounded-lg p-3 sm:p-4 lg:p-5 border border-orange-200 shadow-sm hover:shadow-md transition-shadow">
+                        <div className="w-full lg:w-48 xl:w-64 aspect-video bg-gradient-to-br from-orange-100 to-amber-100 rounded-lg flex items-center justify-center mb-4 lg:mb-0 lg:mr-5 shadow-md flex-shrink-0 border-2 border-orange-200 overflow-hidden">
                           <Image
                             src="/Feedback_images/課題提出.png"
                             alt="成果物提出"
@@ -326,8 +326,8 @@ export default function AboutSection() {
                           />
                         </div>
                         <div className="flex-1">
-                          <h5 className="font-bold text-orange-800 text-xl mb-2">STEP3 成果物の提出</h5>
-                          <p className="text-base text-gray-700">完成した成果物をコミュニティで共有します。他の生徒の成果物も見ることができるので、モチベーション向上にもつながります。課題は取り組みたいものから自由に選んで取り組めるので、自分のペースで学習を進められます。</p>
+                          <h5 className="font-bold text-orange-800 text-lg sm:text-xl mb-2">STEP3 成果物の提出</h5>
+                          <p className="text-sm sm:text-base text-gray-700">完成した成果物をコミュニティで共有します。他の生徒の成果物も見ることができるので、モチベーション向上にもつながります。課題は取り組みたいものから自由に選んで取り組めるので、自分のペースで学習を進められます。</p>
                         </div>
                       </div>
                       
@@ -339,8 +339,8 @@ export default function AboutSection() {
                       </div>
                       
                       {/* ステップ4 */}
-                      <div className="flex items-stretch bg-gradient-to-r from-orange-50 to-amber-50 rounded-lg p-5 border border-orange-200 shadow-sm hover:shadow-md transition-shadow">
-                        <div className="w-64 aspect-video bg-gradient-to-br from-orange-100 to-amber-100 rounded-lg flex items-center justify-center mr-5 shadow-md flex-shrink-0 border-2 border-orange-200 overflow-hidden">
+                      <div className="flex flex-col lg:flex-row items-stretch bg-gradient-to-r from-orange-50 to-amber-50 rounded-lg p-3 sm:p-4 lg:p-5 border border-orange-200 shadow-sm hover:shadow-md transition-shadow">
+                        <div className="w-full lg:w-48 xl:w-64 aspect-video bg-gradient-to-br from-orange-100 to-amber-100 rounded-lg flex items-center justify-center mb-4 lg:mb-0 lg:mr-5 shadow-md flex-shrink-0 border-2 border-orange-200 overflow-hidden">
                           <Image
                             src="/Feedback_images/フィードバック.png"
                             alt="添削・フィードバック"
@@ -350,8 +350,8 @@ export default function AboutSection() {
                           />
                         </div>
                         <div className="flex-1">
-                          <h5 className="font-bold text-orange-800 text-xl mb-2">STEP4 講師による添削・フィードバック</h5>
-                          <p className="text-base text-gray-700">AI開発の最前線で活躍するプロの講師から個別でフィードバックがもらえます。何度でも添削OKで、具体的なアドバイスによりあなたの成長を加速させます。</p>
+                          <h5 className="font-bold text-orange-800 text-lg sm:text-xl mb-2">STEP4 講師による添削・フィードバック</h5>
+                          <p className="text-sm sm:text-base text-gray-700">AI開発の最前線で活躍するプロの講師から個別でフィードバックがもらえます。何度でも添削OKで、具体的なアドバイスによりあなたの成長を加速させます。</p>
                         </div>
                       </div>
                     </div>
