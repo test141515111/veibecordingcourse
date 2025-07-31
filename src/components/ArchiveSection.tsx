@@ -7,6 +7,70 @@ import Image from 'next/image';
 const archiveItems = [
   {
     id: 1,
+    title: "話題のChrome MCPを徹底解説！！！ChromeをMCPで操作しよう！＆AI美女評価",
+    description: "Chrome MCPの概要と導入方法、さらにAIエージェントを使ったブラウザ操作の自動化手法について解説しています。また、AIによる美女評価の事例も交えて、実践的な使い方を紹介します。",
+    date: "2025年6月16日",
+    image: "/Archive_images/話題のChrome MCP解説.png",
+    tags: ["Chrome MCP", "ブラウザ自動化"]
+  },
+  {
+    id: 2,
+    title: "ChromeMCPでクラウドワークスに自動応募させよう！",
+    description: "Chrome MCPを用いてクラウドワークスへの案件応募を自動化する手順とそのプロンプト設計方法について講義しています。実務活用に向けた自動操作の具体例を紹介します。",
+    date: "2025年6月16日",
+    image: "/Archive_images/ChromeMCPでクラウドワークスに自動応募.png",
+    tags: ["Chrome MCP", "自動応募"]
+  },
+  {
+    id: 3,
+    title: "【ハヤシシュンスケ降臨回】AIエージェント ❌ ワークフロー構築 ❌ n8n 徹底解説！！",
+    description: "ClaudeなどのAIエージェントとn8nを連携させ、ノーコードでワークフローを自動生成・実行する方法について解説しています。AIからの自然言語指示で自動化を行うプロセスを実演しています。",
+    date: "2025年6月16日",
+    image: "/Archive_images/AIエージェント ❌ ワークフロー構築 ❌ n8n 徹底解説！！.png",
+    tags: ["AIエージェント", "n8n", "ワークフロー"]
+  },
+  {
+    id: 4,
+    title: "【神回！後半はハヤシシュンスケさん降臨】ClaudeCode ❌ MCPでサービス開発をガンガンやっていこう！！",
+    description: "ClaudeCodeとMCPを活用し、AI主導でWebサービスを構築する実践的な方法について講義しています。Base44などの先進事例も交えて、AI開発の最前線を解説します。",
+    date: "2025年6月16日",
+    image: "/Archive_images/Wixに80億円で買創業6ヶ月の「Base44」でバイブコーディングをしまくろう！.png",
+    tags: ["ClaudeCode", "MCP", "サービス開発"]
+  },
+  {
+    id: 5,
+    title: "Kiro×ClaudeCodeが爆速すぎる...!?AWSが開発したコーディングエージェント『Kiro』徹底解説！！",
+    description: "AWSが開発した新しいAIコーディングエージェント「Kiro」の機能と、ClaudeCodeとの連携による高速開発手法について解説しています。Kiroの実行環境や使い勝手も紹介します。",
+    date: "2025年6月16日",
+    image: "/Archive_images/Kiro×ClaudeCodeが爆速すぎる.png",
+    tags: ["Kiro", "ClaudeCode", "AWS"]
+  },
+  {
+    id: 6,
+    title: "AI彼女を徹底的に作っていこう！",
+    description: "AIエージェントや生成AIツールを活用して、対話可能な\"AI彼女\"を設計・構築する手順について講義しています。外見生成から性格設計までのフローを扱います。",
+    date: "2025年6月16日",
+    image: "/Archive_images/AI彼女を徹底的に作っていこう！.png",
+    tags: ["AI彼女", "生成AI", "対話システム"]
+  },
+  {
+    id: 7,
+    title: "パソコン自体をAIで遠隔操作してみよう！AppleScriptを使ったパソコン操作徹底調査！",
+    description: "AppleScriptを活用して、AIがパソコン本体を自動操作する仕組みについて解説しています。ファイル操作や起動スクリプトの実行などの自動化例も取り上げます。",
+    date: "2025年6月16日",
+    image: "/Archive_images/AppleScriptを使ったパソコン操作徹底調査！.png",
+    tags: ["AppleScript", "パソコン操作", "自動化"]
+  },
+  {
+    id: 8,
+    title: "AppleScriptで自動出品に挑戦しよう！",
+    description: "AppleScriptによるフリマアプリやECサイトへの自動出品フローを構築する方法について講義しています。Mac環境での自動処理スクリプトの基本も解説します。",
+    date: "2025年6月16日",
+    image: "/Archive_images/AppleScriptで自動出品に挑戦しよう！.png",
+    tags: ["AppleScript", "自動出品", "EC"]
+  },
+  {
+    id: 9,
     title: "原点に返って クラウドワークス × AI活用でサクッと案件をこなそう！",
     description: "画像生成、動画台本、SNS運用代行、ブログ記事、システム開発などその場で全部やるで！！",
     date: "2025年6月16日",
@@ -48,6 +112,9 @@ const archiveItems = [
 ];
 
 export default function ArchiveSection() {
+  const [showAll, setShowAll] = React.useState(false);
+  const displayedItems = showAll ? archiveItems : archiveItems.slice(0, 3);
+  
   return (
     <section id="archive" className="py-20 pb-8 mt-0 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
       {/* 背景装飾 */}
@@ -127,7 +194,7 @@ export default function ArchiveSection() {
           
             {/* カードコンテナ - スマホ表示時に横スクロール */}
             <div className="md:space-y-8 md:block flex overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0">
-              {archiveItems.map((item) => (
+              {displayedItems.map((item) => (
                 <div 
                   key={item.id} 
                   className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 flex-shrink-0 md:flex-shrink w-[85%] md:w-full mr-4 md:mr-0 md:mb-8 snap-start"
@@ -138,13 +205,6 @@ export default function ArchiveSection() {
                       {/* 画像プレースホルダーのデザイン */}
                       <div className="absolute inset-0 flex items-center justify-center">
                         <div className="w-full h-full relative">
-                          <div className="absolute inset-0 flex items-center justify-center">
-                            <div className="w-20 h-20 rounded-full bg-amber-100 flex items-center justify-center">
-                              <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                              </svg>
-                            </div>
-                          </div>
                           <Image
                             src={item.image}
                             alt={item.title}
@@ -154,10 +214,7 @@ export default function ArchiveSection() {
                         </div>
                       </div>
                       
-                      {/* 日付バッジ - より目立つデザイン */}
-                      <div className="absolute top-4 left-4 bg-gradient-to-r from-amber-500 to-orange-500 text-white text-sm font-medium py-1.5 px-4 rounded-full shadow-md z-20">
-                        {item.date}
-                      </div>
+
                     </div>
                     
                     {/* コンテンツ部分 - 改良版 */}
@@ -193,7 +250,7 @@ export default function ArchiveSection() {
             {/* スクロールインジケーター - スマホ表示時のみ */}
             <div className="mt-4 flex justify-center md:hidden">
               <div className="flex space-x-1">
-                {[0, 1, 2, 3, 4].map((_, index) => (
+                {displayedItems.slice(0, 3).map((_, index) => (
                   <div 
                     key={index} 
                     className="w-2 h-2 rounded-full bg-amber-200 transition-colors duration-300"
@@ -201,6 +258,36 @@ export default function ArchiveSection() {
                 ))}
               </div>
             </div>
+            
+            {/* 続きを見るボタン */}
+            {!showAll && archiveItems.length > 3 && (
+              <div className="mt-8 text-center">
+                <button
+                  onClick={() => setShowAll(true)}
+                  className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-amber-500 to-orange-500 text-white font-medium rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+                >
+                  <span>続きを見る</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+              </div>
+            )}
+            
+            {/* 閉じるボタン */}
+            {showAll && (
+              <div className="mt-8 text-center">
+                <button
+                  onClick={() => setShowAll(false)}
+                  className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-gray-500 to-gray-600 text-white font-medium rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+                >
+                  <span>閉じる</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+                  </svg>
+                </button>
+              </div>
+            )}
           </div>
           
           {/* 追加説明テキスト */}

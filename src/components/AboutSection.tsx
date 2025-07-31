@@ -359,7 +359,7 @@ export default function AboutSection() {
                     <div className="text-lg sm:text-xl md:text-2xl font-bold text-amber-950 tracking-tight">指導軸</div>
                   </div>
                 </div>
-                <p className="text-amber-800 text-xs sm:text-sm font-medium">マンツーマン指導による成長加速</p>
+                <p className="text-amber-800 text-xs sm:text-sm font-medium">個別サポートによる成長加速</p>
               </div>
 
               <div className="bg-gradient-to-br from-amber-300 to-amber-400 p-4 sm:p-6 md:p-8 text-center relative group border-t sm:border-t-0 sm:border-l border-amber-200/50">
@@ -428,10 +428,10 @@ export default function AboutSection() {
                     <div className="flex items-center justify-between mb-4">
                       <h3 className="text-lg font-semibold text-amber-900">指導内容</h3>
                       <span className="bg-gradient-to-r from-amber-200 to-amber-300 text-amber-800 px-4 py-1.5 rounded-lg text-sm font-medium shadow-sm">
-                        マンツーマン
+                        講師による添削
                       </span>
                     </div>
-                    <p className="text-slate-600 text-sm leading-relaxed">課題の添削とマンツーマン指導で急速成長を実現</p>
+                    <p className="text-slate-600 text-sm leading-relaxed">課題添削と個別サポートで急速成長を実現</p>
                   </div>
 
                   <div className="flex-1 space-y-5">
@@ -502,14 +502,14 @@ export default function AboutSection() {
               <div className="grid grid-cols-3">
                 <div className="p-6 text-center relative group">
                   <div className="transform transition-transform group-hover:scale-105">
-                    <div className="text-3xl font-bold bg-gradient-to-br from-amber-700 to-amber-500 bg-clip-text text-transparent mb-1">30</div>
+                    <div className="text-3xl font-bold bg-gradient-to-br from-amber-700 to-amber-500 bg-clip-text text-transparent mb-1">30以上</div>
                     <div className="text-sm text-amber-800 font-medium">実践課題</div>
                   </div>
                 </div>
                 <div className="p-6 text-center relative group">
                   <div className="transform transition-transform group-hover:scale-105">
                     <div className="text-3xl font-bold bg-gradient-to-br from-amber-700 to-amber-500 bg-clip-text text-transparent mb-1">個別</div>
-                    <div className="text-sm text-amber-800 font-medium">マンツーマン指導</div>
+                    <div className="text-sm text-amber-800 font-medium">Discordサポート</div>
                   </div>
                 </div>
                 <div className="p-6 text-center relative group">
@@ -547,7 +547,7 @@ export default function AboutSection() {
                     </span>
                     <h3 className="text-lg font-bold text-gray-700">スクール参加者人数</h3>
                   </div>
-                  <p className="text-4xl font-bold bg-gradient-to-r from-orange-500 to-amber-600 bg-clip-text text-transparent">436人</p>
+                  <p className="text-4xl font-bold bg-gradient-to-r from-orange-500 to-amber-600 bg-clip-text text-transparent">501人</p>
                 </div>
                 
                 <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl p-6 text-center border border-orange-100 shadow-sm">

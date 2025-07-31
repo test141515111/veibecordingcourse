@@ -42,8 +42,8 @@ const courseProjects = [
   },
   {
     id: 6,
-    title: "YouTubeリサーチGASアプリ開発",
-    image: "/images/projects/YouTubeリサーチツール.png",
+    title: "推し活アプリ開発",
+    image: "/images/推し活アプリ.png",
     target: "Google Apps Scriptを活用したい方",
     note: "※YouTubeデータAPIと連携したツール開発"
   }

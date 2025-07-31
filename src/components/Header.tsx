@@ -16,10 +16,10 @@ export default function Header() {
       <div className="container flex items-center justify-between h-full py-1">
         <Link href="/" className="relative">
           <Image
-            src="/images/ロゴ.png"
-            alt="Vibe Coding"
-            width={85}
-            height={28}
+            src="/images/ユニコスクールロゴ.png"
+            alt="ユニコスクール"
+            width={180}
+            height={58}
             className="h-auto"
             priority
           />
@@ -29,6 +29,7 @@ export default function Header() {
           <Link href="#video" className="hover:text-primary transition-colors">コースについて</Link>
           <Link href="#about" className="hover:text-primary transition-colors">カリキュラム</Link>
           <Link href="#archive" className="hover:text-primary transition-colors">講義アーカイブ</Link>
+          <Link href="#present" className="hover:text-primary transition-colors">参加特典</Link>
           <Link href="#voice" className="hover:text-primary transition-colors">受講生の声</Link>
           <Link href="#faq" className="hover:text-primary transition-colors">よくある質問</Link>
         </nav>
@@ -84,6 +85,13 @@ export default function Header() {
               onClick={() => setIsMenuOpen(false)}
             >
               講義アーカイブ
+            </Link>
+            <Link 
+              href="#present" 
+              className="px-6 py-3 hover:bg-gray-100 transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              参加特典
             </Link>
             <Link 
               href="#voice" 
