@@ -165,7 +165,7 @@ export default function AboutSection() {
                           <div className="ml-2 sm:ml-3 flex-1">
                             <div className="flex flex-col sm:flex-row sm:items-baseline">
                               <p className="font-bold text-gray-800 text-sm sm:text-base">ハヤシシュンスケと<br/>ユニコ🦄のAI開発生放送</p>
-                              <p className="text-xs sm:text-sm text-gray-500 sm:ml-2">23:00〜24:00</p>
+                              <p className="text-xs sm:text-sm text-gray-500 sm:ml-2">23:00〜25:00</p>
                             </div>
                             <p className="text-xs text-gray-600 mt-0.5 border-l-2 border-green-200 pl-2">
                               最新のAI解説・開発実演
@@ -192,14 +192,24 @@ export default function AboutSection() {
                       </div>
                     </div>
                   </div>
-                  <p className="text-sm text-gray-600 flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1 text-orange-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <line x1="12" y1="8" x2="12" y2="12"></line>
-                      <line x1="12" y1="16" x2="12.01" y2="16"></line>
-                    </svg>
+                  <p className="text-base font-medium text-gray-700">
                     ライブ講義はすべてアーカイブ保存され、後からでも視聴可能です
                   </p>
+                  <p className="text-base font-medium text-gray-700 mt-2">
+                    ハヤシシュンスケさんの生放送は期間限定のため永久ではありません
+                  </p>
+                  
+                  {/* 1週間の合計時間表示 */}
+                  <div className="mt-6 p-4 bg-gradient-to-r from-orange-100 to-amber-100 rounded-xl border-2 border-orange-200 shadow-lg">
+                    <div className="text-center">
+                      <div className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent mb-1">
+                        1週間の合計時間: 9時間
+                      </div>
+                      <p className="text-sm text-orange-700 font-medium">
+                        毎週これだけの時間をライブで学習できます！
+                      </p>
+                    </div>
+                  </div>
 
                 </div>
                 
@@ -229,31 +239,9 @@ export default function AboutSection() {
             
             {/* サポートカード3: 課題添削 */}
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden group">
-              <div className="grid grid-cols-1 lg:grid-cols-12 items-stretch">
-                {/* 画像セクション */}
-                <div className="lg:col-span-5 relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-orange-100/30 to-orange-50/10 z-0"></div>
-                  <div className="relative h-full flex items-center justify-center">
-                    <div className="relative w-5/6 aspect-square overflow-hidden">
-                      <div className="absolute -inset-4 bg-gradient-to-br from-orange-100/50 via-pink-100/30 to-blue-100/40 rounded-full blur-md z-0 animate-pulse-slow"></div>
-                      <div className="absolute inset-0 rounded-full border-8 border-white/40 z-10"></div>
-                      <div className="relative z-0 rounded-full overflow-hidden w-full h-full border-8 border-white shadow-lg transform hover:scale-[1.03] transition-transform duration-300">
-                        <Image
-                          src="/images/その他のサポート3.png"
-                          alt="バイブコーディングカリキュラム"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </div>
-                    {/* 装飾要素 */}
-                    <div className="absolute top-5 right-5 w-12 h-12 rounded-full bg-gradient-to-br from-pink-200/40 to-orange-200/40 blur-sm"></div>
-                    <div className="absolute bottom-6 left-6 w-8 h-8 rounded-full bg-gradient-to-br from-blue-200/40 to-purple-200/40 blur-sm"></div>
-                  </div>
-                </div>
-                
+              <div className="grid grid-cols-1 lg:grid-cols-1 items-stretch">
                 {/* テキストセクション */}
-                <div className="lg:col-span-7 p-8 flex flex-col justify-center">
+                <div className="lg:col-span-1 p-8 flex flex-col justify-center">
                   <div className="inline-block bg-orange-100 px-3 py-1 rounded-full text-orange-600 text-xs font-medium tracking-wider mb-3">VIBE CODING CURRICULUM</div>
                   <h3 className="text-2xl lg:text-3xl font-bold mb-4">
                     <span className="inline-block bg-purple-100 px-3 py-1 rounded-lg text-purple-600 relative mb-1">
@@ -266,32 +254,109 @@ export default function AboutSection() {
                   <p className="text-gray-700 mb-6">
                     動画解説付きの課題に取り組むことで、理解を深めながら、実際にコードを書いていくことができます。講師の丁寧な添削とフィードバックにより、より良いコードを書く力が身につきます。
                   </p>
-                  <div className="bg-orange-50/80 rounded-lg p-5 mb-4">
-                    <h4 className="font-bold text-lg mb-3 flex items-center">
+                  
+                  {/* 添削&フィードバックの流れ */}
+                  <div className="mb-6">
+                    <h4 className="font-bold text-lg mb-4 flex items-center">
                       <span className="w-1.5 h-5 bg-orange-500 rounded-sm mr-2 inline-block"></span>
                       添削&フィードバックの流れ
                     </h4>
-                    <ol className="space-y-3">
-                      <li className="flex items-start">
-                        <span className="bg-orange-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5 shadow-sm">1</span>
-                        <p className="text-gray-700">動画解説を視聴し、課題を理解する</p>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="bg-orange-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5 shadow-sm">2</span>
-                        <p className="text-gray-700">バイブコーディングで作成</p>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="bg-orange-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5 shadow-sm">3</span>
-                        <p className="text-gray-700">Discordで成果物を提出</p>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="bg-orange-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0 mt-0.5 shadow-sm">4</span>
-                        <p className="text-gray-700">講師による添削とフィードバック</p>
-                      </li>
-                    </ol>
+                    
+                    {/* 4つのステップを1行ずつ表示 */}
+                    <div className="space-y-4">
+                      {/* ステップ1 */}
+                      <div className="flex flex-col lg:flex-row items-stretch bg-gradient-to-r from-orange-50 to-amber-50 rounded-lg p-3 sm:p-4 lg:p-5 border border-orange-200 shadow-sm hover:shadow-md transition-shadow">
+                        <div className="w-full lg:w-48 xl:w-64 aspect-video bg-gradient-to-br from-orange-100 to-amber-100 rounded-lg flex items-center justify-center mb-4 lg:mb-0 lg:mr-5 shadow-md flex-shrink-0 border-2 border-orange-200 overflow-hidden">
+                          <Image
+                            src="/Feedback_images/課題動画.png"
+                            alt="動画解説視聴"
+                            width={256}
+                            height={144}
+                            className="w-full h-full object-cover rounded-md"
+                          />
+                        </div>
+                        <div className="flex-1">
+                          <h5 className="font-bold text-orange-800 text-lg sm:text-xl mb-2">STEP1 動画解説＋テキストコンテンツで課題を視聴</h5>
+                          <p className="text-sm sm:text-base text-gray-700">テーマを絞った分かりやすい動画解説で、初心者でも安心して取り組めます。動画だけでなく図解やキャプチャなどテキストベースの説明も充実。使用している参考プロンプトも共有されるので、完成例が見えている状態で取り組みやすくなっています。</p>
+                        </div>
+                      </div>
+                      
+                      {/* 流れの矢印1 */}
+                      <div className="flex justify-center">
+                        <div className="w-8 h-8 bg-gradient-to-br from-orange-400 to-amber-400 rounded-full flex items-center justify-center shadow-md">
+                          <span className="text-white font-bold text-sm">▼</span>
+                        </div>
+                      </div>
+                      
+                      {/* ステップ2 */}
+                      <div className="flex flex-col lg:flex-row items-stretch bg-gradient-to-r from-orange-50 to-amber-50 rounded-lg p-3 sm:p-4 lg:p-5 border border-orange-200 shadow-sm hover:shadow-md transition-shadow">
+                        <div className="w-full lg:w-48 xl:w-64 aspect-video bg-gradient-to-br from-orange-100 to-amber-100 rounded-lg flex items-center justify-center mb-4 lg:mb-0 lg:mr-5 shadow-md flex-shrink-0 border-2 border-orange-200 overflow-hidden">
+                          <Image
+                            src="/Feedback_images/バイブコーディング.png"
+                            alt="バイブコーディング"
+                            width={256}
+                            height={144}
+                            className="w-full h-full object-cover rounded-md"
+                          />
+                        </div>
+                        <div className="flex-1">
+                          <h5 className="font-bold text-orange-800 text-lg sm:text-xl mb-2">STEP2 バイブコーディングで開発</h5>
+                          <p className="text-sm sm:text-base text-gray-700">指定ツールを用いてバイブコーディングによる開発に取り組みます。うまくいかない場合は講師になんでも相談OK！何回でも、解決するまで何度でも相談できるので、挫折することなく安心して開発を進められます。</p>
+                        </div>
+                      </div>
+                      
+                      {/* 流れの矢印2 */}
+                      <div className="flex justify-center">
+                        <div className="w-8 h-8 bg-gradient-to-br from-orange-400 to-amber-400 rounded-full flex items-center justify-center shadow-md">
+                          <span className="text-white font-bold text-sm">▼</span>
+                        </div>
+                      </div>
+                      
+                      {/* ステップ3 */}
+                      <div className="flex flex-col lg:flex-row items-stretch bg-gradient-to-r from-orange-50 to-amber-50 rounded-lg p-3 sm:p-4 lg:p-5 border border-orange-200 shadow-sm hover:shadow-md transition-shadow">
+                        <div className="w-full lg:w-48 xl:w-64 aspect-video bg-gradient-to-br from-orange-100 to-amber-100 rounded-lg flex items-center justify-center mb-4 lg:mb-0 lg:mr-5 shadow-md flex-shrink-0 border-2 border-orange-200 overflow-hidden">
+                          <Image
+                            src="/Feedback_images/課題提出.png"
+                            alt="成果物提出"
+                            width={256}
+                            height={144}
+                            className="w-full h-full object-cover rounded-md"
+                          />
+                        </div>
+                        <div className="flex-1">
+                          <h5 className="font-bold text-orange-800 text-lg sm:text-xl mb-2">STEP3 成果物の提出</h5>
+                          <p className="text-sm sm:text-base text-gray-700">完成した成果物をコミュニティで共有します。他の生徒の成果物も見ることができるので、モチベーション向上にもつながります。課題は取り組みたいものから自由に選んで取り組めるので、自分のペースで学習を進められます。</p>
+                        </div>
+                      </div>
+                      
+                      {/* 流れの矢印3 */}
+                      <div className="flex justify-center">
+                        <div className="w-8 h-8 bg-gradient-to-br from-orange-400 to-amber-400 rounded-full flex items-center justify-center shadow-md">
+                          <span className="text-white font-bold text-sm">▼</span>
+                        </div>
+                      </div>
+                      
+                      {/* ステップ4 */}
+                      <div className="flex flex-col lg:flex-row items-stretch bg-gradient-to-r from-orange-50 to-amber-50 rounded-lg p-3 sm:p-4 lg:p-5 border border-orange-200 shadow-sm hover:shadow-md transition-shadow">
+                        <div className="w-full lg:w-48 xl:w-64 aspect-video bg-gradient-to-br from-orange-100 to-amber-100 rounded-lg flex items-center justify-center mb-4 lg:mb-0 lg:mr-5 shadow-md flex-shrink-0 border-2 border-orange-200 overflow-hidden">
+                          <Image
+                            src="/Feedback_images/フィードバック.png"
+                            alt="添削・フィードバック"
+                            width={256}
+                            height={144}
+                            className="w-full h-full object-cover rounded-md"
+                          />
+                        </div>
+                        <div className="flex-1">
+                          <h5 className="font-bold text-orange-800 text-lg sm:text-xl mb-2">STEP4 講師による添削・フィードバック</h5>
+                          <p className="text-sm sm:text-base text-gray-700">AI開発の最前線で活躍するプロの講師から個別でフィードバックがもらえます。何度でも添削OKで、具体的なアドバイスによりあなたの成長を加速させます。</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <p className="text-sm text-gray-600 flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1 text-orange-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  
+                  <p className="text-lg font-extrabold bg-gradient-to-r from-orange-500 via-amber-500 to-orange-600 bg-clip-text text-transparent flex items-center tracking-wide">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-3 text-orange-500 drop-shadow-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <circle cx="12" cy="12" r="10"></circle>
                       <line x1="12" y1="8" x2="12" y2="12"></line>
                       <line x1="12" y1="16" x2="12.01" y2="16"></line>
@@ -359,7 +424,7 @@ export default function AboutSection() {
                     <div className="text-lg sm:text-xl md:text-2xl font-bold text-amber-950 tracking-tight">指導軸</div>
                   </div>
                 </div>
-                <p className="text-amber-800 text-xs sm:text-sm font-medium">マンツーマン指導による成長加速</p>
+                <p className="text-amber-800 text-xs sm:text-sm font-medium">個別サポートによる成長加速</p>
               </div>
 
               <div className="bg-gradient-to-br from-amber-300 to-amber-400 p-4 sm:p-6 md:p-8 text-center relative group border-t sm:border-t-0 sm:border-l border-amber-200/50">
@@ -428,10 +493,10 @@ export default function AboutSection() {
                     <div className="flex items-center justify-between mb-4">
                       <h3 className="text-lg font-semibold text-amber-900">指導内容</h3>
                       <span className="bg-gradient-to-r from-amber-200 to-amber-300 text-amber-800 px-4 py-1.5 rounded-lg text-sm font-medium shadow-sm">
-                        マンツーマン
+                        講師による添削
                       </span>
                     </div>
-                    <p className="text-slate-600 text-sm leading-relaxed">課題の添削とマンツーマン指導で急速成長を実現</p>
+                    <p className="text-slate-600 text-sm leading-relaxed">課題添削と個別サポートで急速成長を実現</p>
                   </div>
 
                   <div className="flex-1 space-y-5">
@@ -502,14 +567,14 @@ export default function AboutSection() {
               <div className="grid grid-cols-3">
                 <div className="p-6 text-center relative group">
                   <div className="transform transition-transform group-hover:scale-105">
-                    <div className="text-3xl font-bold bg-gradient-to-br from-amber-700 to-amber-500 bg-clip-text text-transparent mb-1">30</div>
+                    <div className="text-3xl font-bold bg-gradient-to-br from-amber-700 to-amber-500 bg-clip-text text-transparent mb-1">30以上</div>
                     <div className="text-sm text-amber-800 font-medium">実践課題</div>
                   </div>
                 </div>
                 <div className="p-6 text-center relative group">
                   <div className="transform transition-transform group-hover:scale-105">
                     <div className="text-3xl font-bold bg-gradient-to-br from-amber-700 to-amber-500 bg-clip-text text-transparent mb-1">個別</div>
-                    <div className="text-sm text-amber-800 font-medium">マンツーマン指導</div>
+                    <div className="text-sm text-amber-800 font-medium">Discordサポート</div>
                   </div>
                 </div>
                 <div className="p-6 text-center relative group">
@@ -547,7 +612,7 @@ export default function AboutSection() {
                     </span>
                     <h3 className="text-lg font-bold text-gray-700">スクール参加者人数</h3>
                   </div>
-                  <p className="text-4xl font-bold bg-gradient-to-r from-orange-500 to-amber-600 bg-clip-text text-transparent">436人</p>
+                  <p className="text-4xl font-bold bg-gradient-to-r from-orange-500 to-amber-600 bg-clip-text text-transparent">501人</p>
                 </div>
                 
                 <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl p-6 text-center border border-orange-100 shadow-sm">

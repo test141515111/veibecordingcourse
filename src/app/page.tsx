@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import VideoSection from '@/components/VideoSection';
 import AboutSection from '@/components/AboutSection';
+import Present from '@/components/Present';
 import ArchiveSection from '@/components/ArchiveSection';
 import VoiceSection from '@/components/VoiceSection';
 import ContactSection from '@/components/ContactSection';
@@ -18,6 +19,7 @@ export default function Home() {
         <VideoSection />
         <AboutSection />
         <ArchiveSection />
+        <Present />
         <VoiceSection />
         <ContactSection />
         <FaqSection />
