@@ -145,6 +145,30 @@ export default function Present() {
           </div>
         </div>
 
+        {/* 完全買い切り型スクールセクション */}
+        <div className="max-w-6xl mx-auto mt-12">
+          <div className="text-center mb-8">
+            <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              完全買い切り型スクールだから<br />
+              追加料金、一切ゼロ！
+            </h3>
+          </div>
+          
+          {/* サムネイル画像枠 */}
+          <div className="w-full">
+            <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+              <div className="relative w-full aspect-video">
+                <Image
+                  src="/images/永久会員.png"
+                  alt="永久会員"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
 
       </div>
       

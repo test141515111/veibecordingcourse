@@ -125,29 +125,12 @@ export default function AboutSection() {
                     <div className="space-y-2">
                       <div className="bg-white rounded-lg p-2 sm:p-3 shadow-sm border border-orange-100 transition-shadow duration-300 hover:border-orange-200">
                         <div className="flex items-center">
-                          <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-pink-300 flex items-center justify-center shadow-sm flex-shrink-0">
-                            <span className="text-white font-bold text-xs sm:text-sm">日</span>
-                          </div>
-                          <div className="ml-2 sm:ml-3 flex-1">
-                            <div className="flex flex-col sm:flex-row sm:items-baseline">
-                              <p className="font-bold text-gray-800 text-sm sm:text-base">ユニコ🦄のAI開発生放送</p>
-                              <p className="text-xs sm:text-sm text-gray-500 sm:ml-2">20:00〜22:00</p>
-                            </div>
-                            <p className="text-xs text-gray-600 mt-0.5 border-l-2 border-pink-200 pl-2">
-                              最新のAI解説・開発実演
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      
-                      <div className="bg-white rounded-lg p-2 sm:p-3 shadow-sm border border-orange-100 transition-shadow duration-300 hover:border-orange-200">
-                        <div className="flex items-center">
                           <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-blue-300 flex items-center justify-center shadow-sm flex-shrink-0">
                             <span className="text-white font-bold text-xs sm:text-sm">月</span>
                           </div>
                           <div className="ml-2 sm:ml-3 flex-1">
                             <div className="flex flex-col sm:flex-row sm:items-baseline">
-                              <p className="font-bold text-gray-800 text-sm sm:text-base">ユニコ🦄のAI開発生放送</p>
+                              <p className="font-bold text-gray-800 text-sm sm:text-base">ユニコ🦄の最新AIマネタイズ</p>
                               <p className="text-xs sm:text-sm text-gray-500 sm:ml-2">22:00〜24:00</p>
                             </div>
                             <p className="text-xs text-gray-600 mt-0.5 border-l-2 border-blue-200 pl-2">
@@ -190,13 +173,30 @@ export default function AboutSection() {
                           </div>
                         </div>
                       </div>
+                      
+                      <div className="bg-white rounded-lg p-2 sm:p-3 shadow-sm border border-orange-100 transition-shadow duration-300 hover:border-orange-200">
+                        <div className="flex items-center">
+                          <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-pink-300 flex items-center justify-center shadow-sm flex-shrink-0">
+                            <span className="text-white font-bold text-xs sm:text-sm">日</span>
+                          </div>
+                          <div className="ml-2 sm:ml-3 flex-1">
+                            <div className="flex flex-col sm:flex-row sm:items-baseline">
+                              <p className="font-bold text-gray-800 text-sm sm:text-base">ユニコ🦄の最新AIマネタイズ</p>
+                              <p className="text-xs sm:text-sm text-gray-500 sm:ml-2">20:00〜22:00</p>
+                            </div>
+                            <p className="text-xs text-gray-600 mt-0.5 border-l-2 border-pink-200 pl-2">
+                              最新のAI解説・開発実演
+                            </p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <p className="text-base font-medium text-gray-700">
                     ライブ講義はすべてアーカイブ保存され、後からでも視聴可能です
                   </p>
                   <p className="text-base font-medium text-gray-700 mt-2">
-                    ハヤシシュンスケさんの生放送は期間限定のため永久ではありません
+                    ハヤシシュンスケさんの生放送は期間限定です
                   </p>
                   
                   {/* 1週間の合計時間表示 */}
@@ -266,18 +266,20 @@ export default function AboutSection() {
                     <div className="space-y-4">
                       {/* ステップ1 */}
                       <div className="flex flex-col lg:flex-row items-stretch bg-gradient-to-r from-orange-50 to-amber-50 rounded-lg p-3 sm:p-4 lg:p-5 border border-orange-200 shadow-sm hover:shadow-md transition-shadow">
-                        <div className="w-full lg:w-48 xl:w-64 aspect-video bg-gradient-to-br from-orange-100 to-amber-100 rounded-lg flex items-center justify-center mb-4 lg:mb-0 lg:mr-5 shadow-md flex-shrink-0 border-2 border-orange-200 overflow-hidden">
+                        <div className="w-full lg:w-56 xl:w-72 aspect-video bg-gradient-to-br from-orange-100 to-amber-100 rounded-lg flex items-center justify-center mb-4 lg:mb-0 lg:mr-5 shadow-md flex-shrink-0 border-2 border-orange-200 overflow-hidden">
                           <Image
                             src="/Feedback_images/課題動画.png"
                             alt="動画解説視聴"
-                            width={256}
-                            height={144}
+                            width={288}
+                            height={162}
                             className="w-full h-full object-cover rounded-md"
                           />
                         </div>
-                        <div className="flex-1">
-                          <h5 className="font-bold text-orange-800 text-lg sm:text-xl mb-2">STEP1 動画解説＋テキストコンテンツで課題を視聴</h5>
-                          <p className="text-sm sm:text-base text-gray-700">テーマを絞った分かりやすい動画解説で、初心者でも安心して取り組めます。動画だけでなく図解やキャプチャなどテキストベースの説明も充実。使用している参考プロンプトも共有されるので、完成例が見えている状態で取り組みやすくなっています。</p>
+                        <div className="flex-1 flex items-center">
+                          <h5 className="font-bold text-orange-800 text-lg sm:text-xl lg:text-2xl">
+                            <span className="block text-orange-600 text-lg sm:text-xl lg:text-2xl mb-2 font-bold">STEP1</span>
+                            動画解説＋テキストコンテンツで課題を視聴
+                          </h5>
                         </div>
                       </div>
                       
@@ -290,18 +292,20 @@ export default function AboutSection() {
                       
                       {/* ステップ2 */}
                       <div className="flex flex-col lg:flex-row items-stretch bg-gradient-to-r from-orange-50 to-amber-50 rounded-lg p-3 sm:p-4 lg:p-5 border border-orange-200 shadow-sm hover:shadow-md transition-shadow">
-                        <div className="w-full lg:w-48 xl:w-64 aspect-video bg-gradient-to-br from-orange-100 to-amber-100 rounded-lg flex items-center justify-center mb-4 lg:mb-0 lg:mr-5 shadow-md flex-shrink-0 border-2 border-orange-200 overflow-hidden">
+                        <div className="w-full lg:w-56 xl:w-72 aspect-video bg-gradient-to-br from-orange-100 to-amber-100 rounded-lg flex items-center justify-center mb-4 lg:mb-0 lg:mr-5 shadow-md flex-shrink-0 border-2 border-orange-200 overflow-hidden">
                           <Image
                             src="/Feedback_images/バイブコーディング.png"
                             alt="バイブコーディング"
-                            width={256}
-                            height={144}
+                            width={288}
+                            height={162}
                             className="w-full h-full object-cover rounded-md"
                           />
                         </div>
-                        <div className="flex-1">
-                          <h5 className="font-bold text-orange-800 text-lg sm:text-xl mb-2">STEP2 バイブコーディングで開発</h5>
-                          <p className="text-sm sm:text-base text-gray-700">指定ツールを用いてバイブコーディングによる開発に取り組みます。うまくいかない場合は講師になんでも相談OK！何回でも、解決するまで何度でも相談できるので、挫折することなく安心して開発を進められます。</p>
+                        <div className="flex-1 flex items-center">
+                          <h5 className="font-bold text-orange-800 text-lg sm:text-xl lg:text-2xl">
+                            <span className="block text-orange-600 text-lg sm:text-xl lg:text-2xl mb-2 font-bold">STEP2</span>
+                            バイブコーディングで開発
+                          </h5>
                         </div>
                       </div>
                       
@@ -314,18 +318,20 @@ export default function AboutSection() {
                       
                       {/* ステップ3 */}
                       <div className="flex flex-col lg:flex-row items-stretch bg-gradient-to-r from-orange-50 to-amber-50 rounded-lg p-3 sm:p-4 lg:p-5 border border-orange-200 shadow-sm hover:shadow-md transition-shadow">
-                        <div className="w-full lg:w-48 xl:w-64 aspect-video bg-gradient-to-br from-orange-100 to-amber-100 rounded-lg flex items-center justify-center mb-4 lg:mb-0 lg:mr-5 shadow-md flex-shrink-0 border-2 border-orange-200 overflow-hidden">
+                        <div className="w-full lg:w-56 xl:w-72 aspect-video bg-gradient-to-br from-orange-100 to-amber-100 rounded-lg flex items-center justify-center mb-4 lg:mb-0 lg:mr-5 shadow-md flex-shrink-0 border-2 border-orange-200 overflow-hidden">
                           <Image
                             src="/Feedback_images/課題提出.png"
                             alt="成果物提出"
-                            width={256}
-                            height={144}
+                            width={288}
+                            height={162}
                             className="w-full h-full object-cover rounded-md"
                           />
                         </div>
-                        <div className="flex-1">
-                          <h5 className="font-bold text-orange-800 text-lg sm:text-xl mb-2">STEP3 成果物の提出</h5>
-                          <p className="text-sm sm:text-base text-gray-700">完成した成果物をコミュニティで共有します。他の生徒の成果物も見ることができるので、モチベーション向上にもつながります。課題は取り組みたいものから自由に選んで取り組めるので、自分のペースで学習を進められます。</p>
+                        <div className="flex-1 flex items-center">
+                          <h5 className="font-bold text-orange-800 text-lg sm:text-xl lg:text-2xl">
+                            <span className="block text-orange-600 text-lg sm:text-xl lg:text-2xl mb-2 font-bold">STEP3</span>
+                            成果物の提出
+                          </h5>
                         </div>
                       </div>
                       
@@ -338,18 +344,20 @@ export default function AboutSection() {
                       
                       {/* ステップ4 */}
                       <div className="flex flex-col lg:flex-row items-stretch bg-gradient-to-r from-orange-50 to-amber-50 rounded-lg p-3 sm:p-4 lg:p-5 border border-orange-200 shadow-sm hover:shadow-md transition-shadow">
-                        <div className="w-full lg:w-48 xl:w-64 aspect-video bg-gradient-to-br from-orange-100 to-amber-100 rounded-lg flex items-center justify-center mb-4 lg:mb-0 lg:mr-5 shadow-md flex-shrink-0 border-2 border-orange-200 overflow-hidden">
+                        <div className="w-full lg:w-56 xl:w-72 aspect-video bg-gradient-to-br from-orange-100 to-amber-100 rounded-lg flex items-center justify-center mb-4 lg:mb-0 lg:mr-5 shadow-md flex-shrink-0 border-2 border-orange-200 overflow-hidden">
                           <Image
                             src="/Feedback_images/フィードバック.png"
                             alt="添削・フィードバック"
-                            width={256}
-                            height={144}
+                            width={288}
+                            height={162}
                             className="w-full h-full object-cover rounded-md"
                           />
                         </div>
-                        <div className="flex-1">
-                          <h5 className="font-bold text-orange-800 text-lg sm:text-xl mb-2">STEP4 講師による添削・フィードバック</h5>
-                          <p className="text-sm sm:text-base text-gray-700">AI開発の最前線で活躍するプロの講師から個別でフィードバックがもらえます。何度でも添削OKで、具体的なアドバイスによりあなたの成長を加速させます。</p>
+                        <div className="flex-1 flex items-center">
+                          <h5 className="font-bold text-orange-800 text-lg sm:text-xl lg:text-2xl">
+                            <span className="block text-orange-600 text-lg sm:text-xl lg:text-2xl mb-2 font-bold">STEP4</span>
+                            講師による添削・フィードバック
+                          </h5>
                         </div>
                       </div>
                     </div>
@@ -444,118 +452,116 @@ export default function AboutSection() {
             </div>
 
             {/* Main Content Row - モバイル表示ではスタック */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-amber-100 min-h-[300px] sm:min-h-[400px]">
+            <div className="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-amber-100 min-h-[200px] sm:min-h-[250px]">
               {/* Learning Axis */}
-              <div className="p-8 bg-gradient-to-b from-amber-50/30 to-white relative">
+              <div className="p-4 sm:p-6 bg-gradient-to-b from-amber-50/30 to-white relative">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-px bg-gradient-to-r from-transparent via-amber-200/50 to-transparent"></div>
                 <div className="h-full flex flex-col">
-                  <div className="mb-8">
-                    <div className="flex items-center justify-between mb-4">
+                  <div className="mb-4">
+                    <div className="flex items-center justify-between mb-3">
                       <h3 className="text-lg font-semibold text-amber-900">課題内容</h3>
                       <span className="bg-gradient-to-r from-amber-100 to-amber-200 text-amber-800 px-4 py-1.5 rounded-lg text-sm font-medium shadow-sm">
                         30課題
                       </span>
                     </div>
-                    <p className="text-slate-600 text-sm leading-relaxed">
-                      バイブコーディング独自のカリキュラムで実践的なスキルを習得
-                    </p>
+
                   </div>
 
-                  <div className="flex-1 space-y-5">
-                    <div className="rounded-xl p-5 bg-white border border-amber-100 shadow-sm hover:shadow-md transition-shadow">
-                      <div className="flex items-center gap-3 mb-3">
+                  <div className="flex-1 space-y-3">
+                    <div className="rounded-xl p-4 bg-white border border-amber-100 shadow-sm hover:shadow-md transition-shadow">
+                      <div className="flex items-center gap-3 mb-2">
                         <div className="p-1.5 bg-gradient-to-br from-amber-100 to-amber-50 rounded-lg shadow-sm">
                           <Code className="w-5 h-5 text-amber-700" />
                         </div>
                         <h4 className="font-semibold text-amber-950">基礎課題</h4>
                       </div>
-                      <p className="text-sm text-slate-600 pl-10">テトリス、プロンプト量産アプリ、占いbot開発など基礎力の育成</p>
+
                     </div>
 
-                    <div className="rounded-xl p-5 bg-white border border-amber-100 shadow-sm hover:shadow-md transition-shadow">
-                      <div className="flex items-center gap-3 mb-3">
+                    <div className="rounded-xl p-4 bg-white border border-amber-100 shadow-sm hover:shadow-md transition-shadow">
+                      <div className="flex items-center gap-3 mb-2">
                         <div className="p-1.5 bg-gradient-to-br from-amber-100 to-amber-50 rounded-lg shadow-sm">
                           <Target className="w-5 h-5 text-amber-700" />
                         </div>
                         <h4 className="font-semibold text-amber-950">実践課題</h4>
                       </div>
-                      <p className="text-sm text-slate-600 pl-10">企業サイト作成、リサーチアプリ開発など実践力養成</p>
+
                     </div>
                   </div>
                 </div>
               </div>
 
               {/* Mentoring Axis */}
-              <div className="p-8 bg-gradient-to-b from-amber-100/20 to-white relative">
+              <div className="p-4 sm:p-6 bg-gradient-to-b from-amber-100/20 to-white relative">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-px bg-gradient-to-r from-transparent via-amber-200/50 to-transparent"></div>
                 <div className="h-full flex flex-col">
-                  <div className="mb-8">
-                    <div className="flex items-center justify-between mb-4">
+                  <div className="mb-4">
+                    <div className="flex items-center justify-between mb-3">
                       <h3 className="text-lg font-semibold text-amber-900">指導内容</h3>
                       <span className="bg-gradient-to-r from-amber-200 to-amber-300 text-amber-800 px-4 py-1.5 rounded-lg text-sm font-medium shadow-sm">
                         講師による添削
                       </span>
                     </div>
-                    <p className="text-slate-600 text-sm leading-relaxed">課題添削と個別サポートで急速成長を実現</p>
+
                   </div>
 
-                  <div className="flex-1 space-y-5">
-                    <div className="rounded-xl p-5 bg-white border border-amber-100 shadow-sm hover:shadow-md transition-shadow">
-                      <div className="flex items-center gap-3 mb-3">
+                  <div className="flex-1 space-y-3">
+                    <div className="rounded-xl p-4 bg-white border border-amber-100 shadow-sm hover:shadow-md transition-shadow">
+                      <div className="flex items-center gap-3 mb-2">
                         <div className="p-1.5 bg-gradient-to-br from-amber-200 to-amber-100 rounded-lg shadow-sm">
                           <MessageSquare className="w-5 h-5 text-amber-700" />
                         </div>
                         <h4 className="font-semibold text-amber-950">成果物フィードバック</h4>
                       </div>
-                      <p className="text-sm text-slate-600 pl-10">実際の成果物を見ながら具体的な改善点を指導</p>
+
                     </div>
 
-                    <div className="rounded-xl p-5 bg-white border border-amber-100 shadow-sm hover:shadow-md transition-shadow">
-                      <div className="flex items-center gap-3 mb-3">
+                    <div className="rounded-xl p-4 bg-white border border-amber-100 shadow-sm hover:shadow-md transition-shadow">
+                      <div className="flex items-center gap-3 mb-2">
                         <div className="p-1.5 bg-gradient-to-br from-amber-200 to-amber-100 rounded-lg shadow-sm">
                           <CheckCircle2 className="w-5 h-5 text-amber-700" />
                         </div>
                         <h4 className="font-semibold text-amber-950">個別サポート</h4>
                       </div>
-                      <p className="text-sm text-slate-600 pl-10">つまずきポイントを即座に解決</p>
+
                     </div>
                   </div>
                 </div>
               </div>
 
               {/* Community Axis */}
-              <div className="p-8 bg-gradient-to-b from-amber-100/30 to-white relative">
+              <div className="p-4 sm:p-6 bg-gradient-to-b from-amber-100/30 to-white relative">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-px bg-gradient-to-r from-transparent via-amber-200/50 to-transparent"></div>
                 <div className="h-full flex flex-col">
-                  <div className="mb-8">
-                    <div className="flex items-center justify-between mb-4">
+                  <div className="mb-4">
+                    <div className="flex items-center justify-between mb-3">
                       <h3 className="text-lg font-semibold text-amber-900">参加内容</h3>
                       <span className="bg-gradient-to-r from-amber-300 to-amber-400 text-amber-800 px-4 py-1.5 rounded-lg text-sm font-medium shadow-sm">
                         LIVE配信
                       </span>
                     </div>
-                    <p className="text-slate-600 text-sm leading-relaxed">生放送に参加して最新トレンドや疑問を一発解消</p>
+
                   </div>
 
-                  <div className="flex-1 space-y-5">
-                    <div className="rounded-xl p-5 bg-white border border-amber-100 shadow-sm hover:shadow-md transition-shadow">
-                      <div className="flex items-center gap-3 mb-3">
+                  <div className="flex-1 space-y-3">
+                    <div className="rounded-xl p-4 bg-white border border-amber-100 shadow-sm hover:shadow-md transition-shadow">
+                      <div className="flex items-center gap-3 mb-2">
                         <div className="p-1.5 bg-gradient-to-br from-amber-300 to-amber-200 rounded-lg shadow-sm">
                           <Tv className="w-5 h-5 text-amber-700" />
                         </div>
                         <h4 className="font-semibold text-amber-950">ライブ講義</h4>
                       </div>
-                      <p className="text-sm text-slate-600 pl-10">最新技術トレンドをリアルタイムで学習</p>
+
                     </div>
 
-                    <div className="rounded-xl p-5 bg-white border border-amber-100 shadow-sm hover:shadow-md transition-shadow">
-                      <div className="flex items-center gap-3 mb-3">
+                    <div className="rounded-xl p-4 bg-white border border-amber-100 shadow-sm hover:shadow-md transition-shadow">
+                      <div className="flex items-center gap-3 mb-2">
                         <div className="p-1.5 bg-gradient-to-br from-amber-300 to-amber-200 rounded-lg shadow-sm">
                           <MessageSquare className="w-5 h-5 text-amber-700" />
                         </div>
                         <h4 className="font-semibold text-amber-950">質疑応答</h4>
                       </div>
-                      <p className="text-sm text-slate-600 pl-10">疑問点をその場で直接質問・解決</p>
+
                     </div>
                   </div>
                 </div>
@@ -589,7 +595,7 @@ export default function AboutSection() {
 
           {/* Bottom Message */}
           <div className="text-center mt-8">
-            <p className="text-slate-600">3つの軸が同時に機能することで、確実にスキルアップを実現します</p>
+            <p className="text-slate-600">3つの軸で確実にスキルアップ</p>
           </div>
         </div>
 
@@ -643,8 +649,12 @@ export default function AboutSection() {
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden group">
             <div className="p-8 sm:p-10 text-center">
               <div className="inline-block bg-orange-100 px-3 py-1 rounded-full text-orange-600 text-xs font-medium tracking-wider mb-3">SPECIAL FEATURE</div>
-              <h3 className="text-2xl lg:text-3xl font-bold mb-4 bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent">
-                マンツーマンZoomセッション(1回)
+              <h3 className="text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">
+                <span className="bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent inline-block" style={{fontSize: '0.7em', verticalAlign: 'middle'}}>ユニコ</span>
+                <span className="text-gray-800 inline-block" style={{fontSize: '0.7em', verticalAlign: 'middle'}}>🦄</span>
+                <span className="bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent inline-block" style={{fontSize: '0.7em', verticalAlign: 'middle'}}>とマンツーマン</span>
+                <br />
+                <span className="bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent inline-block" style={{fontSize: '0.7em', verticalAlign: 'middle'}}>Zoomセッション(1回)</span>
               </h3>
               <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
                 あなたの悩みや目標に合わせて、ユニコ🦄が直接アドバイスします。キャリア相談からAIマネタイズ手法の提案まで、あなたに必要なサポートを提供します。

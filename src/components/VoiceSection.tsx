@@ -42,10 +42,10 @@ const courseProjects = [
   },
   {
     id: 6,
-    title: "推し活アプリ開発",
-    image: "/images/推し活アプリ.png",
-    target: "Google Apps Scriptを活用したい方",
-    note: "※YouTubeデータAPIと連携したツール開発"
+    title: "画像からプロンプト作成アプリ",
+    image: "/images/画像プロンプトアプリ.png",
+    target: "AI画像生成を活用したい方",
+    note: "※画像からプロンプトを自動生成するツール開発"
   }
 ];
 

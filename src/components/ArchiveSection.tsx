@@ -8,108 +8,82 @@ const archiveItems = [
   {
     id: 1,
     title: "話題のChrome MCPを徹底解説！！！ChromeをMCPで操作しよう！＆AI美女評価",
-    description: "Chrome MCPの概要と導入方法、さらにAIエージェントを使ったブラウザ操作の自動化手法について解説しています。また、AIによる美女評価の事例も交えて、実践的な使い方を紹介します。",
-    date: "2025年6月16日",
-    image: "/Archive_images/話題のChrome MCP解説.png",
-    tags: ["Chrome MCP", "ブラウザ自動化"]
+    date: "2025-07-06",
+    image: "/Archive_images/話題のChrome MCP解説.png"
   },
   {
     id: 2,
     title: "ChromeMCPでクラウドワークスに自動応募させよう！",
-    description: "Chrome MCPを用いてクラウドワークスへの案件応募を自動化する手順とそのプロンプト設計方法について講義しています。実務活用に向けた自動操作の具体例を紹介します。",
-    date: "2025年6月16日",
-    image: "/Archive_images/ChromeMCPでクラウドワークスに自動応募.png",
-    tags: ["Chrome MCP", "自動応募"]
+    date: "2025-07-06",
+    image: "/Archive_images/ChromeMCPでクラウドワークスに自動応募.png"
   },
   {
     id: 3,
-    title: "【ハヤシシュンスケ降臨回】AIエージェント ❌ ワークフロー構築 ❌ n8n 徹底解説！！",
-    description: "ClaudeなどのAIエージェントとn8nを連携させ、ノーコードでワークフローを自動生成・実行する方法について解説しています。AIからの自然言語指示で自動化を行うプロセスを実演しています。",
-    date: "2025年6月16日",
-    image: "/Archive_images/AIエージェント ❌ ワークフロー構築 ❌ n8n 徹底解説！！.png",
-    tags: ["AIエージェント", "n8n", "ワークフロー"]
+    title: "【ハヤシシュンスケ降臨回】AIエージェント ❌ ワークフロー構築 ❌ n8n 徹底解説！！Claudeを操作するだけで、n8nでワークフローが無限に生み出される装置が完成！！",
+    date: "2025-07-07",
+    image: "/Archive_images/AIエージェント ❌ ワークフロー構築 ❌ n8n 徹底解説！！.png"
   },
   {
     id: 4,
-    title: "【神回！後半はハヤシシュンスケさん降臨】ClaudeCode ❌ MCPでサービス開発をガンガンやっていこう！！",
-    description: "ClaudeCodeとMCPを活用し、AI主導でWebサービスを構築する実践的な方法について講義しています。Base44などの先進事例も交えて、AI開発の最前線を解説します。",
-    date: "2025年6月16日",
-    image: "/Archive_images/Wixに80億円で買創業6ヶ月の「Base44」でバイブコーディングをしまくろう！.png",
-    tags: ["ClaudeCode", "MCP", "サービス開発"]
+    title: "【神回！後半はハヤシシュンスケさん降臨】Wixに80億円で買創業6ヶ月の「Base44」でバイブコーディングをしまくろう！　 ＆ 　【実践編！】ClaudeCode ❌️ MCPでサービス開発をガンガンやっていこう！！",
+    date: "2025-07-14",
+    image: "/Archive_images/Wixに80億円で買創業6ヶ月の「Base44」でバイブコーディングをしまくろう！.png"
   },
   {
     id: 5,
-    title: "Kiro×ClaudeCodeが爆速すぎる...!?AWSが開発したコーディングエージェント『Kiro』徹底解説！！",
-    description: "AWSが開発した新しいAIコーディングエージェント「Kiro」の機能と、ClaudeCodeとの連携による高速開発手法について解説しています。Kiroの実行環境や使い勝手も紹介します。",
-    date: "2025年6月16日",
-    image: "/Archive_images/Kiro×ClaudeCodeが爆速すぎる.png",
-    tags: ["Kiro", "ClaudeCode", "AWS"]
+    title: "Kiro×ClaudeCodeが爆速すぎる...!?AWSが開発したコーディングエージェント「Kiro」徹底解説！！",
+    date: "2025-07-20",
+    image: "/Archive_images/Kiro×ClaudeCodeが爆速すぎる.png"
   },
   {
     id: 6,
     title: "AI彼女を徹底的に作っていこう！",
-    description: "AIエージェントや生成AIツールを活用して、対話可能な\"AI彼女\"を設計・構築する手順について講義しています。外見生成から性格設計までのフローを扱います。",
-    date: "2025年6月16日",
-    image: "/Archive_images/AI彼女を徹底的に作っていこう！.png",
-    tags: ["AI彼女", "生成AI", "対話システム"]
+    date: "2025-07-20",
+    image: "/Archive_images/AI彼女を徹底的に作っていこう！.png"
   },
   {
     id: 7,
-    title: "パソコン自体をAIで遠隔操作してみよう！AppleScriptを使ったパソコン操作徹底調査！",
-    description: "AppleScriptを活用して、AIがパソコン本体を自動操作する仕組みについて解説しています。ファイル操作や起動スクリプトの実行などの自動化例も取り上げます。",
-    date: "2025年6月16日",
-    image: "/Archive_images/AppleScriptを使ったパソコン操作徹底調査！.png",
-    tags: ["AppleScript", "パソコン操作", "自動化"]
+    title: "パソコン自体をAIで遠隔操作してみよう！",
+    date: "2025-07-21",
+    image: "/Archive_images/AppleScriptを使ったパソコン操作徹底調査！.png"
   },
   {
     id: 8,
     title: "AppleScriptで自動出品に挑戦しよう！",
-    description: "AppleScriptによるフリマアプリやECサイトへの自動出品フローを構築する方法について講義しています。Mac環境での自動処理スクリプトの基本も解説します。",
-    date: "2025年6月16日",
-    image: "/Archive_images/AppleScriptで自動出品に挑戦しよう！.png",
-    tags: ["AppleScript", "自動出品", "EC"]
+    date: "2025-07-21",
+    image: "/Archive_images/AppleScriptで自動出品に挑戦しよう！.png"
   },
   {
     id: 9,
     title: "原点に返って クラウドワークス × AI活用でサクッと案件をこなそう！",
-    description: "画像生成、動画台本、SNS運用代行、ブログ記事、システム開発などその場で全部やるで！！",
-    date: "2025年6月16日",
-    image: "/images/クラウドワークス.png",
-    tags: []
+    date: "2025-06-16",
+    image: "/images/クラウドワークス.png"
   },
   {
-    id: 2,
+    id: 10,
     title: "「AI × 恋愛相談」毎日をサポートしてくれるBOTを構築",
-    description: "プロンプトエンジニアリング＆ClaudeCodeで活用したバイブコーディング、音声回答システムをにじボイスAPI × ClaudeCodeで構築",
-    date: "2025年6月22日",
-    image: "/images/AI彼女.png",
-    tags: ["プロンプトエンジニアリング", "音声システム"]
+    date: "2025-06-22",
+    image: "/images/AI彼女.png"
   },
   {
-    id: 3,
+    id: 11,
     title: "Udemyのようなスクールの受講ページをClaudeCodeで構築！",
-    description: "URLを渡すだけでスクールや講座の納品が可能！もちろんwebサービス課金不要で0円！コンテンツライティング編も収録",
-    date: "2025年6月23日",
-    image: "/images/Udemy.png",
-    tags: ["Webサービス開発"]
+    date: "2025-06-23",
+    image: "/images/Udemy.png"
   },
   {
-    id: 4,
+    id: 12,
     title: "今話題のバイブコーディング（AI開発）を丁寧に解説！",
-    description: "会社ホームページと連携BOT（dify）をバイブコーディング！Github→Vercel連携のエラー対応、マーケティング戦略まで",
-    date: "2025年6月29日",
-    image: "/images/バイブコーディング.png",
-    tags: ["連携開発", "マーケティング"]
+    date: "2025-06-29",
+    image: "/images/バイブコーディング.png"
   },
   {
-    id: 5,
+    id: 13,
     title: "「セールスライティング × Webデザイン × バイブコーディング」に挑戦！",
-    description: "GoogleCloudのImagen 4.0で画像を生成してHPをリッチに！#ユニコスクール「バイブコーディング」コースのHPを作り込もう",
-    date: "2025年6月30日",
-    image: "/images/セールスコピーライティング.png",
-    tags: ["ライティング", "画像生成"]
+    date: "2025-06-30",
+    image: "/images/セールスコピーライティング.png"
   }
-];
+].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
 export default function ArchiveSection() {
   const [showAll, setShowAll] = React.useState(false);
@@ -200,47 +174,23 @@ export default function ArchiveSection() {
                   className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 flex-shrink-0 md:flex-shrink w-[85%] md:w-full mr-4 md:mr-0 md:mb-8 snap-start"
                 >
                   <div className="flex flex-col md:flex-row">
-                    {/* 画像部分 - より明確に */}
-                    <div className="md:w-2/5 relative h-64 md:h-auto bg-gradient-to-br from-amber-50 to-orange-50 flex items-center justify-center overflow-hidden">
-                      {/* 画像プレースホルダーのデザイン */}
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="w-full h-full relative">
-                          <Image
-                            src={item.image}
-                            alt={item.title}
-                            fill
-                            className="object-cover z-10 opacity-80 hover:opacity-100 transition-opacity duration-300"
-                          />
-                        </div>
+                    {/* 画像部分 - 16:9アスペクト比 */}
+                    <div className="md:w-1/3 relative bg-gradient-to-br from-amber-50 to-orange-50 flex items-center justify-center overflow-hidden">
+                      <div className="w-full aspect-video relative">
+                        <Image
+                          src={item.image}
+                          alt={item.title}
+                          fill
+                          className="object-cover z-10 opacity-80 hover:opacity-100 transition-opacity duration-300"
+                        />
                       </div>
-                      
-
                     </div>
                     
                     {/* コンテンツ部分 - 改良版 */}
-                    <div className="md:w-3/5 p-6 md:p-8">
-                      <h4 className="text-xl font-bold text-gray-800 mb-3 line-clamp-2">
+                    <div className="md:w-2/3 p-6 md:p-8 flex items-center">
+                      <h4 className="text-xl font-bold text-gray-800 line-clamp-2">
                         {item.title}
                       </h4>
-                      <p className="text-gray-600 mb-4 line-clamp-3">
-                        {item.description}
-                      </p>
-                      
-                      {/* タグ - より洗練されたデザイン */}
-                      {item.tags.length > 0 && (
-                        <div className="flex flex-wrap gap-2 mt-4">
-                          {item.tags.map((tag, index) => (
-                            <span 
-                              key={index} 
-                              className="bg-gradient-to-r from-amber-50 to-orange-50 text-amber-700 text-xs font-medium py-1.5 px-3 rounded-full border border-amber-100"
-                            >
-                              {tag}
-                            </span>
-                          ))}
-                        </div>
-                      )}
-                      
-                      {/* 視聴ボタン削除 */}
                     </div>
                   </div>
                 </div>
